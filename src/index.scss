@@ -1,0 +1,222 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  height: 100%;
+  font-family: system-ui;
+  overscroll-behavior: none;
+}
+
+main {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.fake-loader {
+  position: fixed;
+  pointer-events: none;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.buttonBox {
+  position: absolute;
+  z-index: 2;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  button {
+    position: relative;
+    padding: 12px 65px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #3580c5;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.popup {
+  position: fixed;
+  z-index: 4;
+  top: 20px;
+  left: -100%;
+  background-color: white;
+  width: 30vw;
+  height: 85vh;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out all;
+  &[data-active="true"] {
+    left: 40px;
+  }
+  &_play {
+    position: relative;
+    div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      height: 0px;
+      width: 0px;
+      border-top: 25px solid transparent;
+      border-left: 40px solid white;
+      border-bottom: 25px solid transparent;
+      transform: translateX(-50%) translateY(-50%);
+      pointer-events: none;
+      &[data-hide="true"] {
+        border: none;
+      }
+    }
+  }
+  video {
+    width: 100%;
+    min-height: 200px;
+    object-fit: cover;
+  }
+  h3 {
+    color: #3580c5;
+  }
+  h2 {
+    margin-left: 20px;
+    margin-bottom: -25px;
+    background-color: #3580c5;
+    width: fit-content;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    color: white;
+    transform: translateY(-50%);
+    font-size: 1.757vw;
+    line-height: calc(1.757vw * 1.2);
+  }
+  &_box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.464vw;
+    padding: 1.464vw 2.196vw;
+    overflow-y: auto;
+    max-height: calc(100% - 230px);
+    @media screen and (min-width: 1400px) {
+      max-height: calc(100% - 280px);
+    }
+    @media screen and (min-width: 1650px) {
+      max-height: calc(100% - 340px);
+    }
+
+    p {
+      font-size: 1.025vw;
+      line-height: calc(1.025vw * 1.5);
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      list-style-position: inside;
+
+      li {
+        max-width: 85%;
+        font-size: 1.025vw;
+        line-height: calc(1.025vw * 1.5);
+        font-weight: bold;
+        span {
+          font-weight: normal;
+        }
+      }
+    }
+  }
+  &_close {
+    height: 2.562vw;
+    width: 2.562vw;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  &_button {
+    background-color: #3580c5;
+    border: none;
+    border-radius: 999px;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    width: fit-content;
+    cursor: pointer;
+    font-size: 1.171vw;
+    line-height: calc(1.171vw * 1.2);
+  }
+}
+
+.outDoor {
+  position: fixed;
+  z-index: 2;
+  height: 180px;
+  width: 120px;
+  background-color: orange;
+  opacity: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  clip-path: polygon(40% 50%, 100% 100%, 100% 0);
+  cursor: pointer;
+  transition: 0.3s opacity ease-in-out;
+  &[data-active="true"] {
+    opacity: 0.8;
+  }
+}
+
+.buttonSlide {
+  position: fixed;
+  z-index: 2;
+  bottom: 20px;
+  left: 20px;
+  background-color: #c8382e;
+  border-radius: 999px;
+  width: 250px;
+  height: 45px;
+  text-align: center;
+  border: none;
+  color: white;
+  font-weight: lighter;
+  font-size: 1.125rem;
+  line-height: calc(1.125rem * 1.5);
+  cursor: pointer;
+  &::after {
+    content: "";
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 999px;
+    position: absolute;
+    left: 2.5px;
+    top: 2.5px;
+    transition: 0.3s left ease-in-out;
+  }
+  &[data-active="true"] {
+    background-color: #3580c5;
+    &::after {
+      left: calc(100% - 42.5px);
+    }
+  }
+}

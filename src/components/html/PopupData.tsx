@@ -12,6 +12,7 @@ import { BuroCustomer, BuroNotCustomer } from "./Data/BuroData";
 
 const PopupData = () => {
   const { popupDataValue, isCustomer } = useSnapshot(store);
+
   if (isCustomer) {
     return (
       <>

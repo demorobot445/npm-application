@@ -1,3 +1,5 @@
+import CustomerButton from "./CustomerButton";
+
 export const FertigungCustomer = ({ value }: { value: number }) => {
   switch (value) {
     case 0:
@@ -32,6 +34,7 @@ export const FertigungCustomer = ({ value }: { value: number }) => {
               erfolgreich realisieren.
             </p>
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -74,6 +77,7 @@ export const FertigungCustomer = ({ value }: { value: number }) => {
             </p>
             <p>Wir freuen uns auf Ihre Anfrage!</p>
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -133,6 +137,7 @@ export const FertigungCustomer = ({ value }: { value: number }) => {
               erfolgreich realisieren.
             </p>
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -169,6 +174,7 @@ export const FertigungCustomer = ({ value }: { value: number }) => {
               erfolgreich realisieren.
             </p>
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -211,6 +217,7 @@ export const FertigungCustomer = ({ value }: { value: number }) => {
             </p>
             <p>Wir freuen uns auf Ihre Anfrage!</p>
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -273,6 +280,7 @@ export const FertigungNotCustomer = ({ value }: { value: number }) => {
               </li>
             </ul>
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -318,6 +326,7 @@ export const FertigungNotCustomer = ({ value }: { value: number }) => {
               <li>Erstellung von Messprotokollen</li>
             </ul>
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -340,6 +349,7 @@ export const FertigungNotCustomer = ({ value }: { value: number }) => {
               Kontinuierlicher Einsatz neuester Maschinen und Technologien
             </li>
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -368,6 +378,7 @@ export const FertigungNotCustomer = ({ value }: { value: number }) => {
               </li>
             </ul>
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );

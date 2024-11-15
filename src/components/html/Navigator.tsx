@@ -35,17 +35,19 @@ const Navigator = () => {
 
   return (
     <>
-      <button
-        onClick={handleCustomer}
-        data-active={isCustomer}
-        className="buttonSlide"
-      >
-        {isCustomer ? (
-          <span>Lösungen bei NMH</span>
-        ) : (
-          <span>Karriere bei NMH</span>
-        )}
-      </button>
+      {floor === 0 && (
+        <button
+          onClick={handleCustomer}
+          data-active={isCustomer}
+          className="buttonSlide"
+        >
+          {isCustomer ? (
+            <span>Lösungen bei NMH</span>
+          ) : (
+            <span>Karriere bei NMH</span>
+          )}
+        </button>
+      )}
       <button
         onClick={handleBackDoor}
         data-active={backDoorCondition}

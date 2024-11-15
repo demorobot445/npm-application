@@ -1,3 +1,5 @@
+import CustomerButton from "./CustomerButton";
+
 export const EingangCustomer = ({ value }: { value: number }) => {
   switch (value) {
     case 10:
@@ -38,6 +40,7 @@ export const EingangCustomer = ({ value }: { value: number }) => {
             <li>Förderung E-Mobilität Baden-Württemberg</li>
             <li>Förderung BMWi Digital Jetzt</li>
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -52,6 +55,7 @@ export const EingangCustomer = ({ value }: { value: number }) => {
               Welt und erfahrt, was uns täglich antreibt!
             </p>
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -75,6 +79,7 @@ export const EingangCustomer = ({ value }: { value: number }) => {
               <li>DIN EN ISO 14001:2015 (gültig bis 24.01.2027)</li>
             </ul>
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -148,6 +153,7 @@ export const EingangCustomer = ({ value }: { value: number }) => {
               Gabriel Friedmann & Christian Bulander
             </p>
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -203,6 +209,7 @@ export const EingangCustomer = ({ value }: { value: number }) => {
               Region.
             </p>
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );

@@ -1,3 +1,5 @@
+import CustomerButton from "./CustomerButton";
+
 export const MaschineCustomer = ({ value }: { value: number }) => {
   switch (value) {
     case 18:
@@ -6,41 +8,71 @@ export const MaschineCustomer = ({ value }: { value: number }) => {
           <h2>MONTAGE</h2>
           <div className="popup_box">
             <p>
-              Patrick gibt dir Einblicke in die mechanische Montage. Entdecke
-              seine abwechslungsreichen Aufgaben:
+              Alexander stellt Ihnen die mechanische Konstruktion vor. Entdecken
+              Sie unsere Stärken und erfahren Sie, was uns Einzigartig macht:
             </p>
+            <h3>DIE NMH DECKT EIN GROSSES SPEKTRUM AB:</h3>
             <ul>
               <li>
-                Eigenverantwortliche Montage und Inbetriebnahme nach Zeichnung,
-                Stücklisten und 3D-PDF
+                Mechanische, elektrische, pneumatische und hydraulische Montage
               </li>
-              <li>Internationale Montageeinsätze</li>
-              <li>Installation von Pneumatik und Hydraulik</li>
-              <li>Terminverantwortung</li>
             </ul>
+            <h3>SONDERMASCHINEN, DIE WIR FÜR SIE FERTIGEN KÖNNEN:</h3>
+            <ul>
+              <li>Große Verkettungsanlagen</li>
+              <li>Kleine Standalone-Anlagen</li>
+              <li>Präzise Messanlagen</li>
+              <li>Roboterzellen</li>
+              <li>Greifsysteme</li>
+              <li>Lastaufnahmemittel</li>
+              <li>Decken- und bodengeführte Manipulatoren</li>
+            </ul>
+            <h3>ABLAUF VON KUNDENPROJEKTEN:</h3>
+            <p>
+              Sobald die Konstruktionspläne vorliegen, starten wir den Prozess
+              und montieren die Anlage Ab diesem Zeitpunkt sind Kunden jederzeit
+              herzlich willkommen, uns zu besuchen. Wir freuen uns auf Ihre
+              Anfrage!
+            </p>
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
     case 19:
       return (
         <>
-          <h2> ELEKTRISCHER MONTEUR</h2>
+          <h2>MONTAGE</h2>
           <div className="popup_box">
             <p>
-              Osama nimmt dich mit in die elektrische Installation. Lerne seine
-              abwechslungsreichen Aufgaben kennen:
+              Alexander stellt Ihnen die mechanische Konstruktion vor. Entdecken
+              Sie unsere Stärken und erfahren Sie, was uns Einzigartig macht:
             </p>
+            <h3>DIE NMH DECKT EIN GROSSES SPEKTRUM AB:</h3>
             <ul>
-              <li>Installation von Schaltschränken gemäß E-Plänen</li>
-              <li>Verdrahten und Verkabeln von Maschinen</li>
               <li>
-                Montage von Maschinen sowohl im Hausals auch beim Kunden vor Ort
+                Mechanische, elektrische, pneumatische und hydraulische Montage
               </li>
-              <li>Arbeit an verschiedenen Projektenbei diversen Kunden</li>
             </ul>
-
+            <h3>SONDERMASCHINEN, DIE WIR FÜR SIE FERTIGEN KÖNNEN:</h3>
+            <ul>
+              <li>Große Verkettungsanlagen</li>
+              <li>Kleine Standalone-Anlagen</li>
+              <li>Präzise Messanlagen</li>
+              <li>Roboterzellen</li>
+              <li>Greifsysteme</li>
+              <li>Lastaufnahmemittel</li>
+              <li>Decken- und bodengeführte Manipulatoren</li>
+            </ul>
+            <h3>ABLAUF VON KUNDENPROJEKTEN:</h3>
+            <p>
+              Sobald die Konstruktionspläne vorliegen, starten wir den Prozess
+              und montieren die Anlage Ab diesem Zeitpunkt sind Kunden jederzeit
+              herzlich willkommen, uns zu besuchen. Wir freuen uns auf Ihre
+              Anfrage!
+            </p>
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -163,69 +195,43 @@ export const MaschineNotCustomer = ({ value }: { value: number }) => {
           <h2>MONTAGE</h2>
           <div className="popup_box">
             <p>
-              Alexander stellt Ihnen die mechanische Konstruktion vor. Entdecken
-              Sie unsere Stärken und erfahren Sie, was uns Einzigartig macht:
+              Patrick gibt dir Einblicke in die mechanische Montage. Entdecke
+              seine abwechslungsreichen Aufgaben:
             </p>
-            <h3>DIE NMH DECKT EIN GROSSES SPEKTRUM AB:</h3>
             <ul>
               <li>
-                Mechanische, elektrische, pneumatische und hydraulische Montage
+                Eigenverantwortliche Montage und Inbetriebnahme nach Zeichnung,
+                Stücklisten und 3D-PDF
               </li>
+              <li>Internationale Montageeinsätze</li>
+              <li>Installation von Pneumatik und Hydraulik</li>
+              <li>Terminverantwortung</li>
             </ul>
-            <h3>SONDERMASCHINEN, DIE WIR FÜR SIE FERTIGEN KÖNNEN:</h3>
-            <ul>
-              <li>Große Verkettungsanlagen</li>
-              <li>Kleine Standalone-Anlagen</li>
-              <li>Präzise Messanlagen</li>
-              <li>Roboterzellen</li>
-              <li>Greifsysteme</li>
-              <li>Lastaufnahmemittel</li>
-              <li>Decken- und bodengeführte Manipulatoren</li>
-            </ul>
-            <h3>ABLAUF VON KUNDENPROJEKTEN:</h3>
-            <p>
-              Sobald die Konstruktionspläne vorliegen, starten wir den Prozess
-              und montieren die Anlage Ab diesem Zeitpunkt sind Kunden jederzeit
-              herzlich willkommen, uns zu besuchen. Wir freuen uns auf Ihre
-              Anfrage!
-            </p>
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
     case 19:
       return (
         <>
-          <h2>MONTAGE</h2>
+          <h2>ELEKTRISCHER MONTEUR</h2>
           <div className="popup_box">
             <p>
-              Alexander stellt Ihnen die mechanische Konstruktion vor. Entdecken
-              Sie unsere Stärken und erfahren Sie, was uns Einzigartig macht:
+              Osama nimmt dich mit in die elektrische Installation. Lerne seine
+              abwechslungsreichen Aufgaben kennen:
             </p>
-            <h3>DIE NMH DECKT EIN GROSSES SPEKTRUM AB:</h3>
             <ul>
+              <li>Installation von Schaltschränken gemäß E-Plänen</li>
+              <li>Verdrahten und Verkabeln von Maschinen</li>
               <li>
-                Mechanische, elektrische, pneumatische und hydraulische Montage
+                Montage von Maschinen sowohl im Hausals auch beim Kunden vor Ort
               </li>
+              <li>Arbeit an verschiedenen Projektenbei diversen Kunden</li>
             </ul>
-            <h3>SONDERMASCHINEN, DIE WIR FÜR SIE FERTIGEN KÖNNEN:</h3>
-            <ul>
-              <li>Große Verkettungsanlagen</li>
-              <li>Kleine Standalone-Anlagen</li>
-              <li>Präzise Messanlagen</li>
-              <li>Roboterzellen</li>
-              <li>Greifsysteme</li>
-              <li>Lastaufnahmemittel</li>
-              <li>Decken- und bodengeführte Manipulatoren</li>
-            </ul>
-            <h3>ABLAUF VON KUNDENPROJEKTEN:</h3>
-            <p>
-              Sobald die Konstruktionspläne vorliegen, starten wir den Prozess
-              und montieren die Anlage Ab diesem Zeitpunkt sind Kunden jederzeit
-              herzlich willkommen, uns zu besuchen. Wir freuen uns auf Ihre
-              Anfrage!
-            </p>
+
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );

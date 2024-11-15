@@ -1,3 +1,5 @@
+import CustomerButton from "./CustomerButton";
+
 export const BuroNotCustomer = ({ value }: { value: number }) => {
   switch (value) {
     case 23:
@@ -23,7 +25,7 @@ export const BuroNotCustomer = ({ value }: { value: number }) => {
                 heißen
               </li>
             </ul>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -50,7 +52,7 @@ export const BuroNotCustomer = ({ value }: { value: number }) => {
                 Aufbau und Pflege langfristiger Partnerschaften auf Augenhöhe
               </li>
             </ul>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -76,7 +78,7 @@ export const BuroNotCustomer = ({ value }: { value: number }) => {
                 Anlagen
               </li>
             </ul>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -99,7 +101,7 @@ export const BuroNotCustomer = ({ value }: { value: number }) => {
               </li>
               <li>Projektmeetings mit Kunden</li>
             </ul>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -125,7 +127,7 @@ export const BuroNotCustomer = ({ value }: { value: number }) => {
                 Anlagen
               </li>
             </ul>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -146,7 +148,7 @@ export const BuroNotCustomer = ({ value }: { value: number }) => {
               </li>
               <li>Projektmeetings mit Kunden</li>
             </ul>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -168,7 +170,55 @@ export const BuroNotCustomer = ({ value }: { value: number }) => {
               <li>Überwachung der Liefertermine</li>
               <li>ErmittlungoptimalerBestellmengen</li>
             </ul>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
+          </div>
+        </>
+      );
+    case 30:
+      return (
+        <>
+          <h2>FERTIGUNG</h2>
+          <div className="popup_box">
+            <p>
+              Timo, CAM-Programmierer, schätzt die selbständige Arbeitsweise und
+              die vielen Freiheiten in seinem Job. Das sind seine Tätigkeiten:
+            </p>
+            <ul>
+              <li>Erstellen von Fräsprogramme mit SolidCAM</li>
+              <li>
+                Anfahren der Frästeile an unseren 3-Achs, 5-Achs oder 6-Achs
+                CNC-Fräsmaschinen mit Heidenhain Steuerung
+              </li>
+              <li>
+                Kontinuierliche Optimierung unserer bestehenden Programme und
+                Arbeitsabläufe
+              </li>
+            </ul>
+            <CustomerButton />
+          </div>
+        </>
+      );
+    case 31:
+      return (
+        <>
+          <h2>PERSONAL</h2>
+          <div className="popup_box">
+            <p>
+              Dominik stellt sich vor - dein Ansprechpartner in der
+              Personalabteilung. Lerne ihn und seine Aufgaben kennen:
+            </p>
+            <ul>
+              <li>
+                Zuständig für alle Personalthemenund immer ein offenes Ohr für
+                deine Anliegen
+              </li>
+              <li>
+                Hilft dir bei Fragen rund um deinen Einstieg und deine Karriere
+                bei uns
+              </li>
+              <li>Bietet Unterstützung bei deiner beruflichen Entwicklung</li>
+            </ul>
+            <CustomerButton />
           </div>
         </>
       );
@@ -208,7 +258,7 @@ export const BuroCustomer = ({ value }: { value: number }) => {
               Engagement für Exzellenz. Dieses Jubiläum bekräftigt unseren
               kontinuierlichen Einsatz für zukünftige Innovationen und Wachstum.
             </p>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -244,7 +294,7 @@ export const BuroCustomer = ({ value }: { value: number }) => {
               Engagement für Exzellenz. Dieses Jubiläum bekräftigt unseren
               kontinuierlichen Einsatz für zukünftige Innovationen und Wachstum.
             </p>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -293,7 +343,7 @@ export const BuroCustomer = ({ value }: { value: number }) => {
               Ihnen maßgeschneiderte Lösungen für Ihre speziellen Anforderungen.
             </p>
             <p>Wir freuen uns auf Ihre Anfrage!</p>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -311,7 +361,7 @@ export const BuroCustomer = ({ value }: { value: number }) => {
               <li>Materialbestellung und Rüsten der Werkzeuge</li>
               <li>DurchführungderQualitätsprüfungamEndprodukt</li>
             </ul>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -337,7 +387,7 @@ export const BuroCustomer = ({ value }: { value: number }) => {
                 Anlagen
               </li>
             </ul>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -372,7 +422,7 @@ export const BuroCustomer = ({ value }: { value: number }) => {
               für effiziente und maßgeschneiderte Lösungen. Wir freuen uns auf
               Ihre Projekte.
             </p>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -416,7 +466,76 @@ export const BuroCustomer = ({ value }: { value: number }) => {
               einer Hand.
             </p>
             <p>Wir freuen uns auf Ihre Anfrage!</p>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
+          </div>
+        </>
+      );
+    case 30:
+      return (
+        <>
+          <h2>MASSGESCHNEIDERTE FERTIGUNGSLÖSUNGEN</h2>
+          <div className="popup_box">
+            <p>
+              Christian Bulander, Geschäftsführer der NMH, führt Sie durch unser
+              breites Spektrum an Fertigungsmöglichkeiten. Die Kombination
+              verschiedener Bearbeitungsverfahren und Materialien in der
+              Lohnfertigung eröffnet Ihnen eine Vielzahl an Optionen zur
+              Herstellung Ihrer präzisen Bauteile. Ob Einzel- oder Serienteile -
+              unser moderner Maschinen- park mit 20 Maschinen bietet Ihnen
+              maximale Flexibilität und höchste Präzision bei der Bearbeitung
+              von:
+            </p>
+            <ul>
+              <li>Kunststoff</li>
+              <li>Aluminium</li>
+              <li>Stahl</li>
+            </ul>
+            <p>
+              Von Fräsen und Drehen bis hin zum Schleifen – wir garantieren
+              Ihnen eine präzise Bearbeitung, selbst bei komplexen Geometrien
+              und höchsten Maßanforderungen. Unser Leistungsspektrum umfasst
+              Bauteile von 1 mm bis 6000 mm sowie Beschichtungen und
+              Oberflächenbehand- lungen verschiedenster Art.
+            </p>
+            <h3>WIR BEARBEITEN:</h3>
+            <ul>
+              <li>Rohmaterialien</li>
+              <li>Schweißbaugruppen</li>
+              <li>Gussbearbeitungen</li>
+            </ul>
+            <p>
+              Verlassen Sie sich auf unsere umfassenden Fertigungslösungen aus
+              einer Hand.
+            </p>
+            <p>Wir freuen uns auf Ihre Anfrage!</p>
+            <CustomerButton />
+          </div>
+        </>
+      );
+    case 31:
+      return (
+        <>
+          <h2>RECRUITING</h2>
+          <div className="popup_box">
+            <p>
+              Melina stellt sich vor – deine Ansprechpartnerin im Recruiting.
+              Hier erfährst du, wie sie dich begleiten wird:
+            </p>
+            <ul>
+              <li>
+                Deine Ansprechpartnerin für alle Fragen rund um den Einstieg,
+                von der Bewerbung bis zur ersten Schulung
+              </li>
+              <li>
+                Zuständig für das Recruiting und die Organisation von
+                Weiterbildungen
+              </li>
+              <li>
+                Freut sich darauf, dich und deine Ideen im Team willkommen zu
+                heißen
+              </li>
+            </ul>
+            <CustomerButton />
           </div>
         </>
       );

@@ -1,3 +1,5 @@
+import CustomerButton from "./CustomerButton";
+
 export const BackCustomer = ({ value }: { value: number }) => {
   switch (value) {
     case 6:
@@ -16,6 +18,7 @@ export const BackCustomer = ({ value }: { value: number }) => {
             </p>
             <p>Wir freuen uns auf Ihre Anfrage!</p>
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -33,6 +36,7 @@ export const BackCustomer = ({ value }: { value: number }) => {
             </p>
             <p>Kontaktieren Sie uns für weitere Informationen!</p>
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -55,6 +59,7 @@ export const BackCustomer = ({ value }: { value: number }) => {
             </p>
             <p>Wir freuen uns auf Ihre Anfrage!</p>
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );

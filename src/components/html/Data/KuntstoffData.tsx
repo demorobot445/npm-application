@@ -1,52 +1,6 @@
-export const KunststoffCustomer = ({ value }: { value: number }) => {
-  switch (value) {
-    case 16:
-      return (
-        <>
-          <h2>KUNSTOFFTECHNIK</h2>
-          <div className="popup_box">
-            <p>
-              Philipp nimmt dich mit in die Kunststofftechnik. Erfahre mehr über
-              seine Aufgaben:
-            </p>
+import CustomerButton from "./CustomerButton";
 
-            <ul>
-              <li>Auftragsabwicklung und Kundenkommunikation</li>
-              <li>Materialbestellung und Rüsten der Werkzeuge</li>
-              <li>DurchführungderQualitätsprüfungamEndprodukt</li>
-            </ul>
-            <button className="popup_button">KARRIERE BEI NMH</button>
-          </div>
-        </>
-      );
-    case 17:
-      return (
-        <>
-          <h2>VERFAHRENS-MECHANIKER</h2>
-          <div className="popup_box">
-            <p>
-              Paul nimmt dich mit in die Welt der Verfahrensmechanik. Lerne
-              seine Aufgaben kennen:
-            </p>
-            <ul>
-              <li>EinrichtenderMaschinen</li>
-              <li>EinfahrenderProzesse</li>
-              <li>Prozess - und Qualitätsüberwachung</li>
-              <li>
-                RüstenundEinstellenvonMaschinenfürdieProduktion von
-                Kunststoffteilen
-              </li>
-              <li>SicherstellenderQualität</li>
-              <li>VorbereitungdesMaterials</li>
-              <li>Werkzeugwartung</li>
-            </ul>
-            <button className="popup_button">KARRIERE BEI NMH</button>
-          </div>
-        </>
-      );
-  }
-};
-export const KunststoffNotCustomer = ({ value }: { value: number }) => {
+export const KunststoffCustomer = ({ value }: { value: number }) => {
   switch (value) {
     case 16:
       return (
@@ -78,6 +32,7 @@ export const KunststoffNotCustomer = ({ value }: { value: number }) => {
               Projektanfragen.
             </p>
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );
@@ -117,6 +72,57 @@ export const KunststoffNotCustomer = ({ value }: { value: number }) => {
               freuen uns auf Ihre Anfrage!
             </p>
             <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
+          </div>
+        </>
+      );
+  }
+};
+export const KunststoffNotCustomer = ({ value }: { value: number }) => {
+  switch (value) {
+    case 16:
+      return (
+        <>
+          <h2>KUNSTOFFTECHNIK</h2>
+          <div className="popup_box">
+            <p>
+              Philipp nimmt dich mit in die Kunststofftechnik. Erfahre mehr über
+              seine Aufgaben:
+            </p>
+
+            <ul>
+              <li>Auftragsabwicklung und Kundenkommunikation</li>
+              <li>Materialbestellung und Rüsten der Werkzeuge</li>
+              <li>DurchführungderQualitätsprüfungamEndprodukt</li>
+            </ul>
+            <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
+          </div>
+        </>
+      );
+    case 17:
+      return (
+        <>
+          <h2>VERFAHRENS-MECHANIKER</h2>
+          <div className="popup_box">
+            <p>
+              Paul nimmt dich mit in die Welt der Verfahrensmechanik. Lerne
+              seine Aufgaben kennen:
+            </p>
+            <ul>
+              <li>EinrichtenderMaschinen</li>
+              <li>EinfahrenderProzesse</li>
+              <li>Prozess - und Qualitätsüberwachung</li>
+              <li>
+                RüstenundEinstellenvonMaschinenfürdieProduktion von
+                Kunststoffteilen
+              </li>
+              <li>SicherstellenderQualität</li>
+              <li>VorbereitungdesMaterials</li>
+              <li>Werkzeugwartung</li>
+            </ul>
+            <button className="popup_button">KARRIERE BEI NMH</button>
+            <CustomerButton />
           </div>
         </>
       );

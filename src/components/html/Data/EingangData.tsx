@@ -1,11 +1,28 @@
 import CustomerButton from "./CustomerButton";
 
-export const EingangCustomer = ({ value }: { value: number }) => {
+export const EingangCustomer = ({
+  value,
+  isNotCusomer,
+}: {
+  value: number;
+  isNotCusomer?: boolean;
+}) => {
   switch (value) {
     case 10:
       return (
         <>
-          <h2>AUSZEICHNUNGEN</h2>
+          <div className="popup_headside">
+            <h2>AUSZEICHNUNGEN</h2>
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <h3>
               UNSERE AUSZEICHNUNGEN UNDTEILNAHMEN- ZEICHEN UNSERES ENGAGEMENTS
@@ -39,7 +56,7 @@ export const EingangCustomer = ({ value }: { value: number }) => {
             <li>Förderung Invest BW: Innovationen im Bereich Green Tech</li>
             <li>Förderung E-Mobilität Baden-Württemberg</li>
             <li>Förderung BMWi Digital Jetzt</li>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>
@@ -47,14 +64,26 @@ export const EingangCustomer = ({ value }: { value: number }) => {
     case 11:
       return (
         <>
-          <h2>IMAGEFILM</h2>
+          <div className="popup_headside">
+            <h2>IMAGEFILM</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Unser Imagefilm gibt spannende Einblicke in Kunststoff- technik,
               Fertigung, Maschinenbau und Digitalisierung. Taucht ein in unsere
               Welt und erfahrt, was uns täglich antreibt!
             </p>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>
@@ -62,7 +91,19 @@ export const EingangCustomer = ({ value }: { value: number }) => {
     case 12:
       return (
         <>
-          <h2>ZERTIFIKATE</h2>
+          <div className="popup_headside">
+            <h2>ZERTIFIKATE</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <h3>
               UNSERE ZERTIFIZIERUNGEN- IHR GARANTIE FÜR QUALITÄTUND
@@ -78,7 +119,7 @@ export const EingangCustomer = ({ value }: { value: number }) => {
               <li>DIN EN ISO 9001:2015 (gültig bis 24.01.2027)</li>
               <li>DIN EN ISO 14001:2015 (gültig bis 24.01.2027)</li>
             </ul>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>
@@ -86,7 +127,19 @@ export const EingangCustomer = ({ value }: { value: number }) => {
     case 13:
       return (
         <>
-          <h2>HERZLICH WILLKOMMEN</h2>
+          <div className="popup_headside">
+            <h2>HERZLICH WILLKOMMEN</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <h3>NMH - IHREM PARTNER FÜR INNOVATION UND NACHHALTIGKEIT</h3>
             <p>
@@ -152,7 +205,7 @@ export const EingangCustomer = ({ value }: { value: number }) => {
               <br />
               Gabriel Friedmann & Christian Bulander
             </p>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>
@@ -161,7 +214,19 @@ export const EingangCustomer = ({ value }: { value: number }) => {
     case 14:
       return (
         <>
-          <h2>PARTNERSCHAFTEN</h2>
+          <div className="popup_headside">
+            <h2>PARTNERSCHAFTEN</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Freizeit, Sport & Engagement haben einen hohen Stellenwert. Daher
@@ -208,7 +273,7 @@ export const EingangCustomer = ({ value }: { value: number }) => {
               Leidenschaft vereint - für eine starke Zukunft des Sports in der
               Region.
             </p>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>
@@ -217,7 +282,19 @@ export const EingangCustomer = ({ value }: { value: number }) => {
     case 15:
       return (
         <>
-          <h2>INFOMATERIAL</h2>
+          <div className="popup_headside">
+            <h2>INFOMATERIAL</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Laden Sie bequem unsere Infomaterialien herunter und erfahren Sie
@@ -235,7 +312,6 @@ export const EingangCustomer = ({ value }: { value: number }) => {
               Entdecken Sie unsere Expertise und maßgeschneiderten Lösungen für
               Ihre Anforderungen.
             </p>
-            <button className="popup_button">BROSCHÜREN</button>
           </div>
         </>
       );

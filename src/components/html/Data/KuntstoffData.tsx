@@ -1,11 +1,29 @@
 import CustomerButton from "./CustomerButton";
 
-export const KunststoffCustomer = ({ value }: { value: number }) => {
+export const KunststoffCustomer = ({
+  value,
+  isNotCusomer,
+}: {
+  value: number;
+  isNotCusomer?: boolean;
+}) => {
   switch (value) {
     case 16:
       return (
         <>
-          <h2>KUNSTSTOFFTECHNIK</h2>
+          <div className="popup_headside">
+            <h2>KUNSTSTOFFTECHNIK</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Philipp zeigt Ihnen die Kunststofftechnik. Erfahren Sie mehr über
@@ -31,7 +49,7 @@ export const KunststoffCustomer = ({ value }: { value: number }) => {
               Wir bringen Ihre Ideen in Form und freuen uns auf Ihre
               Projektanfragen.
             </p>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>
@@ -39,7 +57,18 @@ export const KunststoffCustomer = ({ value }: { value: number }) => {
     case 17:
       return (
         <>
-          <h2>LÖSUNGEN IN DER KUNSTSTOFFTECHNIK</h2>
+          <div className="popup_headside">
+            <h2>LÖSUNGEN IN DER KUNSTSTOFFTECHNIK</h2>
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Christian Bulander, Geschäftsführer der NMH, führt Sie durch
@@ -71,19 +100,36 @@ export const KunststoffCustomer = ({ value }: { value: number }) => {
               Wir bieten Ihnen maßgeschneiderte Lösungen für Ihre Projekte und
               freuen uns auf Ihre Anfrage!
             </p>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>
       );
   }
 };
-export const KunststoffNotCustomer = ({ value }: { value: number }) => {
+export const KunststoffNotCustomer = ({
+  value,
+  isNotCusomer,
+}: {
+  value: number;
+  isNotCusomer?: boolean;
+}) => {
   switch (value) {
     case 16:
       return (
         <>
-          <h2>KUNSTOFFTECHNIK</h2>
+          <div className="popup_headside">
+            <h2>KUNSTOFFTECHNIK</h2>
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Philipp nimmt dich mit in die Kunststofftechnik. Erfahre mehr über
@@ -95,7 +141,7 @@ export const KunststoffNotCustomer = ({ value }: { value: number }) => {
               <li>Materialbestellung und Rüsten der Werkzeuge</li>
               <li>DurchführungderQualitätsprüfungamEndprodukt</li>
             </ul>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>
@@ -103,7 +149,19 @@ export const KunststoffNotCustomer = ({ value }: { value: number }) => {
     case 17:
       return (
         <>
-          <h2>VERFAHRENS-MECHANIKER</h2>
+          <div className="popup_headside">
+            <h2>VERFAHRENS-MECHANIKER</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Paul nimmt dich mit in die Welt der Verfahrensmechanik. Lerne
@@ -121,7 +179,7 @@ export const KunststoffNotCustomer = ({ value }: { value: number }) => {
               <li>VorbereitungdesMaterials</li>
               <li>Werkzeugwartung</li>
             </ul>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>

@@ -69,6 +69,35 @@ main {
   &[data-active="true"] {
     left: 40px;
   }
+  &_headside {
+    margin-left: 20px;
+    margin-bottom: -25px;
+    width: calc(100% - 20px);
+    background-color: #3580c5;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 4px;
+    align-items: center;
+    button {
+      border: none;
+      background-color: transparent;
+    }
+    img {
+      height: 40px;
+      width: 40px;
+      object-fit: cover;
+    }
+    h2 {
+      background-color: #3580c5;
+      width: fit-content;
+      padding: 5px 10px;
+      text-transform: uppercase;
+      color: white;
+      font-size: 1.757vw;
+      line-height: calc(1.757vw * 1.2);
+    }
+  }
   &_play {
     position: relative;
     div {
@@ -98,18 +127,7 @@ main {
     font-size: 1.4375rem;
     line-height: calc(1.4375rem * 1.4);
   }
-  h2 {
-    margin-left: 20px;
-    margin-bottom: -25px;
-    background-color: #3580c5;
-    width: fit-content;
-    padding: 5px 10px;
-    text-transform: uppercase;
-    color: white;
-    transform: translateY(-50%);
-    font-size: 1.757vw;
-    line-height: calc(1.757vw * 1.2);
-  }
+
   &_box {
     display: flex;
     flex-direction: column;

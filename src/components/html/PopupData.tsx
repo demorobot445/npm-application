@@ -13,6 +13,8 @@ import { BuroCustomer, BuroNotCustomer } from "./Data/BuroData";
 const PopupData = () => {
   const { popupDataValue, isCustomer } = useSnapshot(store);
 
+  console.log(popupDataValue);
+
   if (isCustomer) {
     return (
       <>
@@ -27,12 +29,12 @@ const PopupData = () => {
   } else {
     return (
       <>
-        <FertigungNotCustomer value={popupDataValue} />
-        <BackCustomer value={popupDataValue} />
-        <EingangCustomer value={popupDataValue} />
-        <KunststoffNotCustomer value={popupDataValue} />
-        <MaschineNotCustomer value={popupDataValue} />
-        <BuroNotCustomer value={popupDataValue} />
+        <FertigungNotCustomer isNotCusomer value={popupDataValue} />
+        <BackCustomer isNotCusomer value={popupDataValue} />
+        <EingangCustomer isNotCusomer value={popupDataValue} />
+        <KunststoffNotCustomer isNotCusomer value={popupDataValue} />
+        <MaschineNotCustomer isNotCusomer value={popupDataValue} />
+        <BuroNotCustomer isNotCusomer value={popupDataValue} />
       </>
     );
   }

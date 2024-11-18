@@ -1,11 +1,29 @@
 import CustomerButton from "./CustomerButton";
 
-export const FertigungCustomer = ({ value }: { value: number }) => {
+export const FertigungCustomer = ({
+  value,
+  isNotCusomer,
+}: {
+  value: number;
+  isNotCusomer?: boolean;
+}) => {
   switch (value) {
     case 0:
       return (
         <>
-          <h2>FERTIGUNG</h2>
+          <div className="popup_headside">
+            <h2>FERTIGUNG</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Marc führt Sie durch die Fertigung. Erleben Sie unsere
@@ -33,7 +51,7 @@ export const FertigungCustomer = ({ value }: { value: number }) => {
               Begleiten Sie uns und erfahren Sie, wie wir komplexe Projekte
               erfolgreich realisieren.
             </p>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>
@@ -41,7 +59,19 @@ export const FertigungCustomer = ({ value }: { value: number }) => {
     case 1:
       return (
         <>
-          <h2>MASSGESCHNEIDERTE FERTIGUNGSLÖSUNGEN</h2>
+          <div className="popup_headside">
+            <h2>MASSGESCHNEIDERTE FERTIGUNGSLÖSUNGEN</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Christian Bulander, Geschäftsführer der NMH, führt Sie durch unser
@@ -76,7 +106,7 @@ export const FertigungCustomer = ({ value }: { value: number }) => {
               einer Hand.
             </p>
             <p>Wir freuen uns auf Ihre Anfrage!</p>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>
@@ -84,7 +114,19 @@ export const FertigungCustomer = ({ value }: { value: number }) => {
     case 2:
       return (
         <>
-          <h2>INFOMATERIAL</h2>
+          <div className="popup_headside">
+            <h2>INFOMATERIAL</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Laden Sie bequem unsere Infomaterialien herunter und erfahren Sie
@@ -101,14 +143,25 @@ export const FertigungCustomer = ({ value }: { value: number }) => {
               Entdecken Sie unsere Expertise und maßgeschneiderten Lösungen für
               Ihre Anforderungen.
             </p>
-            <button className="popup_button">BROSCHÜREN</button>
           </div>
         </>
       );
     case 3:
       return (
         <>
-          <h2>FERTIGUNG</h2>
+          <div className="popup_headside">
+            <h2>FERTIGUNG</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Marc führt Sie durch die Fertigung. Erleben Sie unsere
@@ -136,7 +189,7 @@ export const FertigungCustomer = ({ value }: { value: number }) => {
               Begleiten Sie uns und erfahren Sie, wie wir komplexe Projekte
               erfolgreich realisieren.
             </p>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>
@@ -145,7 +198,18 @@ export const FertigungCustomer = ({ value }: { value: number }) => {
     case 4:
       return (
         <>
-          <h2>FERTIGUNG</h2>
+          <div className="popup_headside">
+            <h2>FERTIGUNG</h2>
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Marc führt Sie durch die Fertigung. Erleben Sie unsere
@@ -173,7 +237,7 @@ export const FertigungCustomer = ({ value }: { value: number }) => {
               Begleiten Sie uns und erfahren Sie, wie wir komplexe Projekte
               erfolgreich realisieren.
             </p>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>
@@ -181,7 +245,19 @@ export const FertigungCustomer = ({ value }: { value: number }) => {
     case 5:
       return (
         <>
-          <h2>MASSGESCHNEIDERTE FERTIGUNGSLÖSUNGEN</h2>
+          <div className="popup_headside">
+            <h2>MASSGESCHNEIDERTE FERTIGUNGSLÖSUNGEN</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Christian Bulander, Geschäftsführer der NMH, führt Sie durch unser
@@ -216,7 +292,7 @@ export const FertigungCustomer = ({ value }: { value: number }) => {
               einer Hand.
             </p>
             <p>Wir freuen uns auf Ihre Anfrage!</p>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>
@@ -224,12 +300,30 @@ export const FertigungCustomer = ({ value }: { value: number }) => {
   }
 };
 
-export const FertigungNotCustomer = ({ value }: { value: number }) => {
+export const FertigungNotCustomer = ({
+  value,
+  isNotCusomer,
+}: {
+  value: number;
+  isNotCusomer?: boolean;
+}) => {
   switch (value) {
     case 0:
       return (
         <>
-          <h2>Drehen</h2>
+          <div className="popup_headside">
+            <h2>Drehen</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Mario nimmt dich mit in die Welt des Drehens. Entdecke seine
@@ -252,14 +346,25 @@ export const FertigungNotCustomer = ({ value }: { value: number }) => {
                 zum fertigen Bauteil
               </li>
             </ul>
-            <button className="popup_button">KARRIERE BEI NHM</button>
           </div>
         </>
       );
     case 1:
       return (
         <>
-          <h2>SCHLEIFEN</h2>
+          <div className="popup_headside">
+            <h2>SCHLEIFEN</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Alfons stellt dir seinen Arbeitsplatz vor. Seine Kernaufgaben
@@ -279,7 +384,7 @@ export const FertigungNotCustomer = ({ value }: { value: number }) => {
                 Arbeit an unterschiedlichen Maschinen für vielseitige Projekte
               </li>
             </ul>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>
@@ -287,7 +392,19 @@ export const FertigungNotCustomer = ({ value }: { value: number }) => {
     case 2:
       return (
         <>
-          <h2>INFOMATERIAL</h2>
+          <div className="popup_headside">
+            <h2>INFOMATERIAL</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Laden Sie bequem unsere Infomaterialien herunter und erfahren Sie
@@ -304,14 +421,25 @@ export const FertigungNotCustomer = ({ value }: { value: number }) => {
               Entdecken Sie unsere Expertise und maßgeschneiderten Lösungen für
               Ihre Anforderungen.
             </p>
-            <button className="popup_button">BROSCHÜREN</button>
           </div>
         </>
       );
     case 3:
       return (
         <>
-          <h2>FERTIGUNG</h2>
+          <div className="popup_headside">
+            <h2>FERTIGUNG</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Elmar, Fertigungstechnologe wickelt eigenverantwortlich spannende
@@ -325,7 +453,7 @@ export const FertigungNotCustomer = ({ value }: { value: number }) => {
               <li>Fräsen von Bauteilen</li>
               <li>Erstellung von Messprotokollen</li>
             </ul>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>
@@ -334,7 +462,19 @@ export const FertigungNotCustomer = ({ value }: { value: number }) => {
     case 4:
       return (
         <>
-          <h2>ZERSPANUNG</h2>
+          <div className="popup_headside">
+            <h2>ZERSPANUNG</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Thomas nimmt dich mit in die Zerspanung. Lerne seine Aufgaben
@@ -348,7 +488,7 @@ export const FertigungNotCustomer = ({ value }: { value: number }) => {
             <li>
               Kontinuierlicher Einsatz neuester Maschinen und Technologien
             </li>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>
@@ -356,7 +496,19 @@ export const FertigungNotCustomer = ({ value }: { value: number }) => {
     case 5:
       return (
         <>
-          <h2>AUSBILDUNG</h2>
+          <div className="popup_headside">
+            <h2>AUSBILDUNG</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Christopher stellt sich vor - dein Ansprechpartner für die
@@ -377,7 +529,7 @@ export const FertigungNotCustomer = ({ value }: { value: number }) => {
                 Herausforderungen mitzuwirken
               </li>
             </ul>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>

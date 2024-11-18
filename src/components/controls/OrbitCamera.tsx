@@ -1,6 +1,6 @@
 import { PerspectiveCamera } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { PerspectiveCamera as PC } from "three";
 // import { Pane } from "tweakpane";
 import { useGSAP } from "@gsap/react";
@@ -12,24 +12,31 @@ const OrbitCamera = ({
   targetRotationY,
   fakeLoaderRef,
   setTargetRotationY,
+  secondCameraRef,
 }: {
   fakeLoaderRef: React.RefObject<HTMLDivElement>;
   cameraRef: React.RefObject<PC>;
+  secondCameraRef: React.RefObject<PC>;
   targetRotationY: number;
   setTargetRotationY: React.Dispatch<React.SetStateAction<number>>;
 }) => {
   const [isMainCameraActive, setIsMainCameraActive] = useState<boolean>(false);
 
-  const secondCameraRef = useRef<PC>(null);
-
   useFrame(() => {
     if (cameraRef.current) {
-      // Apply easing to smoothly transition to the target rotation
       cameraRef.current.rotation.y +=
         (targetRotationY - cameraRef.current.rotation.y) * 0.1;
     }
-  });
 
+    if (secondCameraRef.current) {
+      const desiredRotationYForSecondCamera =
+        secondCameraRef.current.rotation.y;
+
+      secondCameraRef.current.rotation.y +=
+        (desiredRotationYForSecondCamera - secondCameraRef.current.rotation.y) *
+        0.05;
+    }
+  });
   // useEffect(() => {
   //   const pane = new Pane();
 

@@ -1,11 +1,29 @@
 import CustomerButton from "./CustomerButton";
 
-export const BackCustomer = ({ value }: { value: number }) => {
+export const BackCustomer = ({
+  value,
+  isNotCusomer,
+}: {
+  value: number;
+  isNotCusomer?: boolean;
+}) => {
   switch (value) {
     case 6:
       return (
         <>
-          <h2>SÄGEN</h2>
+          <div className="popup_headside">
+            <h2>SÄGEN</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <h3>PRÄZISES SÄGEN MIT MODERNSTERTECHNOLOGIE!</h3>
             <p>
@@ -17,7 +35,7 @@ export const BackCustomer = ({ value }: { value: number }) => {
               stets präzise Ergebnisse.
             </p>
             <p>Wir freuen uns auf Ihre Anfrage!</p>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>
@@ -25,7 +43,19 @@ export const BackCustomer = ({ value }: { value: number }) => {
     case 7:
       return (
         <>
-          <h2>INBETRIEBNAHME</h2>
+          <div className="popup_headside">
+            <h2>INBETRIEBNAHME</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <h3>INBETRIEBNAHME - ALLES AUS EINER HAND!</h3>
             <p>
@@ -35,7 +65,7 @@ export const BackCustomer = ({ value }: { value: number }) => {
               reibungslos laufen und Ihre Projekte schnell zum Erfolg führen.
             </p>
             <p>Kontaktieren Sie uns für weitere Informationen!</p>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>
@@ -43,7 +73,19 @@ export const BackCustomer = ({ value }: { value: number }) => {
     case 8:
       return (
         <>
-          <h2>TRANSPORT</h2>
+          <div className="popup_headside">
+            <h2>TRANSPORT</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <h3>ALLES AUS EINER HAND BEI NMH!</h3>
             <p>
@@ -58,7 +100,7 @@ export const BackCustomer = ({ value }: { value: number }) => {
               Abwicklung Ihrer Projekte.
             </p>
             <p>Wir freuen uns auf Ihre Anfrage!</p>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>
@@ -66,7 +108,18 @@ export const BackCustomer = ({ value }: { value: number }) => {
     case 9:
       return (
         <>
-          <h2>PAUSENPLATZ</h2>
+          <div className="popup_headside">
+            <h2>PAUSENPLATZ</h2>
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Wir bieten nicht nur großartige Pausenmöglichkeiten im Freien oder
@@ -84,7 +137,6 @@ export const BackCustomer = ({ value }: { value: number }) => {
               <li>Wellpass</li>
               <li>Essenszuschüsse</li>
             </ul>
-            <button className="popup_button">KARRIERE</button>
           </div>
         </>
       );

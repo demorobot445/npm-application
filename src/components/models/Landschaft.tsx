@@ -476,8 +476,8 @@ export function Landschaft(props: JSX.IntrinsicElements["group"]) {
       <mesh
         geometry={nodes.himmel.geometry}
         material={materials.NMHblau}
-        position={[123.857, 178.493, -161.783]}
-        scale={[-360.809, -193.462, -360.809]}
+        position={[-200, 178.493, 100]}
+        scale={[-560.809, 350, -1200]}
       />
       <group
         position={[159.056, 0.479, -139.114]}

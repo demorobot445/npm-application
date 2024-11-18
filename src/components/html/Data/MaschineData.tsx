@@ -1,11 +1,29 @@
 import CustomerButton from "./CustomerButton";
 
-export const MaschineCustomer = ({ value }: { value: number }) => {
+export const MaschineCustomer = ({
+  value,
+  isNotCusomer,
+}: {
+  value: number;
+  isNotCusomer?: boolean;
+}) => {
   switch (value) {
     case 18:
       return (
         <>
-          <h2>MONTAGE</h2>
+          <div className="popup_headside">
+            <h2>MONTAGE</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Alexander stellt Ihnen die mechanische Konstruktion vor. Entdecken
@@ -34,7 +52,7 @@ export const MaschineCustomer = ({ value }: { value: number }) => {
               herzlich willkommen, uns zu besuchen. Wir freuen uns auf Ihre
               Anfrage!
             </p>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>
@@ -42,7 +60,18 @@ export const MaschineCustomer = ({ value }: { value: number }) => {
     case 19:
       return (
         <>
-          <h2>MONTAGE</h2>
+          <div className="popup_headside">
+            <h2>MONTAGE</h2>
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Alexander stellt Ihnen die mechanische Konstruktion vor. Entdecken
@@ -71,7 +100,7 @@ export const MaschineCustomer = ({ value }: { value: number }) => {
               herzlich willkommen, uns zu besuchen. Wir freuen uns auf Ihre
               Anfrage!
             </p>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>
@@ -79,7 +108,19 @@ export const MaschineCustomer = ({ value }: { value: number }) => {
     case 20:
       return (
         <>
-          <h2>MODULARES HANDHABUNGSGERÄT</h2>
+          <div className="popup_headside">
+            <h2>MODULARES HANDHABUNGSGERÄT</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Unser eigenentwickeltes Modulares Handhabungsgerät verbessert die
@@ -109,15 +150,25 @@ export const MaschineCustomer = ({ value }: { value: number }) => {
               Wir übernehmen die komplette Konfiguration des Geräts und bieten
               individuelle Beratung für eine optimale Lösung.
             </p>
-
-            <button className="popup_button"> BROSCHÜRE</button>
           </div>
         </>
       );
     case 21:
       return (
         <>
-          <h2>EINZELANLAGEN</h2>
+          <div className="popup_headside">
+            <h2>EINZELANLAGEN</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Im Sondermaschinenbau bieten wir Ihnen eine breite Palette an
@@ -149,14 +200,25 @@ export const MaschineCustomer = ({ value }: { value: number }) => {
               Mit langjähriger Erfahrung stehen wir Ihnen als verlässlicher
               Partner zur Seite, um Ihre Prozesse optimal zu gestalten.
             </p>
-            <button className="popup_button">MEHR ERFAHREN</button>
           </div>
         </>
       );
     case 22:
       return (
         <>
-          <h2>VERKETTETE ANLAGEN</h2>
+          <div className="popup_headside">
+            <h2>VERKETTETE ANLAGEN</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Unsere verketteten Anlagen ermöglichen die nahtlose Integration
@@ -180,19 +242,36 @@ export const MaschineCustomer = ({ value }: { value: number }) => {
               eine effiziente und flexible Lösung, die Ihren gesamten
               Fertigungsprozess automatisiert und optimiert.
             </p>
-            <button className="popup_button"> MEHR ERFAHREN</button>
           </div>
         </>
       );
   }
 };
 
-export const MaschineNotCustomer = ({ value }: { value: number }) => {
+export const MaschineNotCustomer = ({
+  value,
+  isNotCusomer,
+}: {
+  value: number;
+  isNotCusomer?: boolean;
+}) => {
   switch (value) {
     case 18:
       return (
         <>
-          <h2>MONTAGE</h2>
+          <div className="popup_headside">
+            <h2>MONTAGE</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Patrick gibt dir Einblicke in die mechanische Montage. Entdecke
@@ -207,7 +286,7 @@ export const MaschineNotCustomer = ({ value }: { value: number }) => {
               <li>Installation von Pneumatik und Hydraulik</li>
               <li>Terminverantwortung</li>
             </ul>
-            <button className="popup_button">KARRIERE BEI NMH</button>
+
             <CustomerButton />
           </div>
         </>
@@ -215,7 +294,19 @@ export const MaschineNotCustomer = ({ value }: { value: number }) => {
     case 19:
       return (
         <>
-          <h2>ELEKTRISCHER MONTEUR</h2>
+          <div className="popup_headside">
+            <h2>ELEKTRISCHER MONTEUR</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Osama nimmt dich mit in die elektrische Installation. Lerne seine
@@ -230,7 +321,6 @@ export const MaschineNotCustomer = ({ value }: { value: number }) => {
               <li>Arbeit an verschiedenen Projektenbei diversen Kunden</li>
             </ul>
 
-            <button className="popup_button">KARRIERE BEI NMH</button>
             <CustomerButton />
           </div>
         </>
@@ -238,7 +328,19 @@ export const MaschineNotCustomer = ({ value }: { value: number }) => {
     case 20:
       return (
         <>
-          <h2>MODULARES HANDHABUNGSGERÄT</h2>
+          <div className="popup_headside">
+            <h2>MODULARES HANDHABUNGSGERÄT</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Unser eigenentwickeltes Modulares Handhabungsgerät verbessert die
@@ -268,14 +370,24 @@ export const MaschineNotCustomer = ({ value }: { value: number }) => {
               Wir übernehmen die komplette Konfiguration des Geräts und bieten
               individuelle Beratung für eine optimale Lösung.
             </p>
-            <button className="popup_button"> BROSCHÜRE</button>
           </div>
         </>
       );
     case 21:
       return (
         <>
-          <h2>EINZELANLAGEN</h2>
+          <div className="popup_headside">
+            <h2>EINZELANLAGEN</h2>
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Im Sondermaschinenbau bieten wir Ihnen eine breite Palette an
@@ -307,14 +419,25 @@ export const MaschineNotCustomer = ({ value }: { value: number }) => {
               Mit langjähriger Erfahrung stehen wir Ihnen als verlässlicher
               Partner zur Seite, um Ihre Prozesse optimal zu gestalten.
             </p>
-            <button className="popup_button">MEHR ERFAHREN</button>
           </div>
         </>
       );
     case 22:
       return (
         <>
-          <h2>VERKETTETE ANLAGEN</h2>
+          <div className="popup_headside">
+            <h2>VERKETTETE ANLAGEN</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Unsere verketteten Anlagen ermöglichen die nahtlose Integration
@@ -338,7 +461,6 @@ export const MaschineNotCustomer = ({ value }: { value: number }) => {
               eine effiziente und flexible Lösung, die Ihren gesamten
               Fertigungsprozess automatisiert und optimiert.
             </p>
-            <button className="popup_button"> MEHR ERFAHREN</button>
           </div>
         </>
       );

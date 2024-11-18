@@ -1,11 +1,29 @@
 import CustomerButton from "./CustomerButton";
 
-export const BuroNotCustomer = ({ value }: { value: number }) => {
+export const BuroNotCustomer = ({
+  value,
+  isNotCusomer,
+}: {
+  value: number;
+  isNotCusomer?: boolean;
+}) => {
   switch (value) {
     case 23:
       return (
         <>
-          <h2>RECRUITING</h2>
+          <div className="popup_headside">
+            <h2>RECRUITING</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Melina stellt sich vor - deine Ansprechpartnerin im Recruiting.
@@ -32,7 +50,19 @@ export const BuroNotCustomer = ({ value }: { value: number }) => {
     case 24:
       return (
         <>
-          <h2>VERTRIEB</h2>
+          <div className="popup_headside">
+            <h2>VERTRIEB</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Jochen nimmt dich mit in den Vertrieb von Sondermaschinen. Erfahre
@@ -59,7 +89,19 @@ export const BuroNotCustomer = ({ value }: { value: number }) => {
     case 25:
       return (
         <>
-          <h2>ELEKTROKONSTRUKTION</h2>
+          <div className="popup_headside">
+            <h2>ELEKTROKONSTRUKTION</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Benjamin ist Elektrokonstrukteur. Ihn begeistert die Entstehung
@@ -85,7 +127,19 @@ export const BuroNotCustomer = ({ value }: { value: number }) => {
     case 26:
       return (
         <>
-          <h2>PROJEKTLEITER</h2>
+          <div className="popup_headside">
+            <h2>PROJEKTLEITER</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Thomas gibt dir Einblicke in die Projektleitung. Lerne seine
@@ -108,7 +162,19 @@ export const BuroNotCustomer = ({ value }: { value: number }) => {
     case 27:
       return (
         <>
-          <h2>ELEKTROKONSTRUKTION</h2>
+          <div className="popup_headside">
+            <h2>ELEKTROKONSTRUKTION</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Benjamin ist Elektrokonstrukteur. Ihn begeistert die Entstehung
@@ -134,7 +200,19 @@ export const BuroNotCustomer = ({ value }: { value: number }) => {
     case 28:
       return (
         <>
-          <h2>PROJEKTLEITER</h2>
+          <div className="popup_headside">
+            <h2>PROJEKTLEITER</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>Pascal nimmt dich mit in die Projektleitung.</p>
             <p>Lerne seine abwechslungsreichen Aufgaben kennen:</p>
@@ -155,7 +233,19 @@ export const BuroNotCustomer = ({ value }: { value: number }) => {
     case 29:
       return (
         <>
-          <h2>EINKAUF</h2>
+          <div className="popup_headside">
+            <h2>EINKAUF</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Manuel nimmt dich mit in den technischen Einkauf. Erfahre mehr
@@ -177,7 +267,19 @@ export const BuroNotCustomer = ({ value }: { value: number }) => {
     case 30:
       return (
         <>
-          <h2>FERTIGUNG</h2>
+          <div className="popup_headside">
+            <h2>FERTIGUNG</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Timo, CAM-Programmierer, schätzt die selbständige Arbeitsweise und
@@ -201,7 +303,19 @@ export const BuroNotCustomer = ({ value }: { value: number }) => {
     case 31:
       return (
         <>
-          <h2>PERSONAL</h2>
+          <div className="popup_headside">
+            <h2>PERSONAL</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Dominik stellt sich vor - dein Ansprechpartner in der
@@ -224,12 +338,30 @@ export const BuroNotCustomer = ({ value }: { value: number }) => {
       );
   }
 };
-export const BuroCustomer = ({ value }: { value: number }) => {
+export const BuroCustomer = ({
+  value,
+  isNotCusomer,
+}: {
+  value: number;
+  isNotCusomer?: boolean;
+}) => {
   switch (value) {
     case 23:
       return (
         <>
-          <h2>KLUGE KÖPFE & INNOVATIVE LÖSUNGEN</h2>
+          <div className="popup_headside">
+            <h2>KLUGE KÖPFE & INNOVATIVE LÖSUNGEN</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Wir, die NMH GmbH aus Hohentengen, blicken aufüber 80 Jahre
@@ -265,7 +397,18 @@ export const BuroCustomer = ({ value }: { value: number }) => {
     case 24:
       return (
         <>
-          <h2>KLUGE KÖPFE & INNOVATIVE LÖSUNGEN</h2>
+          <div className="popup_headside">
+            <h2>KLUGE KÖPFE & INNOVATIVE LÖSUNGEN</h2>
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Wir, die NMH GmbH aus Hohentengen, blicken aufüber 80 Jahre
@@ -301,7 +444,19 @@ export const BuroCustomer = ({ value }: { value: number }) => {
     case 25:
       return (
         <>
-          <h2>ELEKTROTECHNIK & STEUERUNGSTECHNIK</h2>
+          <div className="popup_headside">
+            <h2>ELEKTROTECHNIK & STEUERUNGSTECHNIK</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Gabriel Friedmann, Geschäftsführer der NMH, leitet das technische
@@ -350,7 +505,19 @@ export const BuroCustomer = ({ value }: { value: number }) => {
     case 26:
       return (
         <>
-          <h2>KUNSTOFFTECHNIK</h2>
+          <div className="popup_headside">
+            <h2>KUNSTOFFTECHNIK</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Philipp nimmt dich mit in die Kunststofftechnik. Erfahre mehr über
@@ -368,7 +535,19 @@ export const BuroCustomer = ({ value }: { value: number }) => {
     case 27:
       return (
         <>
-          <h2>ELEKTROKONSTRUKTION</h2>
+          <div className="popup_headside">
+            <h2>ELEKTROKONSTRUKTION</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Benjamin ist Elektrokonstrukteur. Ihn begeistert die Entstehung
@@ -394,7 +573,19 @@ export const BuroCustomer = ({ value }: { value: number }) => {
     case 28:
       return (
         <>
-          <h2>MECHANISCHE KONSTRUKTION</h2>
+          <div className="popup_headside">
+            <h2>MECHANISCHE KONSTRUKTION</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Marcel stellt Ihnen die mechanische Konstruktion vor. Entdecken
@@ -429,7 +620,19 @@ export const BuroCustomer = ({ value }: { value: number }) => {
     case 29:
       return (
         <>
-          <h2>MASSGESCHNEIDERTE FERTIGUNGSLÖSUNGEN</h2>
+          <div className="popup_headside">
+            <h2>MASSGESCHNEIDERTE FERTIGUNGSLÖSUNGEN</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Christian Bulander, Geschäftsführer der NMH, führt Sie durch unser
@@ -473,7 +676,19 @@ export const BuroCustomer = ({ value }: { value: number }) => {
     case 30:
       return (
         <>
-          <h2>MASSGESCHNEIDERTE FERTIGUNGSLÖSUNGEN</h2>
+          <div className="popup_headside">
+            <h2>MASSGESCHNEIDERTE FERTIGUNGSLÖSUNGEN</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Christian Bulander, Geschäftsführer der NMH, führt Sie durch unser
@@ -515,7 +730,19 @@ export const BuroCustomer = ({ value }: { value: number }) => {
     case 31:
       return (
         <>
-          <h2>RECRUITING</h2>
+          <div className="popup_headside">
+            <h2>RECRUITING</h2>
+
+            {isNotCusomer ? (
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
+            ) : (
+              <button>
+                <img src="/icons/pdf.png" alt="icon" />
+              </button>
+            )}
+          </div>
           <div className="popup_box">
             <p>
               Melina stellt sich vor – deine Ansprechpartnerin im Recruiting.

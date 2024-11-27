@@ -1,19 +1,11 @@
-import { useRef, useState } from "react";
 import { useSnapshot } from "valtio";
 import { store } from "../../store";
 import PopupData from "./PopupData";
+import CustomerButton from "./Data/CustomerButton";
 
 const Popup = () => {
-  const { previousPoistion, moveAnimation, isPopupActive } = useSnapshot(store);
-
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  const [isControl, setIsControl] = useState<boolean>(false);
-
-  const handleVideoClick = () => {
-    setIsControl(true);
-    videoRef.current!.play();
-  };
+  const { previousPoistion, moveAnimation, banner, isPopupActive } =
+    useSnapshot(store);
 
   const handleClose = () => {
     store.isPopupActive = false;
@@ -50,15 +42,20 @@ const Popup = () => {
           <rect style={{ fill: "none" }} width="24" height="24" />
         </svg>
       </button>
-      <div className="popup_play">
-        <div data-hide={isControl} />
-        <video
-          onClick={handleVideoClick}
-          controls={isControl}
-          src="https://videos.pexels.com/video-files/6332575/6332575-uhd_2732_1440_25fps.mp4"
-        ></video>
+      <div className="popup_video">
+        {banner.type === "iframe" ? (
+          <iframe
+            src={banner.src}
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            title="NMH Final"
+          ></iframe>
+        ) : (
+          <img src={banner.src} alt="img" />
+        )}
       </div>
       <PopupData />
+      <CustomerButton />
     </div>
   );
 };

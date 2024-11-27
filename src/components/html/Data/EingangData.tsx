@@ -1,4 +1,4 @@
-import CustomerButton from "./CustomerButton";
+import { store } from "../../../store";
 
 export const EingangCustomer = ({
   value,
@@ -9,6 +9,10 @@ export const EingangCustomer = ({
 }) => {
   switch (value) {
     case 10:
+      store.banner = {
+        type: "img",
+        src: "/pictures/Auszeichnungen.jpg",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -39,7 +43,7 @@ export const EingangCustomer = ({
               <li>Lea Mittelstandspreis- Sozial engagiert 2023</li>
               <li>las Gütezeichen Arbeits- und Gesundheitsschutz</li>
               <li>TOP 100 Innovator 2017, 2019, 2020</li>
-              <li>TEMPAWARD</li>
+              <li>TEMP AWARD</li>
               <li>
                 SWM familyNET Prädikat (familienbewusstes Unternehmen 2017/2021)
               </li>
@@ -52,16 +56,20 @@ export const EingangCustomer = ({
               <li>Mitglied bei BWCon</li>
             </ul>
             <h3>Förderungen</h3>
-            <li>FuE Tätigkeit BSFZ</li>
-            <li>Förderung Invest BW: Innovationen im Bereich Green Tech</li>
-            <li>Förderung E-Mobilität Baden-Württemberg</li>
-            <li>Förderung BMWi Digital Jetzt</li>
-
-            <CustomerButton />
+            <ul>
+              <li>FuE Tätigkeit BSFZ</li>
+              <li>Förderung Invest BW: Innovationen im Bereich Green Tech</li>
+              <li>Förderung E-Mobilität Baden-Württemberg</li>
+              <li>Förderung BMWi Digital Jetzt</li>
+            </ul>
           </div>
         </>
       );
     case 11:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1005812415?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -83,12 +91,14 @@ export const EingangCustomer = ({
               Fertigung, Maschinenbau und Digitalisierung. Taucht ein in unsere
               Welt und erfahrt, was uns täglich antreibt!
             </p>
-
-            <CustomerButton />
           </div>
         </>
       );
     case 12:
+      store.banner = {
+        type: "img",
+        src: "/pictures/Zertifikate.jpg",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -119,12 +129,14 @@ export const EingangCustomer = ({
               <li>DIN EN ISO 9001:2015 (gültig bis 24.01.2027)</li>
               <li>DIN EN ISO 14001:2015 (gültig bis 24.01.2027)</li>
             </ul>
-
-            <CustomerButton />
           </div>
         </>
       );
     case 13:
+      store.banner = {
+        type: "img",
+        src: "/pictures/Gabriel-und-Christian.jpg",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -205,13 +217,15 @@ export const EingangCustomer = ({
               <br />
               Gabriel Friedmann & Christian Bulander
             </p>
-
-            <CustomerButton />
           </div>
         </>
       );
 
     case 14:
+      store.banner = {
+        type: "img",
+        src: "/pictures/Partnerschaften.jpg",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -273,13 +287,16 @@ export const EingangCustomer = ({
               Leidenschaft vereint - für eine starke Zukunft des Sports in der
               Region.
             </p>
-
-            <CustomerButton />
           </div>
         </>
       );
 
     case 15:
+      store.banner = {
+        type: "img",
+        src: "/pictures/Infomaterial.jpg",
+      };
+
       return (
         <>
           <div className="popup_headside">

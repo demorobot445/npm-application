@@ -1,4 +1,4 @@
-import CustomerButton from "./CustomerButton";
+import { store } from "../../../store";
 
 export const KunststoffCustomer = ({
   value,
@@ -9,6 +9,10 @@ export const KunststoffCustomer = ({
 }) => {
   switch (value) {
     case 16:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1025134449?h=6c74d370c4&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -49,12 +53,14 @@ export const KunststoffCustomer = ({
               Wir bringen Ihre Ideen in Form und freuen uns auf Ihre
               Projektanfragen.
             </p>
-
-            <CustomerButton />
           </div>
         </>
       );
     case 17:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1025134988?h=cb5e90f856&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -100,8 +106,6 @@ export const KunststoffCustomer = ({
               Wir bieten Ihnen maßgeschneiderte Lösungen für Ihre Projekte und
               freuen uns auf Ihre Anfrage!
             </p>
-
-            <CustomerButton />
           </div>
         </>
       );
@@ -116,6 +120,10 @@ export const KunststoffNotCustomer = ({
 }) => {
   switch (value) {
     case 16:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1017924708?h=0d76e5e290&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -141,12 +149,14 @@ export const KunststoffNotCustomer = ({
               <li>Materialbestellung und Rüsten der Werkzeuge</li>
               <li>DurchführungderQualitätsprüfungamEndprodukt</li>
             </ul>
-
-            <CustomerButton />
           </div>
         </>
       );
     case 17:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1018038325?h=76ba693cb2&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -179,8 +189,6 @@ export const KunststoffNotCustomer = ({
               <li>VorbereitungdesMaterials</li>
               <li>Werkzeugwartung</li>
             </ul>
-
-            <CustomerButton />
           </div>
         </>
       );

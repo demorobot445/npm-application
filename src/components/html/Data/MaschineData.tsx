@@ -1,4 +1,4 @@
-import CustomerButton from "./CustomerButton";
+import { store } from "../../../store";
 
 export const MaschineCustomer = ({
   value,
@@ -9,6 +9,11 @@ export const MaschineCustomer = ({
 }) => {
   switch (value) {
     case 18:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1025135498?h=2f9114bebd&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
+
       return (
         <>
           <div className="popup_headside">
@@ -52,12 +57,15 @@ export const MaschineCustomer = ({
               herzlich willkommen, uns zu besuchen. Wir freuen uns auf Ihre
               Anfrage!
             </p>
-
-            <CustomerButton />
           </div>
         </>
       );
     case 19:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1025135498?h=2f9114bebd&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
+
       return (
         <>
           <div className="popup_headside">
@@ -100,12 +108,15 @@ export const MaschineCustomer = ({
               herzlich willkommen, uns zu besuchen. Wir freuen uns auf Ihre
               Anfrage!
             </p>
-
-            <CustomerButton />
           </div>
         </>
       );
     case 20:
+      store.banner = {
+        type: "img",
+        src: "/pictures/Modulares-HHG.jpg",
+      };
+
       return (
         <>
           <div className="popup_headside">
@@ -154,6 +165,10 @@ export const MaschineCustomer = ({
         </>
       );
     case 21:
+      store.banner = {
+        type: "img",
+        src: "/pictures/Einzelanlagen.jpg",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -204,6 +219,10 @@ export const MaschineCustomer = ({
         </>
       );
     case 22:
+      store.banner = {
+        type: "img",
+        src: "/pictures/Verkettete-Anlagen.jpg",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -257,6 +276,10 @@ export const MaschineNotCustomer = ({
 }) => {
   switch (value) {
     case 18:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1017906379?h=8ac4639c6b&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -286,12 +309,14 @@ export const MaschineNotCustomer = ({
               <li>Installation von Pneumatik und Hydraulik</li>
               <li>Terminverantwortung</li>
             </ul>
-
-            <CustomerButton />
           </div>
         </>
       );
     case 19:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1018189883?h=e31f95957f&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -320,12 +345,14 @@ export const MaschineNotCustomer = ({
               </li>
               <li>Arbeit an verschiedenen Projektenbei diversen Kunden</li>
             </ul>
-
-            <CustomerButton />
           </div>
         </>
       );
     case 20:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1017894933?h=f3845a5cc9&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -374,6 +401,10 @@ export const MaschineNotCustomer = ({
         </>
       );
     case 21:
+      store.banner = {
+        type: "img",
+        src: "/pictures/Einzelanlagen.jpg",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -423,6 +454,10 @@ export const MaschineNotCustomer = ({
         </>
       );
     case 22:
+      store.banner = {
+        type: "img",
+        src: "/pictures/Verkettete-Anlagen.jpg",
+      };
       return (
         <>
           <div className="popup_headside">

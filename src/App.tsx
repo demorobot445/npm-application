@@ -65,7 +65,7 @@ const ConditionalRender = () => {
 
 function App() {
   // const [dpr, setDpr] = useState(1.5);
-  const { floor } = useSnapshot(store);
+  const { floor, isPopupActive } = useSnapshot(store);
   const [isDragging, setIsDragging] = useState(false);
   const [lastX, setLastX] = useState(0);
   const [targetRotationY, setTargetRotationY] = useState(Math.PI * 0.5);
@@ -172,7 +172,8 @@ function App() {
       <Popup />
       {/* 3D */}
       <Canvas
-        // dpr={0.4}
+        style={{ pointerEvents: isPopupActive ? "none" : "auto" }}
+        dpr={0.4}
         onMouseMove={handleMouseMove}
         onMouseDown={handleMouseDown}
         onMouseUp={handleMouseUp}

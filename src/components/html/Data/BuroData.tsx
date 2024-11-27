@@ -1,4 +1,4 @@
-import CustomerButton from "./CustomerButton";
+import { store } from "../../../store";
 
 export const BuroNotCustomer = ({
   value,
@@ -9,6 +9,10 @@ export const BuroNotCustomer = ({
 }) => {
   switch (value) {
     case 23:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1017907104?h=e5e526b81e&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -43,11 +47,14 @@ export const BuroNotCustomer = ({
                 heißen
               </li>
             </ul>
-            <CustomerButton />
           </div>
         </>
       );
     case 24:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1017909154?h=286af5112c&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -82,11 +89,14 @@ export const BuroNotCustomer = ({
                 Aufbau und Pflege langfristiger Partnerschaften auf Augenhöhe
               </li>
             </ul>
-            <CustomerButton />
           </div>
         </>
       );
     case 25:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1025135069?h=8148bef02d&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -120,11 +130,14 @@ export const BuroNotCustomer = ({
                 Anlagen
               </li>
             </ul>
-            <CustomerButton />
           </div>
         </>
       );
     case 26:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1017917628?h=d0678dd22f&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -155,11 +168,14 @@ export const BuroNotCustomer = ({
               </li>
               <li>Projektmeetings mit Kunden</li>
             </ul>
-            <CustomerButton />
           </div>
         </>
       );
     case 27:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1018038794?h=e9eeac8e07&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -193,11 +209,14 @@ export const BuroNotCustomer = ({
                 Anlagen
               </li>
             </ul>
-            <CustomerButton />
           </div>
         </>
       );
     case 28:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1017894933?h=f3845a5cc9&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -226,11 +245,14 @@ export const BuroNotCustomer = ({
               </li>
               <li>Projektmeetings mit Kunden</li>
             </ul>
-            <CustomerButton />
           </div>
         </>
       );
     case 29:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1018038419?h=78a6929344&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -260,11 +282,14 @@ export const BuroNotCustomer = ({
               <li>Überwachung der Liefertermine</li>
               <li>ErmittlungoptimalerBestellmengen</li>
             </ul>
-            <CustomerButton />
           </div>
         </>
       );
     case 30:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1018038673?h=1f824be5fe&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -296,11 +321,14 @@ export const BuroNotCustomer = ({
                 Arbeitsabläufe
               </li>
             </ul>
-            <CustomerButton />
           </div>
         </>
       );
     case 31:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1018038157?h=ecc3880cbe&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -332,7 +360,6 @@ export const BuroNotCustomer = ({
               </li>
               <li>Bietet Unterstützung bei deiner beruflichen Entwicklung</li>
             </ul>
-            <CustomerButton />
           </div>
         </>
       );
@@ -347,6 +374,10 @@ export const BuroCustomer = ({
 }) => {
   switch (value) {
     case 23:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1031994565?h=6887c09afb&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -390,11 +421,15 @@ export const BuroCustomer = ({
               Engagement für Exzellenz. Dieses Jubiläum bekräftigt unseren
               kontinuierlichen Einsatz für zukünftige Innovationen und Wachstum.
             </p>
-            <CustomerButton />
           </div>
         </>
       );
     case 24:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1031994565?h=6887c09afb&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
+
       return (
         <>
           <div className="popup_headside">
@@ -437,11 +472,14 @@ export const BuroCustomer = ({
               Engagement für Exzellenz. Dieses Jubiläum bekräftigt unseren
               kontinuierlichen Einsatz für zukünftige Innovationen und Wachstum.
             </p>
-            <CustomerButton />
           </div>
         </>
       );
     case 25:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1018038794?h=e9eeac8e07&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -498,11 +536,15 @@ export const BuroCustomer = ({
               Ihnen maßgeschneiderte Lösungen für Ihre speziellen Anforderungen.
             </p>
             <p>Wir freuen uns auf Ihre Anfrage!</p>
-            <CustomerButton />
           </div>
         </>
       );
     case 26:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1025134449?h=6c74d370c4&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
+
       return (
         <>
           <div className="popup_headside">
@@ -528,11 +570,14 @@ export const BuroCustomer = ({
               <li>Materialbestellung und Rüsten der Werkzeuge</li>
               <li>DurchführungderQualitätsprüfungamEndprodukt</li>
             </ul>
-            <CustomerButton />
           </div>
         </>
       );
     case 27:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1018038794?h=e9eeac8e07&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -566,11 +611,15 @@ export const BuroCustomer = ({
                 Anlagen
               </li>
             </ul>
-            <CustomerButton />
           </div>
         </>
       );
     case 28:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1025135207?h=833b6e5d77&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
+
       return (
         <>
           <div className="popup_headside">
@@ -613,11 +662,14 @@ export const BuroCustomer = ({
               für effiziente und maßgeschneiderte Lösungen. Wir freuen uns auf
               Ihre Projekte.
             </p>
-            <CustomerButton />
           </div>
         </>
       );
     case 29:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1025134902?h=f2ea7c7325&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -669,11 +721,14 @@ export const BuroCustomer = ({
               einer Hand.
             </p>
             <p>Wir freuen uns auf Ihre Anfrage!</p>
-            <CustomerButton />
           </div>
         </>
       );
     case 30:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1025134902?h=f2ea7c7325&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -723,11 +778,14 @@ export const BuroCustomer = ({
               einer Hand.
             </p>
             <p>Wir freuen uns auf Ihre Anfrage!</p>
-            <CustomerButton />
           </div>
         </>
       );
     case 31:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1017907104?h=e5e526b81e&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -762,7 +820,6 @@ export const BuroCustomer = ({
                 heißen
               </li>
             </ul>
-            <CustomerButton />
           </div>
         </>
       );

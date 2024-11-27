@@ -1,4 +1,4 @@
-import CustomerButton from "./CustomerButton";
+import { store } from "../../../store";
 
 export const BackCustomer = ({
   value,
@@ -9,6 +9,10 @@ export const BackCustomer = ({
 }) => {
   switch (value) {
     case 6:
+      store.banner = {
+        type: "img",
+        src: "/pictures/Sägen.jpg",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -35,12 +39,14 @@ export const BackCustomer = ({
               stets präzise Ergebnisse.
             </p>
             <p>Wir freuen uns auf Ihre Anfrage!</p>
-
-            <CustomerButton />
           </div>
         </>
       );
     case 7:
+      store.banner = {
+        type: "img",
+        src: "/pictures/Inbetriebnahme.jpg",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -65,12 +71,14 @@ export const BackCustomer = ({
               reibungslos laufen und Ihre Projekte schnell zum Erfolg führen.
             </p>
             <p>Kontaktieren Sie uns für weitere Informationen!</p>
-
-            <CustomerButton />
           </div>
         </>
       );
     case 8:
+      store.banner = {
+        type: "img",
+        src: "/pictures/Pausenplatz.jpg",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -100,12 +108,14 @@ export const BackCustomer = ({
               Abwicklung Ihrer Projekte.
             </p>
             <p>Wir freuen uns auf Ihre Anfrage!</p>
-
-            <CustomerButton />
           </div>
         </>
       );
     case 9:
+      store.banner = {
+        type: "img",
+        src: "/pictures/Pausenplatz.jpg",
+      };
       return (
         <>
           <div className="popup_headside">

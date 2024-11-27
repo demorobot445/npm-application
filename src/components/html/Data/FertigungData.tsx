@@ -1,4 +1,4 @@
-import CustomerButton from "./CustomerButton";
+import { store } from "../../../store";
 
 export const FertigungCustomer = ({
   value,
@@ -9,6 +9,10 @@ export const FertigungCustomer = ({
 }) => {
   switch (value) {
     case 0:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1025135679?h=f1667815cb&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -51,12 +55,14 @@ export const FertigungCustomer = ({
               Begleiten Sie uns und erfahren Sie, wie wir komplexe Projekte
               erfolgreich realisieren.
             </p>
-
-            <CustomerButton />
           </div>
         </>
       );
     case 1:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1025134902?h=f2ea7c7325&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -106,12 +112,14 @@ export const FertigungCustomer = ({
               einer Hand.
             </p>
             <p>Wir freuen uns auf Ihre Anfrage!</p>
-
-            <CustomerButton />
           </div>
         </>
       );
     case 2:
+      store.banner = {
+        type: "img",
+        src: "/pictures/Infomaterial.jpg",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -147,6 +155,10 @@ export const FertigungCustomer = ({
         </>
       );
     case 3:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1025135207?h=833b6e5d77&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -189,13 +201,15 @@ export const FertigungCustomer = ({
               Begleiten Sie uns und erfahren Sie, wie wir komplexe Projekte
               erfolgreich realisieren.
             </p>
-
-            <CustomerButton />
           </div>
         </>
       );
 
     case 4:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1025135207?h=833b6e5d77&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -237,12 +251,14 @@ export const FertigungCustomer = ({
               Begleiten Sie uns und erfahren Sie, wie wir komplexe Projekte
               erfolgreich realisieren.
             </p>
-
-            <CustomerButton />
           </div>
         </>
       );
     case 5:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1025134902?h=f2ea7c7325&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -292,8 +308,6 @@ export const FertigungCustomer = ({
               einer Hand.
             </p>
             <p>Wir freuen uns auf Ihre Anfrage!</p>
-
-            <CustomerButton />
           </div>
         </>
       );
@@ -309,6 +323,10 @@ export const FertigungNotCustomer = ({
 }) => {
   switch (value) {
     case 0:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1017895349?h=18c01ae14b&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -350,6 +368,10 @@ export const FertigungNotCustomer = ({
         </>
       );
     case 1:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1017905940?h=f1ddb66df5&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -384,12 +406,14 @@ export const FertigungNotCustomer = ({
                 Arbeit an unterschiedlichen Maschinen für vielseitige Projekte
               </li>
             </ul>
-
-            <CustomerButton />
           </div>
         </>
       );
     case 2:
+      store.banner = {
+        type: "img",
+        src: "/pictures/Infomaterial.jpg",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -425,6 +449,10 @@ export const FertigungNotCustomer = ({
         </>
       );
     case 3:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1024820369?h=142400b56d&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -453,13 +481,16 @@ export const FertigungNotCustomer = ({
               <li>Fräsen von Bauteilen</li>
               <li>Erstellung von Messprotokollen</li>
             </ul>
-
-            <CustomerButton />
           </div>
         </>
       );
 
     case 4:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1017905667?h=6ed238d139&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
+
       return (
         <>
           <div className="popup_headside">
@@ -488,12 +519,14 @@ export const FertigungNotCustomer = ({
             <li>
               Kontinuierlicher Einsatz neuester Maschinen und Technologien
             </li>
-
-            <CustomerButton />
           </div>
         </>
       );
     case 5:
+      store.banner = {
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1017890458?h=4fd4d9aca8&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      };
       return (
         <>
           <div className="popup_headside">
@@ -529,8 +562,6 @@ export const FertigungNotCustomer = ({
                 Herausforderungen mitzuwirken
               </li>
             </ul>
-
-            <CustomerButton />
           </div>
         </>
       );

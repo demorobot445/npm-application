@@ -3,7 +3,7 @@ import { store } from "../../store";
 ``;
 
 const Navigator = () => {
-  const { moveAnimation, floor, isCustomer, reverseEntryAnimation } =
+  const { moveAnimation, floor, reverseEntryAnimation, isPopupActive } =
     useSnapshot(store);
 
   let backDoorCondition =
@@ -29,13 +29,13 @@ const Navigator = () => {
     }
   };
 
-  const handleCustomer = () => {
-    store.isCustomer = !isCustomer;
-  };
+  // const handleCustomer = () => {
+  //   store.isCustomer = !isCustomer;
+  // };
 
   return (
     <>
-      {floor === 0 && (
+      {/* {floor === 0 && (
         <button
           onClick={handleCustomer}
           data-active={isCustomer}
@@ -47,13 +47,16 @@ const Navigator = () => {
             <span>Karriere bei NMH</span>
           )}
         </button>
-      )}
+      )} */}
       <button
         onClick={handleBackDoor}
         data-active={backDoorCondition}
         className="outDoor"
       ></button>
-      <div className="buttonBox">
+      <div
+        style={{ pointerEvents: isPopupActive ? "none" : "auto" }}
+        className="buttonBox"
+      >
         <button
           onClick={() => {
             store.isPopupActive = false;

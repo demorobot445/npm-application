@@ -23,9 +23,12 @@ export const BuroNotCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -65,9 +68,12 @@ export const BuroNotCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -107,9 +113,12 @@ export const BuroNotCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/011_NMH_Flyer_Messtechnik.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -148,9 +157,12 @@ export const BuroNotCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -186,9 +198,12 @@ export const BuroNotCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/011_NMH_Flyer_Messtechnik.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -227,9 +242,12 @@ export const BuroNotCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -263,9 +281,9 @@ export const BuroNotCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
-                <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -300,9 +318,9 @@ export const BuroNotCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
-                <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -339,9 +357,12 @@ export const BuroNotCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -388,9 +409,12 @@ export const BuroCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -439,9 +463,12 @@ export const BuroCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -490,9 +517,12 @@ export const BuroCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/011_NMH_Flyer_Messtechnik.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -555,9 +585,12 @@ export const BuroCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -588,9 +621,12 @@ export const BuroCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/011_NMH_Flyer_Messtechnik.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -630,9 +666,12 @@ export const BuroCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -680,9 +719,9 @@ export const BuroCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
-                <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -739,9 +778,9 @@ export const BuroCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
-                <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -796,9 +835,12 @@ export const BuroCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">

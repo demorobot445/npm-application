@@ -165,6 +165,22 @@ function App() {
 
   return (
     <main>
+      {/* <div
+        style={{
+          position: "fixed",
+          top: 20,
+          right: 20,
+          backgroundColor: "white",
+          width: 45,
+          height: 45,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          zIndex: 999,
+        }}
+      >
+        <h1 style={{ textAlign: "center" }}>{popupDataValue}</h1>
+      </div> */}
       <div ref={fakeLoaderRef} className="fake-loader">
         <FakeLoader />
       </div>
@@ -173,7 +189,7 @@ function App() {
       {/* 3D */}
       <Canvas
         style={{ pointerEvents: isPopupActive ? "none" : "auto" }}
-        dpr={0.4}
+        // dpr={0.4}
         onMouseMove={handleMouseMove}
         onMouseDown={handleMouseDown}
         onMouseUp={handleMouseUp}

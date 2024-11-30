@@ -54,22 +54,52 @@ const Navigator = () => {
         className="outDoor"
       ></button>
       <div className="buttonBox">
-        <button onClick={() => moveAnimation(24.2, 0, 1, 1, 1.6)}>
+        <button
+          onClick={() => {
+            store.isPopupActive = false;
+            moveAnimation(24.2, 0, 1, 1, 1.6);
+          }}
+        >
           Eingang / Foyer
         </button>
-        <button onClick={() => moveAnimation(2.2, 14.2, 5, 3.3, 2.04)}>
+        <button
+          onClick={() => {
+            store.isPopupActive = false;
+            moveAnimation(2.2, 14.2, 5, 3.3, 2.04);
+          }}
+        >
           Kunststofftechnik
         </button>
-        <button onClick={() => moveAnimation(0.1, 1.7, 3, 1.7, Math.PI * 0.4)}>
+        <button
+          onClick={() => {
+            store.isPopupActive = false;
+            moveAnimation(0.1, 1.7, 3, 1.7, Math.PI * 0.4);
+          }}
+        >
           Fertigung
         </button>
-        <button onClick={() => moveAnimation(2.8, -12.8, 4, 2.6, 0.84)}>
+        <button
+          onClick={() => {
+            store.isPopupActive = false;
+            moveAnimation(2.8, -12.8, 4, 2.6, 0.84);
+          }}
+        >
           Maschinenbau
         </button>
-        <button onClick={() => moveAnimation(19, 0.7, 1.1, 4, -0.36)}>
+        <button
+          onClick={() => {
+            store.isPopupActive = false;
+            moveAnimation(19, 0.7, 1.1, 4, -0.36);
+          }}
+        >
           Verwaltung & GF
         </button>
-        <button onClick={() => moveAnimation(-59.3, 13.2, 7, 5, 5.67)}>
+        <button
+          onClick={() => {
+            store.isPopupActive = false;
+            moveAnimation(-59.3, 13.2, 7, 5, 5.67);
+          }}
+        >
           Logistik
         </button>
         <button onClick={reverseEntryAnimation}>Vorderansicht</button>

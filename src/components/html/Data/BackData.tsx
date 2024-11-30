@@ -23,9 +23,9 @@ export const BackCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
-                <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -57,9 +57,9 @@ export const BackCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
-                <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -89,9 +89,9 @@ export const BackCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
-                <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -125,9 +125,9 @@ export const BackCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
-                <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              <a target="_blank" href="https://www.nmh.de/karriere/">
+                <img src="/icons/job.png" alt="icon" />
+              </a>
             )}
           </div>
           <div className="popup_box">

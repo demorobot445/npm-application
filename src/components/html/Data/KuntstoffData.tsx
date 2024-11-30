@@ -23,9 +23,12 @@ export const KunststoffCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_black"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Flyer_Kunststofftechnik.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -70,9 +73,12 @@ export const KunststoffCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_black"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Flyer_Kunststofftechnik.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -133,9 +139,12 @@ export const KunststoffNotCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_black"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Flyer_Kunststofftechnik.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -167,9 +176,12 @@ export const KunststoffNotCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Flyer_Kunststofftechnik.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">

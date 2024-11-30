@@ -4,8 +4,13 @@ import PopupData from "./PopupData";
 import CustomerButton from "./Data/CustomerButton";
 
 const Popup = () => {
-  const { previousPoistion, moveAnimation, banner, isPopupActive } =
-    useSnapshot(store);
+  const {
+    previousPoistion,
+    moveAnimation,
+    banner,
+    isPopupActive,
+    popupDataValue,
+  } = useSnapshot(store);
 
   const handleClose = () => {
     store.isPopupActive = false;
@@ -55,7 +60,15 @@ const Popup = () => {
         )}
       </div>
       <PopupData />
-      <CustomerButton />
+      {popupDataValue !== 13 &&
+        popupDataValue !== 14 &&
+        popupDataValue !== 2 &&
+        popupDataValue !== 8 &&
+        popupDataValue !== 9 &&
+        popupDataValue !== 7 &&
+        popupDataValue !== 6 &&
+        popupDataValue !== 12 &&
+        popupDataValue !== 11 && <CustomerButton />}
     </div>
   );
 };

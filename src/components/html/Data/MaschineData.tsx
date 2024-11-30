@@ -24,9 +24,12 @@ export const MaschineCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/012_NMH_Flyer_Montagetechnik.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -75,9 +78,12 @@ export const MaschineCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/005_NMH_Flyer_Prüftechnik.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -127,9 +133,12 @@ export const MaschineCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/001_NMH_Flyer_modularesHHG.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -179,9 +188,12 @@ export const MaschineCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/007_NMH_Flyer_Achsmontage.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -229,13 +241,19 @@ export const MaschineCustomer = ({
             <h2>VERKETTETE ANLAGEN</h2>
 
             {isNotCusomer ? (
-              <a target="_blank" href="https://www.nmh.de/karriere/">
-                <img src="/icons/job.png" alt="icon" />
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/015_NMH_Flyer_Automation.pdf"
+              >
+                <img src="/icons/pdf.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/015_NMH_Flyer_Automation.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -290,9 +308,12 @@ export const MaschineNotCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/012_NMH_Flyer_Montagetechnik.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -327,9 +348,12 @@ export const MaschineNotCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/005_NMH_Flyer_Prüftechnik.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -363,9 +387,12 @@ export const MaschineNotCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/001_NMH_Flyer_modularesHHG.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -414,9 +441,12 @@ export const MaschineNotCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/007_NMH_Flyer_Achsmontage.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">
@@ -464,13 +494,19 @@ export const MaschineNotCustomer = ({
             <h2>VERKETTETE ANLAGEN</h2>
 
             {isNotCusomer ? (
-              <a target="_blank" href="https://www.nmh.de/karriere/">
-                <img src="/icons/job.png" alt="icon" />
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/015_NMH_Flyer_Automation.pdf"
+              >
+                <img src="/icons/pdf.png" alt="icon" />
               </a>
             ) : (
-              <button>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/015_NMH_Flyer_Automation.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
-              </button>
+              </a>
             )}
           </div>
           <div className="popup_box">

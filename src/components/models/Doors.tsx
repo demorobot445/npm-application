@@ -116,7 +116,7 @@ export function Doors(props: JSX.IntrinsicElements["group"]) {
           onPointerEnter={handleHoverEnter}
           onPointerLeave={handleHoverLeave}
           onClick={() => {
-            if (floor === 3) moveAnimation(2.8, -12.8, 4, 2.6, 0.84);
+            if (floor === 3) moveAnimation(2.8, -15, 4, 2.6, 0.84);
           }}
         >
           <group
@@ -684,7 +684,7 @@ export function Doors(props: JSX.IntrinsicElements["group"]) {
           onPointerLeave={handleHoverLeave}
           onClick={() => {
             if (floor === 4) moveAnimation(3.5, -12.6, 4.2, 3.7, 5.67);
-            else moveAnimation(2.8, -12.8, 4, 2.6, 0.84);
+            else moveAnimation(2.8, -15, 4, 2.6, 0.84);
           }}
         >
           <group
@@ -729,7 +729,7 @@ export function Doors(props: JSX.IntrinsicElements["group"]) {
           onPointerLeave={handleHoverLeave}
           onClick={() => {
             if (floor === 4) moveAnimation(4.3, -16.2, 4.1, 0.6, 5.57);
-            else moveAnimation(2.8, -12.8, 4, 2.6, 0.84);
+            else moveAnimation(2.8, -15, 4, 2.6, 0.84);
           }}
         >
           <group

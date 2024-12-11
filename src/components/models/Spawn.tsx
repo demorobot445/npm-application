@@ -51,6 +51,10 @@ export function Spawn(props: JSX.IntrinsicElements["group"]) {
             material={materials["port02.001"]}
             scale={[1.096, 3.105, 1.096]}
           />
+          <mesh rotation-x={Math.PI * 0.5}>
+            <ringGeometry args={[0.25, 0, 20, 20]} />
+            <meshBasicMaterial color={"#1f2025"} />
+          </mesh>
         </group>
       </group>
     </group>

@@ -124,8 +124,12 @@ main {
     position: relative;
     object-fit: cover;
     height: 235px;
+    background-color: black;
     @media screen and (min-width: 1500px) {
-      height: 322px;
+      height: 270px;
+    }
+    @media screen and (min-width: 1800px) {
+      height: 324px;
     }
     iframe,
     img {
@@ -262,36 +266,42 @@ main {
 
 .buttonInside {
   position: absolute;
-  bottom: 36px;
-  left: 36px;
+  bottom: 0px;
+  left: 0px;
   z-index: 2;
-  background-color: #c8382e;
-  border-radius: 999px;
-  width: 250px;
-  height: 45px;
-  min-height: 45px;
-  text-align: center;
-  border: none;
-  color: white;
-  font-weight: lighter;
-  font-size: 1.125rem;
-  line-height: calc(1.125rem * 1.5);
-  cursor: pointer;
-  &::after {
-    content: "";
-    height: 40px;
-    width: 40px;
-    background-color: white;
+  width: 100%;
+  background-color: white;
+  padding: 16px 0px 36px 36px;
+  button {
+    background-color: #c8382e;
     border-radius: 999px;
-    position: absolute;
-    left: 2.5px;
-    top: 2.5px;
-    transition: 0.3s left ease-in-out;
-  }
-  &[data-active="true"] {
-    background-color: #0c69ab;
+    width: 250px;
+    height: 45px;
+    min-height: 45px;
+    text-align: center;
+    border: none;
+    color: white;
+    font-weight: lighter;
+    font-size: 1.125rem;
+    line-height: calc(1.125rem * 1.5);
+    cursor: pointer;
+    position: relative;
     &::after {
-      left: calc(100% - 42.5px);
+      content: "";
+      height: 40px;
+      width: 40px;
+      background-color: white;
+      border-radius: 999px;
+      position: absolute;
+      left: 2.5px;
+      top: 2.5px;
+      transition: 0.3s left ease-in-out;
+    }
+    &[data-active="true"] {
+      background-color: #0c69ab;
+      &::after {
+        left: calc(100% - 42.5px);
+      }
     }
   }
 }

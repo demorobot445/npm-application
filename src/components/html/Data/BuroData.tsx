@@ -281,8 +281,11 @@ export const BuroNotCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <a target="_blank" href="https://www.nmh.de/karriere/">
-                <img src="/icons/job.png" alt="icon" />
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Komplettbearbeitung_Maschinenliste.pdf"
+              >
+                <img src="/icons/pdf.png" alt="icon" />
               </a>
             )}
           </div>
@@ -318,8 +321,11 @@ export const BuroNotCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <a target="_blank" href="https://www.nmh.de/karriere/">
-                <img src="/icons/job.png" alt="icon" />
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Komplettbearbeitung_Maschinenliste.pdf"
+              >
+                <img src="/icons/pdf.png" alt="icon" />
               </a>
             )}
           </div>
@@ -719,8 +725,11 @@ export const BuroCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <a target="_blank" href="https://www.nmh.de/karriere/">
-                <img src="/icons/job.png" alt="icon" />
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Komplettbearbeitung_Maschinenliste.pdf"
+              >
+                <img src="/icons/pdf.png" alt="icon" />
               </a>
             )}
           </div>
@@ -778,8 +787,11 @@ export const BuroCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <a target="_blank" href="https://www.nmh.de/karriere/">
-                <img src="/icons/job.png" alt="icon" />
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Komplettbearbeitung_Maschinenliste.pdf"
+              >
+                <img src="/icons/pdf.png" alt="icon" />
               </a>
             )}
           </div>

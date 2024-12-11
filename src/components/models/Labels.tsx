@@ -943,7 +943,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           material={materials["weiss.leuchten"]}
         />
       </group>
-      <group
+      {/* <group
         position={[162.646, 0.548, -157.455]}
         rotation={[0, 0.137, 0]}
         scale={0.72}
@@ -960,7 +960,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text033_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
+      </group> */}
       <group
         position={[159.953, 1.182, -161.979]}
         rotation={[0, Math.PI / 2, 0]}

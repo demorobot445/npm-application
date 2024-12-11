@@ -9,17 +9,15 @@ const CustomerButton = () => {
   };
 
   return (
-    <button
-      onClick={handleCustomer}
-      data-active={isCustomer}
-      className="buttonInside"
-    >
-      {isCustomer ? (
-        <span>Lösungen bei NMH</span>
-      ) : (
-        <span>Karriere bei NMH</span>
-      )}
-    </button>
+    <div className="buttonInside">
+      <button onClick={handleCustomer} data-active={isCustomer}>
+        {isCustomer ? (
+          <span>Lösungen bei NMH</span>
+        ) : (
+          <span>Karriere bei NMH</span>
+        )}
+      </button>
+    </div>
   );
 };
 

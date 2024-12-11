@@ -19,12 +19,18 @@ export const BackCustomer = ({
             <h2>SÄGEN</h2>
 
             {isNotCusomer ? (
-              <a target="_blank" href="https://www.nmh.de/karriere/">
-                <img src="/icons/job.png" alt="icon" />
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+              >
+                <img src="/icons/pdf.png" alt="icon" />
               </a>
             ) : (
-              <a target="_blank" href="https://www.nmh.de/karriere/">
-                <img src="/icons/job.png" alt="icon" />
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+              >
+                <img src="/icons/pdf.png" alt="icon" />
               </a>
             )}
           </div>
@@ -53,12 +59,18 @@ export const BackCustomer = ({
             <h2>INBETRIEBNAHME</h2>
 
             {isNotCusomer ? (
-              <a target="_blank" href="https://www.nmh.de/karriere/">
-                <img src="/icons/job.png" alt="icon" />
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+              >
+                <img src="/icons/pdf.png" alt="icon" />
               </a>
             ) : (
-              <a target="_blank" href="https://www.nmh.de/karriere/">
-                <img src="/icons/job.png" alt="icon" />
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+              >
+                <img src="/icons/pdf.png" alt="icon" />
               </a>
             )}
           </div>
@@ -85,12 +97,18 @@ export const BackCustomer = ({
             <h2>TRANSPORT</h2>
 
             {isNotCusomer ? (
-              <a target="_blank" href="https://www.nmh.de/karriere/">
-                <img src="/icons/job.png" alt="icon" />
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+              >
+                <img src="/icons/pdf.png" alt="icon" />
               </a>
             ) : (
-              <a target="_blank" href="https://www.nmh.de/karriere/">
-                <img src="/icons/job.png" alt="icon" />
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+              >
+                <img src="/icons/pdf.png" alt="icon" />
               </a>
             )}
           </div>
@@ -121,12 +139,18 @@ export const BackCustomer = ({
           <div className="popup_headside">
             <h2>PAUSENPLATZ</h2>
             {isNotCusomer ? (
-              <a target="_blank" href="https://www.nmh.de/karriere/">
-                <img src="/icons/job.png" alt="icon" />
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+              >
+                <img src="/icons/pdf.png" alt="icon" />
               </a>
             ) : (
-              <a target="_blank" href="https://www.nmh.de/karriere/">
-                <img src="/icons/job.png" alt="icon" />
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+              >
+                <img src="/icons/pdf.png" alt="icon" />
               </a>
             )}
           </div>

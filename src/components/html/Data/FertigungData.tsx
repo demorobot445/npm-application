@@ -25,7 +25,7 @@ export const FertigungCustomer = ({
             ) : (
               <a
                 target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Komplettbearbeitung_Maschinenliste.pdf"
               >
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
@@ -78,7 +78,7 @@ export const FertigungCustomer = ({
             ) : (
               <a
                 target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Komplettbearbeitung_Maschinenliste.pdf"
               >
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
@@ -123,8 +123,8 @@ export const FertigungCustomer = ({
       );
     case 2:
       store.banner = {
-        type: "img",
-        src: "/pictures/Infomaterial.jpg",
+        type: "iframe",
+        src: "https://player.vimeo.com/video/858621907?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       };
       return (
         <>
@@ -132,12 +132,18 @@ export const FertigungCustomer = ({
             <h2>INFOMATERIAL</h2>
 
             {isNotCusomer ? (
-              <a target="_blank" href="https://www.nmh.de/karriere/">
-                <img src="/icons/job.png" alt="icon" />
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Smart-Eco-Box.pdf"
+              >
+                <img src="/icons/pdf.png" alt="icon" />
               </a>
             ) : (
-              <a target="_blank" href="https://www.nmh.de/karriere/">
-                <img src="/icons/job.png" alt="icon" />
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Smart-Eco-Box.pdf"
+              >
+                <img src="/icons/pdf.png" alt="icon" />
               </a>
             )}
           </div>
@@ -177,7 +183,7 @@ export const FertigungCustomer = ({
             ) : (
               <a
                 target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdfNMH_Firmenvorstellung_Maschinenbau_2024_DE.pdf"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Komplettbearbeitung_Maschinenliste.pdf"
               >
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
@@ -230,7 +236,7 @@ export const FertigungCustomer = ({
             ) : (
               <a
                 target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Komplettbearbeitung_Maschinenliste.pdf"
               >
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
@@ -283,7 +289,7 @@ export const FertigungCustomer = ({
             ) : (
               <a
                 target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Komplettbearbeitung_Maschinenliste.pdf"
               >
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
@@ -354,7 +360,7 @@ export const FertigungNotCustomer = ({
             ) : (
               <a
                 target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Komplettbearbeitung_Maschinenliste.pdf"
               >
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
@@ -402,7 +408,7 @@ export const FertigungNotCustomer = ({
             ) : (
               <a
                 target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Komplettbearbeitung_Maschinenliste.pdf"
               >
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
@@ -432,8 +438,8 @@ export const FertigungNotCustomer = ({
       );
     case 2:
       store.banner = {
-        type: "img",
-        src: "/pictures/Infomaterial.jpg",
+        type: "iframe",
+        src: "https://player.vimeo.com/video/858621907?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       };
       return (
         <>
@@ -441,12 +447,18 @@ export const FertigungNotCustomer = ({
             <h2>INFOMATERIAL</h2>
 
             {isNotCusomer ? (
-              <a target="_blank" href="https://www.nmh.de/karriere/">
-                <img src="/icons/job.png" alt="icon" />
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Smart-Eco-Box.pdf"
+              >
+                <img src="/icons/pdf.png" alt="icon" />
               </a>
             ) : (
-              <a target="_blank" href="https://www.nmh.de/karriere/">
-                <img src="/icons/job.png" alt="icon" />
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Smart-Eco-Box.pdf"
+              >
+                <img src="/icons/pdf.png" alt="icon" />
               </a>
             )}
           </div>
@@ -486,7 +498,7 @@ export const FertigungNotCustomer = ({
             ) : (
               <a
                 target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdfNMH_Firmenvorstellung_Maschinenbau_2024_DE.pdf"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Komplettbearbeitung_Maschinenliste.pdf"
               >
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
@@ -527,7 +539,7 @@ export const FertigungNotCustomer = ({
             ) : (
               <a
                 target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Komplettbearbeitung_Maschinenliste.pdf"
               >
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
@@ -564,7 +576,10 @@ export const FertigungNotCustomer = ({
                 <img src="/icons/job.png" alt="icon" />
               </a>
             ) : (
-              <a target="_blank" href="">
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Komplettbearbeitung_Maschinenliste.pdf"
+              >
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
             )}

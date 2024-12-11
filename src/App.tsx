@@ -11,7 +11,6 @@ import OrbitCamera from "./components/controls/OrbitCamera";
 import FakeLoader from "./components/html/FakeLoader";
 import { Fertigung } from "./components/models/Fertigung";
 import { Kunststoff } from "./components/models/Kunststoff";
-import { Montage } from "./components/models/Montage";
 import { Aussen } from "./components/models/Aussen";
 import { useSnapshot } from "valtio";
 import { store } from "./store";
@@ -22,6 +21,7 @@ import { Labels } from "./components/models/Labels";
 import Navigator from "./components/html/Navigator";
 import Popup from "./components/html/Popup";
 import { PerspectiveCamera as PC } from "three";
+import Maschinenbau from "./components/models/Maschinenbau";
 
 const ConditionalRender = () => {
   const { floor } = useSnapshot(store);
@@ -51,7 +51,7 @@ const ConditionalRender = () => {
     case 4:
     case 4.1:
     case 4.2:
-      return <Montage />;
+      return <Maschinenbau />;
 
     case 5:
     case 5.1:

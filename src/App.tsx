@@ -9,7 +9,6 @@ import { Cafeteria } from "./components/models/Cafeteria";
 import { Hauptgebaeude } from "./components/models/Hauptgebaeude";
 import OrbitCamera from "./components/controls/OrbitCamera";
 import FakeLoader from "./components/html/FakeLoader";
-import { Fertigung } from "./components/models/Fertigung";
 import { Kunststoff } from "./components/models/Kunststoff";
 import { Aussen } from "./components/models/Aussen";
 import { useSnapshot } from "valtio";
@@ -22,6 +21,7 @@ import Navigator from "./components/html/Navigator";
 import Popup from "./components/html/Popup";
 import { PerspectiveCamera as PC } from "three";
 import Maschinenbau from "./components/models/Maschinenbau";
+import Fertigung from "./components/models/Fertigung";
 
 const ConditionalRender = () => {
   const { floor } = useSnapshot(store);

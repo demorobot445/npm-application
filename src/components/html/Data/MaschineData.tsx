@@ -396,41 +396,25 @@ export const MaschineNotCustomer = ({
             )}
           </div>
           <div className="popup_box">
-            <p>
-              Unser eigenentwickeltes Modulares Handhabungsgerät verbessert die
-              Ergonomie und erhöht den Bedienkomfort. Es eignet sich für
-              vielfältige Aufgaben wie Heben von Lasten, Überkopfarbeiten,
-              statisches Halten bei der Montage, Kom- missionieren, Verpacken,
-              Befüllen und als Montagehelfer. Zudem bietet es zahlreiche weitere
-              Einsatzmöglichkeiten zur Unterstützung Ihrer Produktionsprozesse.
-            </p>
-            <h3>MEHRWERT:</h3>
+            <p>Pascal nimmt dich mit in die Projektleitung.</p>
+            <p>Lerne seine abwechslungsreichen Aufgaben kennen:</p>
             <ul>
-              <li>Steigerung der Qualität und Arbeitsergonomie</li>
-              <li>Vermeidung von Überlastung der Mitarbeiter</li>
-              <li>ReduktionvonHerstellungskostendurch</li>
-              optimierte Abläufe
-              <li>Förderung ressourcenschonender Prozesse und</li>
-              Reduktion von Rückenproblemen
-              <li>Über 1000 Variationen zur individuellen Anpassung</li>
-              an Ihre Anforderungen
+              <li>Zielgerichtete und erfolgsorientierte Konstruktion</li>
+              <li>Betreuung und Anleitung von internen Teams</li>
+              <li>ProjektleitungvonderPlanungsphasebiszur Endabnahme</li>
+              <li>
+                Verantwortung für Ressourcen, Budget,Termine, Kosten, Qualität
+                und gesetzliche Vorgaben
+              </li>
+              <li>Projektmeetings mit Kunden</li>
             </ul>
-            <h3>BEISPIEL AUTOMOBIL:</h3>
-            <li>
-              Fügen und Handhabung von Fahrzeugfront, Fahrzeugheck, Reifen,
-              Cockpit, Sitzen usw.
-            </li>
-            <p>
-              Wir übernehmen die komplette Konfiguration des Geräts und bieten
-              individuelle Beratung für eine optimale Lösung.
-            </p>
           </div>
         </>
       );
     case 21:
       store.banner = {
-        type: "img",
-        src: "/pictures/Einzelanlagen.jpg",
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1017906379?h=8ac4639c6b&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       };
       return (
         <>
@@ -451,42 +435,25 @@ export const MaschineNotCustomer = ({
           </div>
           <div className="popup_box">
             <p>
-              Im Sondermaschinenbau bieten wir Ihnen eine breite Palette an
-              maßgeschneiderten Lösungen, die Ihre Produktionsprozesse
-              effizienter und präziser gestalten. UnsereTechnologien und Systeme
-              sind darauf ausgelegt, höchste Leistungsfähigkeit und Flexibilität
-              zu bieten. Von Montagetechnik bis Automatisierung - wir
-              unterstützen Sie mit Innovativen und nachhaltigen Lösungen.
+              Patrick gibt dir Einblicke in die mechanische Montage. Entdecke
+              seine abwechslungsreichen Aufgaben:
             </p>
-            <h3>FOLGENDE BEREICHE DECKEN WIR AB:</h3>
             <ul>
-              <li>Montagetechnik</li>
-              <li>Messtechnik</li>
-              <li>Spanntechnik</li>
-              <li>Schweißtechnik</li>
-              <li>Einpresstechnik</li>
-              <li>Achsmontage</li>
-              <li>Visiontechnik</li>
-              <li>Prüftechnik</li>
-              <li>Manipulator</li>
-              <li>Bremsscheibenprüfung</li>
-              <li>Transporttechnik</li>
-              <li>Hebezeuge</li>
-              <li>Handhabungsgerät</li>
-              <li>Wärmeofen</li>
-              <li>Automation</li>
+              <li>
+                Eigenverantwortliche Montage und Inbetriebnahme nach Zeichnung,
+                Stücklisten und 3D-PDF
+              </li>
+              <li>Internationale Montageeinsätze</li>
+              <li>Installation von Pneumatik und Hydraulik</li>
+              <li>Terminverantwortung</li>
             </ul>
-            <p>
-              Mit langjähriger Erfahrung stehen wir Ihnen als verlässlicher
-              Partner zur Seite, um Ihre Prozesse optimal zu gestalten.
-            </p>
           </div>
         </>
       );
     case 22:
       store.banner = {
-        type: "img",
-        src: "/pictures/Verkettete-Anlagen.jpg",
+        type: "iframe",
+        src: "https://player.vimeo.com/video/1017906379?h=8ac4639c6b&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       };
       return (
         <>
@@ -511,27 +478,18 @@ export const MaschineNotCustomer = ({
           </div>
           <div className="popup_box">
             <p>
-              Unsere verketteten Anlagen ermöglichen die nahtlose Integration
-              verschiedener Einheiten in einen durchgängigen, automatisierten
-              Prozess. Durch die intelligente Kombination von Montagetechnik,
-              Messtechnik, Spanntechnik und weiteren Modulen lassen sich
-              komplexe Produktionsschritte effizient miteinander verbinden.
+              Patrick gibt dir Einblicke in die mechanische Montage. Entdecke
+              seine abwechslungsreichen Aufgaben:
             </p>
-            <h3>EIN BEISPIEL:</h3>
-            <p>
-              Eine verkettete Anlage kann mit einer Montagestation begin- nen,
-              gefolgt von einer Prüfeinheit, um die Produktqualität
-              sicherzustellen. Anschließend erfolgt die Spanntechnik für präzise
-              Fixierungen, bevor die Schweißtechnik zum Einsatz kommt. Zum
-              Abschluss sorgt dieTransporttechnik für den reibungslosen Übergang
-              zum nächsten Produktionsschritt oder zur Verpackungseinheit.
-            </p>
-            <p>
-              Alle Module können individuell angepasst und erweitert werden, um
-              den Anforderungen Ihrer Produktion gerecht zu werden. So entsteht
-              eine effiziente und flexible Lösung, die Ihren gesamten
-              Fertigungsprozess automatisiert und optimiert.
-            </p>
+            <ul>
+              <li>
+                Eigenverantwortliche Montage und Inbetriebnahme nach Zeichnung,
+                Stücklisten und 3D-PDF
+              </li>
+              <li>Internationale Montageeinsätze</li>
+              <li>Installation von Pneumatik und Hydraulik</li>
+              <li>Terminverantwortung</li>
+            </ul>
           </div>
         </>
       );

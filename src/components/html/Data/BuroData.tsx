@@ -101,7 +101,7 @@ export const BuroNotCustomer = ({
     case 25:
       store.banner = {
         type: "iframe",
-        src: "https://player.vimeo.com/video/1025135069?h=8148bef02d&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+        src: "https://player.vimeo.com/video/1018038794?h=e9eeac8e07&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       };
       return (
         <>
@@ -511,7 +511,7 @@ export const BuroCustomer = ({
     case 25:
       store.banner = {
         type: "iframe",
-        src: "https://player.vimeo.com/video/1018038794?h=e9eeac8e07&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+        src: "https://player.vimeo.com/video/1025135069?h=8148bef02d&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       };
       return (
         <>

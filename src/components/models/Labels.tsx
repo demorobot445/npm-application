@@ -489,7 +489,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
         />
       </group>
       <group
-        position={[119.625, 1.28, -178.316]}
+        position={[124, 1.28, -178.316]}
         rotation={[0, 1.322, 0]}
         scale={1.141}
         onPointerEnter={handleHoverEnter}

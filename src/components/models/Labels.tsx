@@ -444,17 +444,8 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
         onPointerEnter={handleHoverEnter}
         onPointerLeave={handleHoverLeave}
         onClick={() => {
-          if (floor === 5) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(-7.8, 20.9, undefined, 1.3, 1.93);
-            store.popupDataValue = 17;
-          }
+          if (floor === 5) moveAnimation(6.4, 19.9, 5.2, 0.5, 1.38);
+          else moveAnimation(2.2, 14.2, 5, 3.3, 2.04);
         }}
       >
         <mesh

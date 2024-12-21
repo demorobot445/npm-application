@@ -65,7 +65,7 @@ const ConditionalRender = () => {
 
 function App() {
   // const [dpr, setDpr] = useState(1.5);
-  const { floor, isPopupActive, popupDataValue } = useSnapshot(store);
+  const { floor, isPopupActive } = useSnapshot(store);
   const [isDragging, setIsDragging] = useState(false);
   const [lastX, setLastX] = useState(0);
   const [targetRotationY, setTargetRotationY] = useState(Math.PI * 0.5);
@@ -165,7 +165,7 @@ function App() {
 
   return (
     <main>
-      <div
+      {/* <div
         style={{
           position: "fixed",
           top: 20,
@@ -180,7 +180,7 @@ function App() {
         }}
       >
         <h1 style={{ textAlign: "center" }}>{popupDataValue}</h1>
-      </div>
+      </div> */}
       <div ref={fakeLoaderRef} className="fake-loader">
         <FakeLoader />
       </div>
@@ -189,7 +189,7 @@ function App() {
       {/* 3D */}
       <Canvas
         style={{ pointerEvents: isPopupActive ? "none" : "auto" }}
-        dpr={0.4}
+        // dpr={0.4}
         onMouseMove={handleMouseMove}
         onMouseDown={handleMouseDown}
         onMouseUp={handleMouseUp}

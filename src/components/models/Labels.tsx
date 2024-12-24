@@ -471,6 +471,30 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
         />
       </group>
       <group
+        position={[133, 1.841, -137.901]}
+        rotation={[0, -1.103, 0]}
+        scale={1.399}
+        onPointerEnter={handleHoverEnter}
+        onPointerLeave={handleHoverLeave}
+        onClick={() => {
+          if (floor === 5) moveAnimation(6.4, 19.9, 5.2, 0.5, 1.38);
+          else moveAnimation(2.2, 14.2, 5, 3.3, 2.04);
+        }}
+      >
+        <mesh
+          geometry={nodes.Text018.geometry}
+          material={materials["weiss.002"]}
+        />
+        <mesh
+          geometry={nodes.Text018_1.geometry}
+          material={materials["hgrau.008"]}
+        />
+        <mesh
+          geometry={nodes.Text018_2.geometry}
+          material={materials["weiss.leuchten"]}
+        />
+      </group>
+      <group
         position={[108.502, 3.516, -144.696]}
         rotation={[0, -0.719, 0]}
         scale={1.95}

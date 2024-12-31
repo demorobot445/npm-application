@@ -1,19 +1,12 @@
-import { AdaptiveDpr, Environment, Loader } from "@react-three/drei";
+import { AdaptiveDpr, Loader } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
-import { Landschaft } from "./components/models/Landschaft";
-import { Walls } from "./components/models/Walls";
-import { Parkplatz } from "./components/models/Parkplatz";
 import { Foyer } from "./components/models/Foyer";
-import { Cafeteria } from "./components/models/Cafeteria";
-import { Hauptgebaeude } from "./components/models/Hauptgebaeude";
 import OrbitCamera from "./components/controls/OrbitCamera";
 import FakeLoader from "./components/html/FakeLoader";
-import { Kunststoff } from "./components/models/Kunststoff";
 import { Aussen } from "./components/models/Aussen";
 import { useSnapshot } from "valtio";
 import { store } from "./store";
-import { Roof } from "./components/models/Roof";
 import { Doors } from "./components/models/Doors";
 import { Spawnpoint } from "./components/models/Spawnpoint";
 import { Labels } from "./components/models/Labels";
@@ -22,6 +15,13 @@ import Popup from "./components/html/Popup";
 import { PerspectiveCamera as PC } from "three";
 import Maschinenbau from "./components/models/Maschinenbau";
 import Fertigung from "./components/models/Fertigung";
+import Cafeteria from "./components/models/Cafeteria";
+import Landscape from "./components/models/Landscape";
+import CarPark from "./components/models/CarPark";
+import Plastics from "./components/models/Plastics";
+import Roofs from "./components/models/Roofs";
+import WindowsAndDoors from "./components/models/WindowsAndDoors";
+import Walls from "./components/models/Walls";
 
 const ConditionalRender = () => {
   const { floor } = useSnapshot(store);
@@ -29,13 +29,7 @@ const ConditionalRender = () => {
   switch (floor) {
     case 0:
     case 7:
-      return (
-        <>
-          <Roof />
-          <Landschaft />
-          <Parkplatz />
-        </>
-      );
+      return <></>;
     case 1:
     case 1.1:
       return <Foyer />;
@@ -56,7 +50,7 @@ const ConditionalRender = () => {
     case 5:
     case 5.1:
     case 5.2:
-      return <Kunststoff />;
+      return <Plastics />;
 
     case 6:
       return <Aussen />;
@@ -197,7 +191,7 @@ function App() {
         onTouchEnd={handleTouchEnd}
       >
         <AdaptiveDpr />
-        <Environment preset="city" />
+        {/* <Environment preset="city" /> */}
         <OrbitCamera
           secondCameraRef={secondCameraRef}
           cameraRef={cameraRef}
@@ -208,9 +202,12 @@ function App() {
         <group position={[-140, 0, 160]}>
           <Suspense fallback={null}>
             <ConditionalRender />
-            <Hauptgebaeude />
+            <WindowsAndDoors />
+            <Roofs />
             <Walls />
             <Doors />
+            <CarPark />
+            <Landscape />
             <Spawnpoint />
             <Labels />
           </Suspense>

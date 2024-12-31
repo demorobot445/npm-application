@@ -164,10 +164,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text004.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text004.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text004_1.geometry}
           material={materials["hgrau.008"]}
@@ -197,10 +196,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text013.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text013.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text013_1.geometry}
           material={materials["hgrau.008"]}
@@ -229,10 +227,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text009.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text009.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text009_1.geometry}
           material={materials["hgrau.008"]}
@@ -262,10 +259,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text016.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text016.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text016_1.geometry}
           material={materials["hgrau.008"]}
@@ -295,10 +291,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text116.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text116.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text116_1.geometry}
           material={materials["hgrau.008"]}
@@ -327,10 +322,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text003.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text003.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text003_1.geometry}
           material={materials["hgrau.008"]}
@@ -359,10 +353,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           store.popupDataValue = 3;
         }}
       >
-        <mesh
-          geometry={nodes.Text002.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text002.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text002_1.geometry}
           material={materials["hgrau.008"]}
@@ -391,10 +384,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text006.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text006.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text006_1.geometry}
           material={materials["hgrau.008"]}
@@ -424,10 +416,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Cube144.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Cube144.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Cube144_1.geometry}
           material={materials["hgrau.008"]}
@@ -457,10 +448,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text018.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text018.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text018_1.geometry}
           material={materials["hgrau.008"]}
@@ -481,10 +471,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           else moveAnimation(2.2, 14.2, 5, 3.3, 2.04);
         }}
       >
-        <mesh
-          geometry={nodes.Text018.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text018.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text018_1.geometry}
           material={materials["hgrau.008"]}
@@ -499,10 +488,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
         rotation={[0, -0.719, 0]}
         scale={1.95}
       >
-        <mesh
-          geometry={nodes.Text068.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text068.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text068_1.geometry}
           material={materials["hgrau.008"]}
@@ -532,10 +520,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text115.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text115.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text115_1.geometry}
           material={materials["hgrau.008"]}
@@ -565,10 +552,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text015.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text015.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text015_1.geometry}
           material={materials["hgrau.008"]}
@@ -598,10 +584,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text019.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text019.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text019_1.geometry}
           material={materials["hgrau.008"]}
@@ -631,10 +616,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text028.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text028.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text028_1.geometry}
           material={materials["hgrau.008"]}
@@ -664,10 +648,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text021.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text021.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text021_1.geometry}
           material={materials["hgrau.008"]}
@@ -696,10 +679,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text023.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text023.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text023_1.geometry}
           material={materials["hgrau.008"]}
@@ -729,10 +711,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text024.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text024.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text024_1.geometry}
           material={materials["hgrau.008"]}
@@ -762,10 +743,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Cube247.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Cube247.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Cube247_1.geometry}
           material={materials["hgrau.008"]}
@@ -794,10 +774,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text114.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text114.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text114_1.geometry}
           material={materials["hgrau.008"]}
@@ -826,10 +805,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text037.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text037.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text037_1.geometry}
           material={materials["hgrau.008"]}
@@ -858,10 +836,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text031.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text031.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text031_1.geometry}
           material={materials["hgrau.008"]}
@@ -890,10 +867,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           store.popupDataValue = 10;
         }}
       >
-        <mesh
-          geometry={nodes.Text010.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text010.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text010_1.geometry}
           material={materials["hgrau.008"]}
@@ -922,10 +898,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text039.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text039.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text039_1.geometry}
           material={materials["hgrau.008"]}
@@ -954,10 +929,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text041.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text041.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text041_1.geometry}
           material={materials["hgrau.008"]}
@@ -974,8 +948,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
       >
         <mesh
           geometry={nodes.Text033.geometry}
-          material={materials["weiss.002"]}
-        />
+          
+        >
+        <meshBasicMaterial color={materials["weiss.002"].color} /></mesh>
         <mesh
           geometry={nodes.Text033_1.geometry}
           material={materials["hgrau.008"]}
@@ -1004,10 +979,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text110.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text110.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text110_1.geometry}
           material={materials["hgrau.008"]}
@@ -1037,10 +1011,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text045.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text045.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text045_1.geometry}
           material={materials["hgrau.008"]}
@@ -1070,10 +1043,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text046.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text046.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text046_1.geometry}
           material={materials["hgrau.008"]}
@@ -1103,10 +1075,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           }
         }}
       >
-        <mesh
-          geometry={nodes.Text027.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text027.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text027_1.geometry}
           material={materials["hgrau.008"]}
@@ -1136,10 +1107,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           store.popupDataValue = 9;
         }}
       >
-        <mesh
-          geometry={nodes.Text049.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text049.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text049_1.geometry}
           material={materials["hgrau.008"]}
@@ -1169,10 +1139,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           store.popupDataValue = 8;
         }}
       >
-        <mesh
-          geometry={nodes.Text111.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text111.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text111_1.geometry}
           material={materials["hgrau.008"]}
@@ -1202,10 +1171,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           store.popupDataValue = 7;
         }}
       >
-        <mesh
-          geometry={nodes.Text113.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text113.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text113_1.geometry}
           material={materials["hgrau.008"]}
@@ -1235,10 +1203,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           store.popupDataValue = 6;
         }}
       >
-        <mesh
-          geometry={nodes.Text112.geometry}
-          material={materials["weiss.002"]}
-        />
+        <mesh geometry={nodes.Text112.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Text112_1.geometry}
           material={materials["hgrau.008"]}

@@ -471,15 +471,16 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           else moveAnimation(2.2, 14.2, 5, 3.3, 2.04);
         }}
       >
-        <mesh geometry={nodes.Text018.geometry}>
-          <meshBasicMaterial color={materials["weiss.002"].color} />
-        </mesh>
+        <mesh geometry={nodes.Cube144.geometry}>
+          {" "}
+          <meshBasicMaterial color={materials["weiss.002"].color} />{" "}
+        </mesh>{" "}
         <mesh
-          geometry={nodes.Text018_1.geometry}
+          geometry={nodes.Cube144_1.geometry}
           material={materials["hgrau.008"]}
-        />
+        />{" "}
         <mesh
-          geometry={nodes.Text018_2.geometry}
+          geometry={nodes.Cube144_2.geometry}
           material={materials["weiss.leuchten"]}
         />
       </group>

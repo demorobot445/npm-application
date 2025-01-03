@@ -1,9 +1,56 @@
 import { useGLTF } from "@react-three/drei";
-import { useEffect } from "react";
-import { MeshStandardMaterial, MeshBasicMaterial, Object3D, Mesh } from "three";
+import { useEffect, useState } from "react";
+import {
+  MeshStandardMaterial,
+  MeshBasicMaterial,
+  Object3D,
+  Mesh,
+  AnimationMixer,
+  LoopRepeat,
+} from "three";
 
 const Fertigung = () => {
-  const { scene } = useGLTF("/fertigung.glb");
+  const { scene, animations } = useGLTF("/fertigung.glb");
+
+  const [mixer, setMixer] = useState<AnimationMixer | null>(null);
+  const [isAnimationPlaying, setIsAnimationPlaying] = useState(false);
+
+  useEffect(() => {
+    if (animations.length > 0) {
+      // Create an AnimationMixer when animations are available
+      const newMixer = new AnimationMixer(scene);
+
+      // Set up and play the animations
+      animations.forEach((clip) => {
+        const action = newMixer.clipAction(clip);
+        action.play();
+        action.setLoop(LoopRepeat, Infinity);
+      });
+
+      // Set the mixer in state
+      setMixer(newMixer);
+      setIsAnimationPlaying(true);
+    }
+
+    return () => {
+      if (mixer) {
+        mixer.stopAllAction();
+      }
+    };
+  }, [animations, scene]);
+
+  useEffect(() => {
+    if (mixer && isAnimationPlaying) {
+      // Update the animation mixer in every frame
+      const animate = () => {
+        mixer.update(0.01);
+      };
+
+      // Simple interval to call animate() periodically
+      const interval = setInterval(animate, 16); // ~60 FPS
+      return () => clearInterval(interval); // Cleanup interval on component unmount
+    }
+  }, [mixer, isAnimationPlaying]);
 
   useEffect(() => {
     scene.traverse((child) => {

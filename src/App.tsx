@@ -1,10 +1,8 @@
 import { AdaptiveDpr, Loader } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
-import { Foyer } from "./components/models/Foyer";
 import OrbitCamera from "./components/controls/OrbitCamera";
 import FakeLoader from "./components/html/FakeLoader";
-import { Aussen } from "./components/models/Aussen";
 import { useSnapshot } from "valtio";
 import { store } from "./store";
 import { Doors } from "./components/models/Doors";
@@ -22,17 +20,16 @@ import Plastics from "./components/models/Plastics";
 import Roofs from "./components/models/Roofs";
 import WindowsAndDoors from "./components/models/WindowsAndDoors";
 import Walls from "./components/models/Walls";
+import Entry from "./components/models/Entry";
+import Commission from "./components/models/Commission";
 
 const ConditionalRender = () => {
   const { floor } = useSnapshot(store);
 
   switch (floor) {
-    case 0:
-    case 7:
-      return <></>;
     case 1:
     case 1.1:
-      return <Foyer />;
+      return <Entry />;
 
     case 2:
       return <Cafeteria />;
@@ -53,7 +50,7 @@ const ConditionalRender = () => {
       return <Plastics />;
 
     case 6:
-      return <Aussen />;
+      return <Commission />;
   }
 };
 

@@ -9,8 +9,8 @@ import {
   LoopRepeat,
 } from "three";
 
-const Plastics = () => {
-  const { scene, animations } = useGLTF("/plastics.glb");
+const Entry = () => {
+  const { scene, animations } = useGLTF("/entryway.glb");
 
   const [mixer, setMixer] = useState<AnimationMixer | null>(null);
   const [isAnimationPlaying, setIsAnimationPlaying] = useState(false);
@@ -90,6 +90,6 @@ const Plastics = () => {
   return <primitive object={scene as unknown as Object3D} />;
 };
 
-export default Plastics;
+export default Entry;
 
-useGLTF.preload("/plastics.glb");
+useGLTF.preload("/entryway.glb");

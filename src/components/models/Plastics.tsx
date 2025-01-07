@@ -10,7 +10,7 @@ import {
 } from "three";
 
 const Plastics = () => {
-  const { scene, animations } = useGLTF("/plastics.glb");
+  const { scene, animations, materials } = useGLTF("/plastics.glb");
 
   const [mixer, setMixer] = useState<AnimationMixer | null>(null);
   const [isAnimationPlaying, setIsAnimationPlaying] = useState(false);
@@ -53,6 +53,7 @@ const Plastics = () => {
   }, [mixer, isAnimationPlaying]);
 
   useEffect(() => {
+    (materials[""] as MeshStandardMaterial).color.set("#61637B");
     scene.traverse((child) => {
       if ((child as any).isMesh) {
         const mesh = child as Mesh;

@@ -187,8 +187,8 @@ function App() {
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
+        <color attach="background" args={["#2e69a6"]} />
         <AdaptiveDpr />
-        {/* <Environment preset="city" /> */}
         <OrbitCamera
           secondCameraRef={secondCameraRef}
           cameraRef={cameraRef}

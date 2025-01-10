@@ -63,8 +63,6 @@ function App() {
   const secondCameraRef = useRef<PC>(null);
   const fakeLoaderRef = useRef<HTMLDivElement>(null);
 
-  console.log(floor);
-
   // POINTER EVENT BOTH USE IN MOUSE AND TOUCH CONTROLS
 
   const handlePointerDown = (clientX: number) => {

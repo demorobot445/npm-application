@@ -62,6 +62,8 @@ const Popup = () => {
       <PopupData />
       {popupDataValue !== 13 &&
         popupDataValue !== 14 &&
+        popupDataValue !== 10 &&
+        popupDataValue !== 15 &&
         popupDataValue !== 2 &&
         popupDataValue !== 8 &&
         popupDataValue !== 9 &&

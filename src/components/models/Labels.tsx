@@ -3,7 +3,7 @@ import { useCursor, useGLTF } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
 import { useSnapshot } from "valtio";
 import { store } from "../../store";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { ThreeEvent, useThree } from "@react-three/fiber";
 import gsap from "gsap";
 
@@ -119,50 +119,152 @@ type GLTFResult = GLTF & {
   };
 };
 
-export function Labels(props: JSX.IntrinsicElements["group"]) {
-  const { nodes, materials } = useGLTF("/labels.glb") as GLTFResult;
+type Props = {
+  position: [number, number, number];
+  rotation: [number, number, number];
+  scale?: number;
+  floorNumber: number;
+  popupValue: number;
+  moveAnimationParams: [number, number, number | undefined, number, number];
+  children: React.ReactNode;
+};
 
+const Label: React.FC<Props> = ({
+  position,
+  rotation,
+  scale = 1,
+  floorNumber,
+  popupValue,
+  moveAnimationParams,
+  children,
+}) => {
   const { moveAnimation, floor } = useSnapshot(store);
-
-  // model hovered
   const [hovered, setHovered] = useState(false);
+
+  // Using a ref to store original position
+  const originalPositionRef = useRef<number>(0);
+
   useCursor(hovered);
+
   const handleHoverEnter = (e: ThreeEvent<PointerEvent>) => {
     setHovered(true);
-    gsap.to(e.eventObject.position, {
-      y: e.eventObject.position.y + 0.1,
+    const object = e.eventObject;
+
+    // Store the initial position on first hover if not already stored
+    if (originalPositionRef.current === 0) {
+      originalPositionRef.current = object.position.y;
+    }
+
+    gsap.to(object.position, {
+      y: object.position.y + 0.1,
     });
   };
+
   const handleHoverLeave = (e: ThreeEvent<PointerEvent>) => {
     setHovered(false);
-    gsap.to(e.eventObject.position, {
-      y: e.eventObject.position.y - 0.1,
+    const object = e.eventObject;
+    gsap.to(object.position, {
+      y: originalPositionRef.current,
     });
   };
 
   const { camera } = useThree();
 
   return (
-    <group {...props} dispose={null}>
-      <group
+    <group
+      position={position}
+      rotation={rotation}
+      scale={scale}
+      onPointerEnter={handleHoverEnter}
+      onPointerLeave={handleHoverLeave}
+      onClick={() => {
+        if (floor === floorNumber) {
+          store.previousPoistion = {
+            x: camera.position.x,
+            y: camera.position.y,
+            z: camera.position.z,
+            rotateY: camera.rotation.y,
+          };
+          store.isPopupActive = true;
+          moveAnimation(...moveAnimationParams);
+          store.popupDataValue = popupValue;
+        }
+      }}
+    >
+      {children}
+    </group>
+  );
+};
+
+export function Labels(props: JSX.IntrinsicElements["group"]) {
+  const { nodes, materials } = useGLTF("/labels.glb") as GLTFResult;
+
+  return (
+    <group name="main-group" {...props} dispose={null}>
+      <Label
+        floorNumber={1}
+        position={[159.953, 1.182, -161.979]}
+        rotation={[0, Math.PI / 2, 0]}
+        popupValue={11}
+        moveAnimationParams={[22.1, -1.6, undefined, 0.6, 1.57]}
+      >
+        <mesh geometry={nodes.Text110.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
+        <mesh
+          geometry={nodes.Text110_1.geometry}
+          material={materials["hgrau.008"]}
+        />
+        <mesh
+          geometry={nodes.Text110_2.geometry}
+          material={materials["weiss.leuchten"]}
+        />
+      </Label>
+      <Label
+        position={[159.939, 1.182, -163.132]}
+        rotation={[0, Math.PI / 2, 0]}
+        floorNumber={1}
+        popupValue={12}
+        moveAnimationParams={[22.1, -2.8, undefined, 0.6, 1.57]}
+      >
+        <mesh geometry={nodes.Text039.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
+        <mesh
+          geometry={nodes.Text039_1.geometry}
+          material={materials["hgrau.008"]}
+        />
+        <mesh
+          geometry={nodes.Text039_2.geometry}
+          material={materials["weiss.leuchten"]}
+        />
+      </Label>
+      <Label
+        position={[159.945, 1.182, -164.268]}
+        rotation={[0, Math.PI / 2, 0]}
+        floorNumber={1}
+        popupValue={13}
+        moveAnimationParams={[22.1, -4.1, undefined, 0.6, 1.57]}
+      >
+        <mesh geometry={nodes.Text041.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
+        <mesh
+          geometry={nodes.Text041_1.geometry}
+          material={materials["hgrau.008"]}
+        />
+        <mesh
+          geometry={nodes.Text041_2.geometry}
+          material={materials["weiss.leuchten"]}
+        />
+      </Label>
+      <Label
         position={[147.446, 3.778, -165.462]}
         rotation={[0, -0.568, 0]}
         scale={1.22}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 3.1) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(4.1, -2.4, undefined, 3.2, Math.PI * 2 - 0.55);
-            store.popupDataValue = 29;
-          }
-        }}
+        floorNumber={3.1}
+        popupValue={29}
+        moveAnimationParams={[4.1, -2.4, undefined, 3.2, Math.PI * 2 - 0.55]}
       >
         <mesh geometry={nodes.Text004.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -175,26 +277,15 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text004_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[129.247, 1.946, -165.822]}
         rotation={[0, 0.688, 0]}
         scale={1.097}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 3) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(-10.8, -0.8, undefined, 0.7, 0.41);
-            store.popupDataValue = 0;
-          }
-        }}
+        floorNumber={3}
+        popupValue={0}
+        moveAnimationParams={[-10.8, -0.8, undefined, 0.7, 0.41]}
       >
         <mesh geometry={nodes.Text013.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -207,25 +298,14 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text013_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[118.136, 2.254, -162.839]}
         rotation={[0, 0.968, 0]}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 3) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(-21.2, -1.7, undefined, 0.2, -0.38);
-            store.popupDataValue = 5;
-          }
-        }}
+        floorNumber={3}
+        popupValue={5}
+        moveAnimationParams={[-21.2, -1.7, undefined, 0.2, -0.38]}
       >
         <mesh geometry={nodes.Text009.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -238,26 +318,15 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text009_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
-        position={[132.79, 0.13, -155.407]}
+      </Label>
+
+      <Label
+        position={[132.79, 0.13, -155.35]}
         rotation={[0, Math.PI / 2, 0]}
         scale={0.426}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 3) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(-6.3, 4.3, undefined, 0.01, 2.13);
-            store.popupDataValue = 2;
-          }
-        }}
+        floorNumber={3}
+        popupValue={2}
+        moveAnimationParams={[-6.3, 4.3, undefined, 0.01, 2.13]}
       >
         <mesh geometry={nodes.Text016.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -270,26 +339,15 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text016_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[136.714, 2.089, -166.368]}
         rotation={[0, 0.127, 0]}
         scale={1.054}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 3) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(-4.7, -11.5, undefined, 1, 3.6);
-            store.popupDataValue = 1;
-          }
-        }}
+        floorNumber={3}
+        popupValue={1}
+        moveAnimationParams={[-4.7, -11.5, undefined, 1, 3.6]}
       >
         <mesh geometry={nodes.Text116.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -302,25 +360,14 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text116_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[128.62, 2.256, -149.965]}
         rotation={[0, Math.PI / 2, 0]}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 3) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(-7, 9.1, undefined, 1, 1.58);
-            store.popupDataValue = 4;
-          }
-        }}
+        floorNumber={3}
+        popupValue={4}
+        moveAnimationParams={[-7, 9.1, undefined, 1, 1.58]}
       >
         <mesh geometry={nodes.Text003.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -333,25 +380,14 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text003_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[136.702, 1.901, -154.278]}
         rotation={[0, -0.767, 0]}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 3) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(-5.2, 8.1, undefined, 1.3, -0.63);
-          }
-          store.popupDataValue = 3;
-        }}
+        floorNumber={3}
+        popupValue={3}
+        moveAnimationParams={[-5.2, 8.1, undefined, 1.3, -0.63]}
       >
         <mesh geometry={nodes.Text002.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -364,25 +400,15 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text002_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[147.819, 1.092, -167.765]}
         rotation={[0, -0.831, 0]}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 3.2) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(5, -5, undefined, -0.05, Math.PI * 1.9 - 0.55);
-            store.popupDataValue = 30;
-          }
-        }}
+        scale={1}
+        floorNumber={3.2}
+        popupValue={30}
+        moveAnimationParams={[5, -5, undefined, -0.05, Math.PI * 1.9 - 0.55]}
       >
         <mesh geometry={nodes.Text006.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -395,26 +421,15 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text006_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      {/* <Label
         position={[144.749, 1.064, -140.857]}
         rotation={[0, 0.906, 0]}
         scale={0.784}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 5.2) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(6.5, 19.7, undefined, 0.5, 1.5);
-            store.popupDataValue = 16;
-          }
-        }}
+        floorNumber={5.2}
+        popupValue={16}
+        moveAnimationParams={[6.5, 19.7, undefined, 0.5, 1.5]}
       >
         <mesh geometry={nodes.Cube144.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -427,26 +442,15 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Cube144_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label> */}
+
+      <Label
         position={[126.269, 1.841, -137.901]}
         rotation={[0, -1.103, 0]}
         scale={1.399}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 5) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(-7.8, 20.9, undefined, 1.3, 1.93);
-            store.popupDataValue = 17;
-          }
-        }}
+        floorNumber={5}
+        popupValue={17}
+        moveAnimationParams={[-7.8, 20.9, undefined, 1.3, 1.93]}
       >
         <mesh geometry={nodes.Text018.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -459,31 +463,29 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text018_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
-        position={[133, 1.841, -137.901]}
-        rotation={[0, -1.103, 0]}
+      </Label>
+
+      <Label
+        position={[140, 1.6, -137]}
+        rotation={[0, 1.103, 0]}
         scale={1.399}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 5) moveAnimation(6.4, 19.9, 5.2, 0.5, 1.38);
-          else moveAnimation(2.2, 14.2, 5, 3.3, 2.04);
-        }}
+        floorNumber={5}
+        popupValue={17}
+        moveAnimationParams={[6.4, 19.9, undefined, 0.5, 1.38]}
       >
         <mesh geometry={nodes.Cube144.geometry}>
-          {" "}
-          <meshBasicMaterial color={materials["weiss.002"].color} />{" "}
-        </mesh>{" "}
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
         <mesh
           geometry={nodes.Cube144_1.geometry}
           material={materials["hgrau.008"]}
-        />{" "}
+        />
         <mesh
           geometry={nodes.Cube144_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
+      </Label>
+
       <group
         position={[108.502, 3.516, -144.696]}
         rotation={[0, -0.719, 0]}
@@ -501,25 +503,14 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           material={materials["weiss.leuchten"]}
         />
       </group>
-      <group
+
+      <Label
         position={[124, 1.28, -178.316]}
         rotation={[0, 1.322, 0]}
         scale={1.141}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 4) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(-23.4, -20.4, undefined, 0.5, -1.94);
-            store.popupDataValue = 21;
-          }
-        }}
+        floorNumber={4}
+        popupValue={21}
+        moveAnimationParams={[-24.3, -21.9, undefined, 0.5, -1.94]}
       >
         <mesh geometry={nodes.Text115.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -532,26 +523,15 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text115_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[125.954, 1.28, -179.791]}
         rotation={[0, 0.773, 0]}
         scale={1.415}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 4) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(-19.6, -21.5, undefined, 0.5, -1.8);
-            store.popupDataValue = 20;
-          }
-        }}
+        floorNumber={4}
+        popupValue={20}
+        moveAnimationParams={[-19.6, -21.5, undefined, 0.5, -1.8]}
       >
         <mesh geometry={nodes.Text015.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -564,26 +544,15 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text015_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[147.71, 3.657, -174.881]}
         rotation={[0, -1.008, 0]}
         scale={1.083}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 4.2) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(4, -13.1, undefined, 3.2, Math.PI * 2 - 1.17);
-            store.popupDataValue = 28;
-          }
-        }}
+        floorNumber={4.2}
+        popupValue={28}
+        moveAnimationParams={[4, -13.1, undefined, 3.2, Math.PI * 2 - 1.17]}
       >
         <mesh geometry={nodes.Text019.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -596,26 +565,15 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text019_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[127.132, 1.784, -184.212]}
         rotation={[0, 0.406, 0]}
         scale={1.092}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 4) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(-12.9, -20.9, undefined, 1, -0.55);
-            store.popupDataValue = 18;
-          }
-        }}
+        floorNumber={4}
+        popupValue={18}
+        moveAnimationParams={[-12.9, -20.9, undefined, 1, -0.55]}
       >
         <mesh geometry={nodes.Text028.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -628,26 +586,15 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text028_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[137.631, 1.462, -183.907]}
         rotation={[0, 0.833, 0]}
         scale={1.047}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 4) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(0.8, -22.9, undefined, 1.2, 1.5);
-            store.popupDataValue = 19;
-          }
-        }}
+        floorNumber={4}
+        popupValue={19}
+        moveAnimationParams={[0.8, -22.9, undefined, 1.2, 1.5]}
       >
         <mesh geometry={nodes.Text021.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -660,25 +607,14 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text021_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[148.485, 0.984, -177.851]}
         rotation={[0, -1.17, 0]}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 4.1) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(5.7, -16.4, undefined, 0.3, Math.PI * 2 - 1.13);
-            store.popupDataValue = 25;
-          }
-        }}
+        floorNumber={4.1}
+        popupValue={25}
+        moveAnimationParams={[5.7, -16.4, undefined, 0.3, Math.PI * 2 - 1.13]}
       >
         <mesh geometry={nodes.Text023.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -691,26 +627,15 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text023_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[145.784, 4.02, -179.457]}
         rotation={[0, 0.037, 0]}
         scale={1.067}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 4.2) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(4.5, -22.3, undefined, 3.5, Math.PI * 2 - 2.77);
-            store.popupDataValue = 26;
-          }
-        }}
+        floorNumber={4.2}
+        popupValue={26}
+        moveAnimationParams={[4.5, -22.3, undefined, 3.5, Math.PI * 2 - 2.77]}
       >
         <mesh geometry={nodes.Text024.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -723,26 +648,15 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text024_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[136.27, 1.798, -179.748]}
         rotation={[0, 1.295, 0]}
         scale={1.128}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 4) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(-7.3, -20.5, undefined, 1, -1.61);
-            store.popupDataValue = 22;
-          }
-        }}
+        floorNumber={4}
+        popupValue={22}
+        moveAnimationParams={[-11.3, -18.2, undefined, 1, -1]}
       >
         <mesh geometry={nodes.Cube247.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -755,25 +669,14 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Cube247_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[146.567, 0.984, -180.328]}
         rotation={[Math.PI, -0.177, Math.PI]}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 4.1) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(4.6, -22.8, undefined, 0.8, Math.PI * 2 - 2.77);
-            store.popupDataValue = 27;
-          }
-        }}
+        floorNumber={4.1}
+        popupValue={27}
+        moveAnimationParams={[4.6, -22.8, undefined, 0.8, Math.PI * 2 - 2.77]}
       >
         <mesh geometry={nodes.Text114.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -786,25 +689,14 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text114_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[160.446, 1.233, -154.456]}
         rotation={[0, -1.106, 0]}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 1) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(22.6, 4.6, undefined, 0.7, 2.07);
-            store.popupDataValue = 14;
-          }
-        }}
+        floorNumber={1}
+        popupValue={14}
+        moveAnimationParams={[22.6, 4.6, undefined, 0.7, 2.07]}
       >
         <mesh geometry={nodes.Text037.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -817,25 +709,14 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text037_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[157.36, 1.233, -157.395]}
         rotation={[0, Math.PI / 2, 0]}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 1) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(19.2, 2.7, undefined, 0.6, 1.55);
-            store.popupDataValue = 15;
-          }
-        }}
+        floorNumber={1}
+        popupValue={15}
+        moveAnimationParams={[19.2, 2.7, undefined, 0.6, 1.55]}
       >
         <mesh geometry={nodes.Text031.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -848,25 +729,14 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text031_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[159.478, 0.548, -156.587]}
         rotation={[0, -0.464, 0]}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 1) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(20.7, 1.5, undefined, 0.5, 2.56);
-          }
-          store.popupDataValue = 10;
-        }}
+        floorNumber={1}
+        popupValue={10}
+        moveAnimationParams={[20.7, 1.5, undefined, 0.5, 2.56]}
       >
         <mesh geometry={nodes.Text010.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -879,69 +749,8 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text010_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
-        position={[159.939, 1.182, -163.132]}
-        rotation={[0, Math.PI / 2, 0]}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 1) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(22.1, -2.8, undefined, 0.6, 1.57);
-            store.popupDataValue = 12;
-          }
-        }}
-      >
-        <mesh geometry={nodes.Text039.geometry}>
-          <meshBasicMaterial color={materials["weiss.002"].color} />
-        </mesh>
-        <mesh
-          geometry={nodes.Text039_1.geometry}
-          material={materials["hgrau.008"]}
-        />
-        <mesh
-          geometry={nodes.Text039_2.geometry}
-          material={materials["weiss.leuchten"]}
-        />
-      </group>
-      <group
-        position={[159.945, 1.182, -164.268]}
-        rotation={[0, Math.PI / 2, 0]}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 1) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(22.1, -4.1, undefined, 0.6, 1.57);
-            store.popupDataValue = 13;
-          }
-        }}
-      >
-        <mesh geometry={nodes.Text041.geometry}>
-          <meshBasicMaterial color={materials["weiss.002"].color} />
-        </mesh>
-        <mesh
-          geometry={nodes.Text041_1.geometry}
-          material={materials["hgrau.008"]}
-        />
-        <mesh
-          geometry={nodes.Text041_2.geometry}
-          material={materials["weiss.leuchten"]}
-        />
-      </group>
+      </Label>
+
       {/* <group
         position={[162.646, 0.548, -157.455]}
         rotation={[0, 0.137, 0]}
@@ -961,56 +770,14 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           material={materials["weiss.leuchten"]}
         />
       </group> */}
-      <group
-        position={[159.953, 1.182, -161.979]}
-        rotation={[0, Math.PI / 2, 0]}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 1) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(22.1, -1.6, undefined, 0.6, 1.57);
-            store.popupDataValue = 11;
-          }
-        }}
-      >
-        <mesh geometry={nodes.Text110.geometry}>
-          <meshBasicMaterial color={materials["weiss.002"].color} />
-        </mesh>
-        <mesh
-          geometry={nodes.Text110_1.geometry}
-          material={materials["hgrau.008"]}
-        />
-        <mesh
-          geometry={nodes.Text110_2.geometry}
-          material={materials["weiss.leuchten"]}
-        />
-      </group>
-      <group
+
+      <Label
         position={[161.223, 3.742, -159.14]}
         rotation={[0, Math.PI / 2, 0]}
         scale={0.838}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 1.1) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(19.4, 1.1, undefined, 3.2, -1.54);
-            store.popupDataValue = 31;
-          }
-        }}
+        floorNumber={1.1}
+        popupValue={31}
+        moveAnimationParams={[19.4, 1.1, undefined, 3.2, -1.54]}
       >
         <mesh geometry={nodes.Text045.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -1023,26 +790,15 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text045_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[162.311, 3.906, -165.868]}
         rotation={[0, -0.637, 0]}
         scale={1.045}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 1.1) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(19.9, -2.9, undefined, 3.6, -0.8);
-            store.popupDataValue = 24;
-          }
-        }}
+        floorNumber={1.1}
+        popupValue={24}
+        moveAnimationParams={[19.9, -2.9, undefined, 3.6, -0.8]}
       >
         <mesh geometry={nodes.Text046.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -1055,26 +811,15 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text046_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[161.221, 3.742, -161.135]}
         rotation={[0, Math.PI / 2, 0]}
         scale={0.838}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 1.1) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(19.4, -1.1, undefined, 3.2, -1.54);
-            store.popupDataValue = 23;
-          }
-        }}
+        floorNumber={1.1}
+        popupValue={23}
+        moveAnimationParams={[19.4, -1.1, undefined, 3.2, -1.54]}
       >
         <mesh geometry={nodes.Text027.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -1087,26 +832,15 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text027_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[105.181, 3.107, -176.031]}
         rotation={[0, -0.114, 0]}
         scale={2.596}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 7) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(-34.3, -8.9, undefined, 0.5, Math.PI * 2.1);
-          }
-          store.popupDataValue = 9;
-        }}
+        floorNumber={7}
+        popupValue={9}
+        moveAnimationParams={[-33.7, -7.3, undefined, 0.8, Math.PI * 2.22]}
       >
         <mesh geometry={nodes.Text049.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -1119,26 +853,15 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text049_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[88.796, 3.287, -161.799]}
         rotation={[0, 0.727, 0]}
         scale={2.596}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 7) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(-57.9, -7.4, undefined, 2.2, Math.PI * 1.35);
-          }
-          store.popupDataValue = 8;
-        }}
+        floorNumber={7}
+        popupValue={8}
+        moveAnimationParams={[-61.2, -8.9, undefined, 0.6, 4.24]}
       >
         <mesh geometry={nodes.Text111.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -1151,26 +874,15 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text111_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[106.329, 2.053, -193.876]}
         rotation={[0, 0.344, 0]}
         scale={1.33}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 6) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(-33.5, -30.2, undefined, 1, Math.PI * 2.1);
-          }
-          store.popupDataValue = 7;
-        }}
+        floorNumber={6}
+        popupValue={7}
+        moveAnimationParams={[-33.5, -30.2, undefined, 1, Math.PI * 2.1]}
       >
         <mesh geometry={nodes.Text113.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -1183,26 +895,15 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text113_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
-      <group
+      </Label>
+
+      <Label
         position={[85.184, 2.314, -194.332]}
         rotation={[0, 1.166, 0]}
         scale={1.739}
-        onPointerEnter={handleHoverEnter}
-        onPointerLeave={handleHoverLeave}
-        onClick={() => {
-          if (floor === 6) {
-            store.previousPoistion = {
-              x: camera.position.x,
-              y: camera.position.y,
-              z: camera.position.z,
-              rotateY: camera.rotation.y,
-            };
-            store.isPopupActive = true;
-            moveAnimation(-49, -29.4, undefined, 1.4, Math.PI * 2.3);
-          }
-          store.popupDataValue = 6;
-        }}
+        floorNumber={6}
+        popupValue={6}
+        moveAnimationParams={[-49, -29.4, undefined, 1.4, Math.PI * 2.3]}
       >
         <mesh geometry={nodes.Text112.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -1215,7 +916,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text112_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
+      </Label>
     </group>
   );
 }

@@ -17,21 +17,6 @@ export const EingangCustomer = ({
         <>
           <div className="popup_headside">
             <h2>AUSZEICHNUNGEN</h2>
-            {isNotCusomer ? (
-              <a
-                target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
-              >
-                <img src="/icons/pdf.png" alt="icon" />
-              </a>
-            ) : (
-              <a
-                target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
-              >
-                <img src="/icons/pdf.png" alt="icon" />
-              </a>
-            )}
           </div>
           <div className="popup_box">
             <h3>
@@ -54,6 +39,11 @@ export const EingangCustomer = ({
                 SWM familyNET Prädikat (familienbewusstes Unternehmen 2017/2021)
               </li>
             </ul>
+            <div className="popup_images">
+              <img src="/company-logo/0.png" alt="logo" />
+              <img src="/company-logo/1.png" alt="logo" />
+              <img src="/company-logo/2.png" alt="logo" />
+            </div>
             <h3>Teilnahmen und Mitgliedschaften</h3>
             <ul>
               <li>Unterzeichner der WIN Charta</li>
@@ -331,22 +321,6 @@ export const EingangCustomer = ({
         <>
           <div className="popup_headside">
             <h2>INFOMATERIAL</h2>
-
-            {isNotCusomer ? (
-              <a
-                target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
-              >
-                <img src="/icons/pdf.png" alt="icon" />
-              </a>
-            ) : (
-              <a
-                target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
-              >
-                <img src="/icons/pdf.png" alt="icon" />
-              </a>
-            )}
           </div>
           <div className="popup_box">
             <p>
@@ -354,7 +328,6 @@ export const EingangCustomer = ({
               mehr über unsere innovativen Lösungen undTechnologien in den
               Bereichen:
             </p>
-
             <ul>
               <li>Kunststofftechnik</li>
               <li>Fertigung</li>
@@ -365,6 +338,69 @@ export const EingangCustomer = ({
               Entdecken Sie unsere Expertise und maßgeschneiderten Lösungen für
               Ihre Anforderungen.
             </p>
+            <h3>Informaterial zum download</h3>
+            <div className="popup_grid">
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Infomaterial/CoCo.pdf"
+              >
+                CoCo.pdf
+              </a>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Infomaterial/Kunststofftechnik.pdf"
+              >
+                Kunststofftechnik.pdf
+              </a>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Infomaterial/Maschinenliste.pdf"
+              >
+                Maschinenliste.pdf
+              </a>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Infomaterial/modularesHHG.pdf"
+              >
+                ModularesHHG.pdf
+              </a>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Infomaterial/Komplettbearbeitung.pdf"
+              >
+                Komplettbearbeitung.pdf
+              </a>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Infomaterial/MuLedCon_Regalmanager.pdf"
+              >
+                MuLedCon_Regalmanager.pdf
+              </a>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Infomaterial/MuCl.pdf"
+              >
+                MuCl.pdf
+              </a>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Infomaterial/Messen_und_pruefen.pdf"
+              >
+                Messen & Prüfen.pdf
+              </a>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Infomaterial/Montieren_und_Zusammenbauen.pdf"
+              >
+                Montieren & Zusammenbauen.pdf
+              </a>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Infomaterial/Transportieren_und_Handling.pdf"
+              >
+                Transportieren & Handling.pdf Verkettungen.pdf
+              </a>
+            </div>
           </div>
         </>
       );

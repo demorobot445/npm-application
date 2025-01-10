@@ -37,6 +37,7 @@ const OrbitCamera = ({
         0.05;
     }
   });
+
   // useEffect(() => {
   //   const pane = new Pane();
 

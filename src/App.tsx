@@ -1,4 +1,4 @@
-import { AdaptiveDpr, Loader } from "@react-three/drei";
+import { AdaptiveDpr, Box, Loader } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
 import OrbitCamera from "./components/controls/OrbitCamera";
@@ -10,7 +10,7 @@ import { Spawnpoint } from "./components/models/Spawnpoint";
 import { Labels } from "./components/models/Labels";
 import Navigator from "./components/html/Navigator";
 import Popup from "./components/html/Popup";
-import { PerspectiveCamera as PC } from "three";
+import { DoubleSide, PerspectiveCamera as PC } from "three";
 import Maschinenbau from "./components/models/Maschinenbau";
 import Fertigung from "./components/models/Fertigung";
 import Cafeteria from "./components/models/Cafeteria";
@@ -63,6 +63,8 @@ function App() {
   const secondCameraRef = useRef<PC>(null);
   const fakeLoaderRef = useRef<HTMLDivElement>(null);
 
+  console.log(floor);
+
   // POINTER EVENT BOTH USE IN MOUSE AND TOUCH CONTROLS
 
   const handlePointerDown = (clientX: number) => {
@@ -81,39 +83,41 @@ function App() {
     setLastX(clientX);
 
     const rotationSpeed = 0.002;
-    const secondCameraRotationScale = 0.1; // Scale factor for the second camera rotation
+    const secondCameraRotationScale = 0.1; // Scale factor for second camera rotation
 
-    if (
-      floor === 7 ||
-      floor === 4.1 ||
-      floor === 4.2 ||
-      floor === 3.1 ||
-      floor === 3.2
-    ) {
-      const newRotationY = targetRotationY - deltaX * rotationSpeed;
+    // Mapping for floor-specific rotation limits
+    const rotationLimits: Record<
+      number | string,
+      { min: number; max: number }
+    > = {
+      1: { min: Math.PI * 0.2, max: Math.PI * 0.8 },
+      1.1: { min: Math.PI * 1.4, max: Math.PI * 1.8 },
+      2: { min: Math.PI * 0.4, max: Math.PI * 0.8 },
+      3: { min: Math.PI * 0, max: Math.PI * 1 },
+      3.1: { min: Math.PI * 1.7, max: Math.PI * 1.8 },
+      3.2: { min: Math.PI * 1.7, max: Math.PI * 1.8 },
+      4: { min: Math.PI * 0.2, max: Math.PI * 0.5 },
+      4.1: { min: Math.PI * 1.7, max: Math.PI * 1.8 },
+      4.2: { min: Math.PI * 1.7, max: Math.PI * 1.8 },
+      5: { min: Math.PI * 0.6, max: Math.PI * 0.9 },
+      7: { min: Math.PI * 1.7, max: Math.PI * 1.8 },
+    };
 
-      // Define the min and max rotation limits for cameraRef
-      const minRotationY = Math.PI * 1.7;
-      const maxRotationY = Math.PI * 1.8;
+    // Cast floor to a valid key in rotationLimits (number or string)
+    const { min, max } = rotationLimits[floor as number] || {
+      min: -Infinity,
+      max: Infinity,
+    };
 
-      // Clamp the newRotationY to be within the min and max limits
-      setTargetRotationY(
-        Math.max(minRotationY, Math.min(maxRotationY, newRotationY))
-      );
+    const newTargetRotationY = targetRotationY - deltaX * rotationSpeed;
 
-      // Apply scaled rotation to secondCameraRef
-      if (secondCameraRef.current) {
-        secondCameraRef.current.rotation.y -=
-          deltaX * rotationSpeed * secondCameraRotationScale;
-      }
-    } else {
-      setTargetRotationY((prev) => prev - deltaX * rotationSpeed);
+    // Clamp the new target rotation Y within the limits
+    setTargetRotationY(Math.max(min, Math.min(max, newTargetRotationY)));
 
-      // Apply scaled rotation to secondCameraRef
-      if (secondCameraRef.current) {
-        secondCameraRef.current.rotation.y -=
-          deltaX * rotationSpeed * secondCameraRotationScale;
-      }
+    // Apply scaled rotation to the second camera
+    if (secondCameraRef.current) {
+      secondCameraRef.current.rotation.y -=
+        deltaX * rotationSpeed * secondCameraRotationScale;
     }
   };
 
@@ -187,7 +191,7 @@ function App() {
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
-        <color attach="background" args={["#2e69a6"]} />
+        <fog attach="fog" args={[0x0c69ab, 100, 600]} />
         <AdaptiveDpr />
         <OrbitCamera
           secondCameraRef={secondCameraRef}
@@ -197,6 +201,9 @@ function App() {
           fakeLoaderRef={fakeLoaderRef}
         />
         <group position={[-140, 0, 160]}>
+          <Box args={[1000, 1000, 1000]}>
+            <meshBasicMaterial side={DoubleSide} color={"#2e69a6"} />
+          </Box>
           <Suspense fallback={null}>
             <ConditionalRender />
             <WindowsAndDoors />

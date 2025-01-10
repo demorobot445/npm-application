@@ -416,12 +416,12 @@ export function Doors(props: JSX.IntrinsicElements["group"]) {
           position={[144.139, -0.866, -138.363]}
           rotation={[0, -Math.PI / 2, 0]}
           scale={[2.878, 3.732, 2.205]}
-          onPointerEnter={handleHoverEnter}
-          onPointerLeave={handleHoverLeave}
-          onClick={() => {
-            if (floor === 5) moveAnimation(6.4, 19.9, 5.2, 0.5, 1.38);
-            else moveAnimation(2.2, 14.2, 5, 3.3, 2.04);
-          }}
+          // onPointerEnter={handleHoverEnter}
+          // onPointerLeave={handleHoverLeave}
+          // onClick={() => {
+          //   if (floor === 5) moveAnimation(6.4, 19.9, 5.2, 0.5, 1.38);
+          //   else moveAnimation(2.2, 14.2, 5, 3.3, 2.04);
+          // }}
         >
           <group
             name="Plane015_1"

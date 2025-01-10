@@ -38,6 +38,8 @@ const Roofs = () => {
         }
       }
     });
+    scene.getObjectByName("Cube007_1")!.position.x = -0.01;
+    scene.getObjectByName("roof005")!.position.y = 8.16;
   }, [scene]);
 
   return <primitive object={scene as unknown as Object3D} />;

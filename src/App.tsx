@@ -32,21 +32,25 @@ const ConditionalRender = () => {
       return <Entry />;
 
     case 2:
+    case 2.1:
       return <Cafeteria />;
 
     case 3:
     case 3.1:
     case 3.2:
+    case 3.3:
       return <Fertigung />;
 
     case 4:
     case 4.1:
     case 4.2:
+    case 4.3:
       return <Maschinenbau />;
 
     case 5:
     case 5.1:
     case 5.2:
+    case 5.3:
       return <Plastics />;
 
     case 6:
@@ -94,7 +98,7 @@ function App() {
       3: { min: Math.PI * 0, max: Math.PI * 1 },
       3.1: { min: Math.PI * 1.7, max: Math.PI * 1.8 },
       3.2: { min: Math.PI * 1.7, max: Math.PI * 1.8 },
-      4: { min: Math.PI * 0.2, max: Math.PI * 0.5 },
+      4: { min: -Math.PI * 0.2, max: Math.PI * 0.3 },
       4.1: { min: Math.PI * 1.7, max: Math.PI * 1.8 },
       4.2: { min: Math.PI * 1.7, max: Math.PI * 1.8 },
       5: { min: Math.PI * 0.6, max: Math.PI * 0.9 },
@@ -114,8 +118,16 @@ function App() {
 
     // Apply scaled rotation to the second camera
     if (secondCameraRef.current) {
+      const minRotationY = Math.PI * 0.3;
+      const maxRotationY = Math.PI * 0.45;
+
       secondCameraRef.current.rotation.y -=
         deltaX * rotationSpeed * secondCameraRotationScale;
+
+      secondCameraRef.current.rotation.y = Math.max(
+        minRotationY,
+        Math.min(maxRotationY, secondCameraRef.current.rotation.y)
+      );
     }
   };
 

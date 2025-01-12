@@ -18,7 +18,7 @@ const Navigator = () => {
     if (floor === 3.1 || floor === 3.2) {
       moveAnimation(0.1, 1.7, 3, 1.7, Math.PI * 0.4);
     } else if (floor === 4.1 || floor === 4.2) {
-      moveAnimation(2.8, -15, 4, 3.2, 0.84);
+      moveAnimation(-1.5, -12.5, 4, 2.8, 0.64);
     } else if (floor === 5.2) {
       moveAnimation(2.2, 14.2, 5, 3.3, 2.04);
     } else if (floor === 1.1) {
@@ -83,7 +83,7 @@ const Navigator = () => {
         <button
           onClick={() => {
             store.isPopupActive = false;
-            moveAnimation(2.8, -15, 4, 3.2, 0.84);
+            moveAnimation(-1.5, -12.5, 4, 2.8, 0.64);
           }}
         >
           Maschinenbau
@@ -91,7 +91,7 @@ const Navigator = () => {
         <button
           onClick={() => {
             store.isPopupActive = false;
-            moveAnimation(19, 0.7, 1.1, 4, -0.36);
+            moveAnimation(18.2, 0.7, 1.1, 3.7, Math.PI * 1.7);
           }}
         >
           Verwaltung & GF

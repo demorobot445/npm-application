@@ -85,21 +85,36 @@ const OrbitCamera = ({
         rotateY?: number
       ) => {
         if (floor) {
-          gsap
-            .timeline()
-            .to(cameraRef.current!.position, {
-              x,
-              y: upper ? upper : 1,
-              z,
-              duration: 0.8,
-            })
-            .to(fakeLoaderRef.current, { opacity: 1 }, "<")
-            .call(() => {
-              if (isMainCameraActive === false) setIsMainCameraActive(true);
-              store.floor = floor;
-              setTargetRotationY((prev) => (rotateY ? rotateY : prev));
-            })
-            .to(fakeLoaderRef.current, { opacity: 0 }, ">0.4");
+          if (floor === 3.3 || floor === 4.3 || floor === 5.3) {
+            gsap
+              .timeline()
+              .call(() => {
+                setTargetRotationY((prev) => (rotateY ? rotateY : prev));
+                store.floor = floor;
+              })
+              .to(cameraRef.current!.position, {
+                x,
+                z,
+                duration: 0.8,
+                y: upper ? upper : 1,
+              });
+          } else {
+            gsap
+              .timeline()
+              .to(cameraRef.current!.position, {
+                x,
+                y: upper ? upper : 1,
+                z,
+                duration: 0.8,
+              })
+              .to(fakeLoaderRef.current, { opacity: 1 }, "<")
+              .call(() => {
+                if (isMainCameraActive === false) setIsMainCameraActive(true);
+                store.floor = floor;
+                setTargetRotationY((prev) => (rotateY ? rotateY : prev));
+              })
+              .to(fakeLoaderRef.current, { opacity: 0 }, ">0.4");
+          }
         } else {
           gsap
             .timeline()

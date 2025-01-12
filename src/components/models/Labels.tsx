@@ -124,6 +124,7 @@ type Props = {
   rotation: [number, number, number];
   scale?: number;
   floorNumber: number;
+  floorSecondNumber?: number;
   popupValue: number;
   moveAnimationParams: [number, number, number | undefined, number, number];
   children: React.ReactNode;
@@ -134,6 +135,7 @@ const Label: React.FC<Props> = ({
   rotation,
   scale = 1,
   floorNumber,
+  floorSecondNumber,
   popupValue,
   moveAnimationParams,
   children,
@@ -178,7 +180,7 @@ const Label: React.FC<Props> = ({
       onPointerEnter={handleHoverEnter}
       onPointerLeave={handleHoverLeave}
       onClick={() => {
-        if (floor === floorNumber) {
+        if (floor === floorNumber || floor === floorSecondNumber) {
           store.previousPoistion = {
             x: camera.position.x,
             y: camera.position.y,
@@ -284,6 +286,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
         rotation={[0, 0.688, 0]}
         scale={1.097}
         floorNumber={3}
+        floorSecondNumber={3.3}
         popupValue={0}
         moveAnimationParams={[-10.8, -0.8, undefined, 0.7, 0.41]}
       >
@@ -304,6 +307,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
         position={[118.136, 2.254, -162.839]}
         rotation={[0, 0.968, 0]}
         floorNumber={3}
+        floorSecondNumber={3.3}
         popupValue={5}
         moveAnimationParams={[-21.2, -1.7, undefined, 0.2, -0.38]}
       >
@@ -325,6 +329,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
         rotation={[0, Math.PI / 2, 0]}
         scale={0.426}
         floorNumber={3}
+        floorSecondNumber={3.3}
         popupValue={2}
         moveAnimationParams={[-6.3, 4.3, undefined, 0.01, 2.13]}
       >
@@ -346,6 +351,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
         rotation={[0, 0.127, 0]}
         scale={1.054}
         floorNumber={3}
+        floorSecondNumber={3.3}
         popupValue={1}
         moveAnimationParams={[-4.7, -11.5, undefined, 1, 3.6]}
       >
@@ -366,6 +372,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
         position={[128.62, 2.256, -149.965]}
         rotation={[0, Math.PI / 2, 0]}
         floorNumber={3}
+        floorSecondNumber={3.3}
         popupValue={4}
         moveAnimationParams={[-7, 9.1, undefined, 1, 1.58]}
       >
@@ -386,6 +393,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
         position={[136.702, 1.901, -154.278]}
         rotation={[0, -0.767, 0]}
         floorNumber={3}
+        floorSecondNumber={3.3}
         popupValue={3}
         moveAnimationParams={[-5.2, 8.1, undefined, 1.3, -0.63]}
       >
@@ -449,6 +457,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
         rotation={[0, -1.103, 0]}
         scale={1.399}
         floorNumber={5}
+        floorSecondNumber={5.3}
         popupValue={17}
         moveAnimationParams={[-7.8, 20.9, undefined, 1.3, 1.93]}
       >
@@ -466,10 +475,11 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
       </Label>
 
       <Label
-        position={[140, 1.6, -137]}
-        rotation={[0, 1.103, 0]}
+        position={[134, 1.6, -137]}
+        rotation={[0, Math.PI * 0.65, 0]}
         scale={1.399}
         floorNumber={5}
+        floorSecondNumber={5.3}
         popupValue={17}
         moveAnimationParams={[6.4, 19.9, undefined, 0.5, 1.38]}
       >
@@ -509,6 +519,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
         rotation={[0, 1.322, 0]}
         scale={1.141}
         floorNumber={4}
+        floorSecondNumber={4.3}
         popupValue={21}
         moveAnimationParams={[-24.3, -21.9, undefined, 0.5, -1.94]}
       >
@@ -530,6 +541,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
         rotation={[0, 0.773, 0]}
         scale={1.415}
         floorNumber={4}
+        floorSecondNumber={4.3}
         popupValue={20}
         moveAnimationParams={[-19.6, -21.5, undefined, 0.5, -1.8]}
       >
@@ -572,6 +584,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
         rotation={[0, 0.406, 0]}
         scale={1.092}
         floorNumber={4}
+        floorSecondNumber={4.3}
         popupValue={18}
         moveAnimationParams={[-12.9, -20.9, undefined, 1, -0.55]}
       >
@@ -593,6 +606,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
         rotation={[0, 0.833, 0]}
         scale={1.047}
         floorNumber={4}
+        floorSecondNumber={4.3}
         popupValue={19}
         moveAnimationParams={[0.8, -22.9, undefined, 1.2, 1.5]}
       >
@@ -655,6 +669,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
         rotation={[0, 1.295, 0]}
         scale={1.128}
         floorNumber={4}
+        floorSecondNumber={4.3}
         popupValue={22}
         moveAnimationParams={[-11.3, -18.2, undefined, 1, -1]}
       >

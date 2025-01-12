@@ -53,6 +53,7 @@ const Plastics = () => {
   }, [mixer, isAnimationPlaying]);
 
   useEffect(() => {
+    (materials["weiss.001"] as MeshStandardMaterial).color.set("#ada795");
     (materials[""] as MeshStandardMaterial).color.set("#61637B");
     scene.traverse((child) => {
       if ((child as any).isMesh) {

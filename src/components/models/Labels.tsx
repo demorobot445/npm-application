@@ -119,6 +119,19 @@ type GLTFResult = GLTF & {
   };
 };
 
+type GLTFResultLabel = GLTF & {
+  nodes: {
+    Text017: THREE.Mesh;
+    Text017_1: THREE.Mesh;
+    Text017_2: THREE.Mesh;
+  };
+  materials: {
+    weiss: THREE.MeshStandardMaterial;
+    hgrau: THREE.MeshStandardMaterial;
+    ["weiss.leuchten"]: THREE.MeshStandardMaterial;
+  };
+};
+
 type Props = {
   position: [number, number, number];
   rotation: [number, number, number];
@@ -200,9 +213,32 @@ const Label: React.FC<Props> = ({
 
 export function Labels(props: JSX.IntrinsicElements["group"]) {
   const { nodes, materials } = useGLTF("/labels.glb") as GLTFResult;
+  const { nodes: newNodes, materials: newMaterials } = useGLTF(
+    "/kunststoff-label.glb"
+  ) as GLTFResultLabel;
 
   return (
     <group name="main-group" {...props} dispose={null}>
+      <Label
+        position={[134.638, 1.8, -138.1]}
+        rotation={[Math.PI / 2, 0, Math.PI / 0.74]}
+        floorNumber={5}
+        floorSecondNumber={5.3}
+        popupValue={17}
+        moveAnimationParams={[6.4, 19.9, undefined, 0.5, 1.38]}
+      >
+        <mesh geometry={newNodes.Text017.geometry}>
+          <meshBasicMaterial color={materials["weiss.002"].color} />
+        </mesh>
+        <mesh
+          geometry={newNodes.Text017_1.geometry}
+          material={newMaterials.hgrau}
+        />
+        <mesh
+          geometry={newNodes.Text017_2.geometry}
+          material={newMaterials["weiss.leuchten"]}
+        />
+      </Label>
       <Label
         floorNumber={1}
         position={[159.953, 1.182, -161.979]}
@@ -241,6 +277,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           material={materials["weiss.leuchten"]}
         />
       </Label>
+
       <Label
         position={[159.945, 1.182, -164.268]}
         rotation={[0, Math.PI / 2, 0]}
@@ -474,7 +511,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
         />
       </Label>
 
-      <Label
+      {/* <Label
         position={[134, 1.6, -137]}
         rotation={[0, Math.PI * 0.65, 0]}
         scale={1.399}
@@ -494,9 +531,9 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Cube144_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </Label>
+      </Label> */}
 
-      <group
+      {/* <group
         position={[108.502, 3.516, -144.696]}
         rotation={[0, -0.719, 0]}
         scale={1.95}
@@ -512,7 +549,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
           geometry={nodes.Text068_2.geometry}
           material={materials["weiss.leuchten"]}
         />
-      </group>
+      </group> */}
 
       <Label
         position={[124, 1.28, -178.316]}

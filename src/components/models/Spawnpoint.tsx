@@ -34,6 +34,13 @@ export function Spawnpoint(props: JSX.IntrinsicElements["group"]) {
           onClick={(e) => moveAnimation(e.point.x, e.point.z, 3.3)}
         />
         <Spawn
+          name="spr006_0"
+          position={[144, 1.742, -160.4]}
+          onPointerEnter={handleHoverEnter}
+          onPointerLeave={handleHoverLeave}
+          onClick={() => moveAnimation(0.1, 1.7, 3, 1.7, Math.PI * 0.4)}
+        />
+        <Spawn
           name="spr007"
           position={[116.537, -0.838, -153.94]}
           onPointerEnter={handleHoverEnter}
@@ -103,16 +110,23 @@ export function Spawnpoint(props: JSX.IntrinsicElements["group"]) {
           onPointerLeave={handleHoverLeave}
           onClick={(e) => moveAnimation(e.point.x, e.point.z, 5.3)}
         />
-        <Spawn
+        {/* <Spawn
           name="sprspg004"
           position={[142.939, -0.815, -140.373]}
           onPointerEnter={handleHoverEnter}
           onPointerLeave={handleHoverLeave}
           onClick={(e) => moveAnimation(e.point.x, e.point.z, 5.3)}
-        />
+        /> */}
         <Spawn
           name="spr001"
           position={[134.179, -0.798, -177.45]}
+          onPointerEnter={handleHoverEnter}
+          onPointerLeave={handleHoverLeave}
+          onClick={(e) => moveAnimation(e.point.x, e.point.z, 4.3)}
+        />
+        <Spawn
+          name="spr001_0"
+          position={[133, -0.798, -179.706]}
           onPointerEnter={handleHoverEnter}
           onPointerLeave={handleHoverLeave}
           onClick={(e) => moveAnimation(e.point.x, e.point.z, 4.3)}

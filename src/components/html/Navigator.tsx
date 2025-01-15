@@ -1,6 +1,5 @@
 import { useSnapshot } from "valtio";
 import { store } from "../../store";
-``;
 
 const Navigator = () => {
   const { moveAnimation, floor, reverseEntryAnimation, isPopupActive } =

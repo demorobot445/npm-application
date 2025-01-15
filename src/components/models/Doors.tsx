@@ -244,6 +244,50 @@ export function Doors(props: JSX.IntrinsicElements["group"]) {
           </group>
         </group>
         <group
+          name="durchcafeteria002"
+          position={[143.45, 1.725, -172]}
+          rotation={[0, Math.PI / 1, 0]}
+          scale={[2.8, 3.4, 4.1]}
+          onPointerEnter={handleHoverEnter}
+          onPointerLeave={handleHoverLeave}
+          onClick={() => {
+            if (floor === 3.1) moveAnimation(3.5, -12.6, 4.2, 3.7, 5.67);
+          }}
+        >
+          <group
+            name="Plane017_2"
+            position={[-0.031, 0, 0]}
+            scale={[1, 1, 0.643]}
+          >
+            <mesh
+              name="Plane033"
+              geometry={nodes.Plane033.geometry}
+              material={materials.port01}
+            />
+            <mesh
+              name="Plane033_1"
+              geometry={nodes.Plane033_1.geometry}
+              material={materials["schwarz.016"]}
+            />
+            <group
+              name="Plane016_2"
+              position={[0.15, 0.002, 0.001]}
+              rotation={[0, -0.391, 0]}
+            >
+              <mesh
+                name="Plane049"
+                geometry={nodes.Plane049.geometry}
+                material={materials.port01}
+              />
+              <mesh
+                name="Plane049_1"
+                geometry={nodes.Plane049_1.geometry}
+                material={materials["schwarz.016"]}
+              />
+            </group>
+          </group>
+        </group>
+        <group
           name="durchcafeteria"
           position={[147.548, -0.835, -160.064]}
           rotation={[0, Math.PI / 2, 0]}
@@ -290,9 +334,15 @@ export function Doors(props: JSX.IntrinsicElements["group"]) {
         </group>
         <group
           name="durchcafeteria001"
-          position={[148.8, 1.785, -160.484]}
-          rotation={[0, Math.PI / 2, 0]}
-          scale={[4.034, 4.332, 3.489]}
+          position={[143.641, 1.785, -162.047]}
+          rotation={[0, Math.PI / 1, 0]}
+          scale={3.25}
+          onPointerEnter={handleHoverEnter}
+          onPointerLeave={handleHoverLeave}
+          onClick={() => {
+            if (floor === 3 || floor === 3.4)
+              moveAnimation(3.4, -2.5, 3.1, 3.6, Math.PI * 1.7);
+          }}
         >
           <group
             name="Plane017_4"
@@ -422,12 +472,15 @@ export function Doors(props: JSX.IntrinsicElements["group"]) {
           position={[144.139, -0.866, -138.363]}
           rotation={[0, -Math.PI / 2, 0]}
           scale={[2.878, 3.732, 2.205]}
-          // onPointerEnter={handleHoverEnter}
-          // onPointerLeave={handleHoverLeave}
-          // onClick={() => {
-          //   if (floor === 5) moveAnimation(6.4, 19.9, 5.2, 0.5, 1.38);
-          //   else moveAnimation(2.2, 14.2, 5, 3.3, 2.04);
-          // }}
+          onPointerEnter={handleHoverEnter}
+          onPointerLeave={handleHoverLeave}
+          onClick={() => {
+            if (floor === 5 || floor === 5.3) {
+              store.isPopupActive = true;
+              store.popupDataValue = 17;
+              moveAnimation(6.4, 19.9, undefined, 0.5, 1.38);
+            }
+          }}
         >
           <group
             name="Plane015_1"
@@ -469,8 +522,9 @@ export function Doors(props: JSX.IntrinsicElements["group"]) {
           scale={[6.308, 5.192, 5.192]}
           onPointerEnter={handleHoverEnter}
           onPointerLeave={handleHoverLeave}
-          onClick={(e) => {
-            if (floor === 5) moveAnimation(e.point.x - 2, e.point.z, 5.1);
+          onClick={() => {
+            if (floor === 5 || floor === 5.3)
+              moveAnimation(-38.3, 22.9, 5.4, 1.3, -0.92);
           }}
         >
           <group
@@ -513,8 +567,8 @@ export function Doors(props: JSX.IntrinsicElements["group"]) {
           scale={[6.248, 5.216, 5.216]}
           onPointerEnter={handleHoverEnter}
           onPointerLeave={handleHoverLeave}
-          onClick={(e) => {
-            if (floor === 5.1) moveAnimation(e.point.x + 2, e.point.z, 5);
+          onClick={() => {
+            if (floor === 5.4) moveAnimation(2.2, 14.2, 5, 3.3, 2.04);
           }}
         >
           <group
@@ -556,8 +610,9 @@ export function Doors(props: JSX.IntrinsicElements["group"]) {
           scale={[2.878, 3.406, 2.205]}
           onPointerEnter={handleHoverEnter}
           onPointerLeave={handleHoverLeave}
-          onClick={(e) => {
-            if (floor === 5) moveAnimation(e.point.x, e.point.z - 1, 3);
+          onClick={() => {
+            if (floor === 5 || floor === 5.3)
+              moveAnimation(0.1, 1.7, 3, 1.7, Math.PI * 0.4);
           }}
         >
           <group
@@ -781,9 +836,9 @@ export function Doors(props: JSX.IntrinsicElements["group"]) {
           scale={[2.464, 3.34, 3.375]}
           onPointerEnter={handleHoverEnter}
           onPointerLeave={handleHoverLeave}
-          onClick={(e) => {
+          onClick={() => {
             if (floor === 4 || floor === 4.3)
-              moveAnimation(e.point.x, e.point.z + 1, 3);
+              moveAnimation(0.1, 1.7, 3, 1.7, Math.PI * 0.4);
           }}
         >
           <group
@@ -826,9 +881,9 @@ export function Doors(props: JSX.IntrinsicElements["group"]) {
           scale={[2.749, 3.281, 2.518]}
           onPointerEnter={handleHoverEnter}
           onPointerLeave={handleHoverLeave}
-          onClick={(e) => {
+          onClick={() => {
             if (floor === 4 || floor === 4.3)
-              moveAnimation(e.point.x, e.point.z + 1, 3);
+              moveAnimation(0.1, 1.7, 3, 1.7, Math.PI * 0.4);
           }}
         >
           <group
@@ -1052,7 +1107,7 @@ export function Doors(props: JSX.IntrinsicElements["group"]) {
           onPointerLeave={handleHoverLeave}
           onClick={() => {
             if (floor === 2 || floor === 2.1)
-              moveAnimation(0.1, 1.7, 3, 1.7, Math.PI * 0.7);
+              moveAnimation(8.5, 1.3, 3.4, 3.3, 0.87);
           }}
         >
           <group

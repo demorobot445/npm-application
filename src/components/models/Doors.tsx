@@ -340,7 +340,7 @@ export function Doors(props: JSX.IntrinsicElements["group"]) {
           onPointerEnter={handleHoverEnter}
           onPointerLeave={handleHoverLeave}
           onClick={() => {
-            if (floor === 3 || floor === 3.4)
+            if (floor === 3 || floor === 3.3 || floor === 3.4)
               moveAnimation(3.4, -2.5, 3.1, 3.6, Math.PI * 1.7);
           }}
         >
@@ -515,7 +515,7 @@ export function Doors(props: JSX.IntrinsicElements["group"]) {
             </group>
           </group>
         </group>
-        <group
+        {/* <group
           name="durchgang_lager"
           position={[113.516, -0.802, -142.45]}
           rotation={[0, 1.571, 0]}
@@ -603,7 +603,7 @@ export function Doors(props: JSX.IntrinsicElements["group"]) {
               />
             </group>
           </group>
-        </group>
+        </group> */}
         <group
           name="durchgang_fert"
           position={[143.648, -0.849, -147.037]}
@@ -1189,7 +1189,8 @@ export function Doors(props: JSX.IntrinsicElements["group"]) {
           onPointerEnter={handleHoverEnter}
           onPointerLeave={handleHoverLeave}
           onClick={(e) => {
-            if (floor === 7) moveAnimation(e.point.x, e.point.z - 2, 6);
+            if (floor === 7)
+              moveAnimation(e.point.x, e.point.z - 2, 6, 1, Math.PI * 0.1);
           }}
         >
           <group
@@ -1232,8 +1233,8 @@ export function Doors(props: JSX.IntrinsicElements["group"]) {
           scale={[7.651, 6.106, 6.106]}
           onPointerEnter={handleHoverEnter}
           onPointerLeave={handleHoverLeave}
-          onClick={(e) => {
-            if (floor === 7) moveAnimation(e.point.x + 1.4, e.point.z, 4);
+          onClick={() => {
+            if (floor === 7) moveAnimation(-1.5, -12.5, 4, 2.8, 0.64);
           }}
         >
           <group
@@ -1276,8 +1277,8 @@ export function Doors(props: JSX.IntrinsicElements["group"]) {
           scale={[7.651, 6.106, 6.106]}
           onPointerEnter={handleHoverEnter}
           onPointerLeave={handleHoverLeave}
-          onClick={(e) => {
-            if (floor === 7) moveAnimation(e.point.x + 1.4, e.point.z, 3);
+          onClick={() => {
+            if (floor === 7) moveAnimation(0.1, 1.7, 3, 1.7, Math.PI * 0.4);
           }}
         >
           <group

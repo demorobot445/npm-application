@@ -51,7 +51,15 @@ main {
     color: #fff;
     background-color: #0c69ab;
     border: none;
+    border-radius: 999px;
+    border: 2px solid #fff;
     cursor: pointer;
+    text-transform: uppercase;
+    &[data-active="true"] {
+      color: #0c69ab;
+      background-color: #fff;
+      border: 2px solid #0c69ab;
+    }
   }
 }
 
@@ -186,7 +194,7 @@ main {
       max-height: calc(100vh - 420px);
     }
     @media screen and (min-width: 1650px) {
-      max-height: calc(100vh - 486px);
+      max-height: calc(100vh - 524px);
     }
 
     p,

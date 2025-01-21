@@ -66,13 +66,13 @@ export const MaschineCustomer = ({
     case 19:
       store.banner = {
         type: "iframe",
-        src: "https://player.vimeo.com/video/1025135498?h=2f9114bebd&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+        src: "https://player.vimeo.com/video/1017906379?h=8ac4639c6b&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       };
-
       return (
         <>
           <div className="popup_headside">
             <h2>MONTAGE</h2>
+
             {isNotCusomer ? (
               <a target="_blank" href="https://www.nmh.de/karriere/">
                 <img src="/icons/job.png" alt="icon" />
@@ -80,7 +80,7 @@ export const MaschineCustomer = ({
             ) : (
               <a
                 target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/005_NMH_Flyer_Prüftechnik.pdf"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/012_NMH_Flyer_Montagetechnik.pdf"
               >
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
@@ -88,32 +88,18 @@ export const MaschineCustomer = ({
           </div>
           <div className="popup_box">
             <p>
-              Alexander stellt Ihnen die mechanische Konstruktion vor. Entdecken
-              Sie unsere Stärken und erfahren Sie, was uns Einzigartig macht:
+              Patrick gibt dir Einblicke in die mechanische Montage. Entdecke
+              seine abwechslungsreichen Aufgaben:
             </p>
-            <h3>DIE NMH DECKT EIN GROSSES SPEKTRUM AB:</h3>
             <ul>
               <li>
-                Mechanische, elektrische, pneumatische und hydraulische Montage
+                Eigenverantwortliche Montage und Inbetriebnahme nach Zeichnung,
+                Stücklisten und 3D-PDF
               </li>
+              <li>Internationale Montageeinsätze</li>
+              <li>Installation von Pneumatik und Hydraulik</li>
+              <li>Terminverantwortung</li>
             </ul>
-            <h3>SONDERMASCHINEN, DIE WIR FÜR SIE FERTIGEN KÖNNEN:</h3>
-            <ul>
-              <li>Große Verkettungsanlagen</li>
-              <li>Kleine Standalone-Anlagen</li>
-              <li>Präzise Messanlagen</li>
-              <li>Roboterzellen</li>
-              <li>Greifsysteme</li>
-              <li>Lastaufnahmemittel</li>
-              <li>Decken- und bodengeführte Manipulatoren</li>
-            </ul>
-            <h3>ABLAUF VON KUNDENPROJEKTEN:</h3>
-            <p>
-              Sobald die Konstruktionspläne vorliegen, starten wir den Prozess
-              und montieren die Anlage Ab diesem Zeitpunkt sind Kunden jederzeit
-              herzlich willkommen, uns zu besuchen. Wir freuen uns auf Ihre
-              Anfrage!
-            </p>
           </div>
         </>
       );
@@ -154,18 +140,25 @@ export const MaschineCustomer = ({
             <ul>
               <li>Steigerung der Qualität und Arbeitsergonomie</li>
               <li>Vermeidung von Überlastung der Mitarbeiter</li>
-              <li>ReduktionvonHerstellungskostendurch</li>
-              optimierte Abläufe
-              <li>Förderung ressourcenschonender Prozesse und</li>
-              Reduktion von Rückenproblemen
-              <li>Über 1000 Variationen zur individuellen Anpassung</li>
-              an Ihre Anforderungen
+              <li>ReduktionvonHerstellungskostendurch optimierte Abläufe</li>
+
+              <li>
+                Förderung ressourcenschonender Prozesse und Reduktion von
+                Rückenproblemen
+              </li>
+
+              <li>
+                Über 1000 Variationen zur individuellen Anpassung an Ihre
+                Anforderungen
+              </li>
             </ul>
             <h3>BEISPIEL AUTOMOBIL:</h3>
-            <li>
-              Fügen und Handhabung von Fahrzeugfront, Fahrzeugheck, Reifen,
-              Cockpit, Sitzen usw.
-            </li>
+            <ul>
+              <li>
+                Fügen und Handhabung von Fahrzeugfront, Fahrzeugheck, Reifen,
+                Cockpit, Sitzen usw.
+              </li>
+            </ul>
             <p>
               Wir übernehmen die komplette Konfiguration des Geräts und bieten
               individuelle Beratung für eine optimale Lösung.
@@ -296,12 +289,12 @@ export const MaschineNotCustomer = ({
     case 18:
       store.banner = {
         type: "iframe",
-        src: "https://player.vimeo.com/video/1017906379?h=8ac4639c6b&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+        src: "https://player.vimeo.com/video/1017917628?h=d0678dd22f&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       };
       return (
         <>
           <div className="popup_headside">
-            <h2>MONTAGE</h2>
+            <h2>PROJEKTLEITER</h2>
 
             {isNotCusomer ? (
               <a target="_blank" href="https://www.nmh.de/karriere/">
@@ -310,7 +303,7 @@ export const MaschineNotCustomer = ({
             ) : (
               <a
                 target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/012_NMH_Flyer_Montagetechnik.pdf"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
               >
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
@@ -318,17 +311,18 @@ export const MaschineNotCustomer = ({
           </div>
           <div className="popup_box">
             <p>
-              Patrick gibt dir Einblicke in die mechanische Montage. Entdecke
-              seine abwechslungsreichen Aufgaben:
+              Thomas gibt dir Einblicke in die Projektleitung. Lerne seine
+              Aufgaben kennen:
             </p>
             <ul>
+              <li>Zielgerichtete und erfolgsorientierte Konstruktion</li>
+              <li>Betreuung und Anleitung von internen Teams</li>
+              <li>ProjektleitungvonderPlanungsphasebiszurEndabnahme</li>
               <li>
-                Eigenverantwortliche Montage und Inbetriebnahme nach Zeichnung,
-                Stücklisten und 3D-PDF
+                Verantwortung für Ressourcen, Budget,Termine, Kosten, Qualität
+                und gesetzliche Vorgaben
               </li>
-              <li>Internationale Montageeinsätze</li>
-              <li>Installation von Pneumatik und Hydraulik</li>
-              <li>Terminverantwortung</li>
+              <li>Projektmeetings mit Kunden</li>
             </ul>
           </div>
         </>

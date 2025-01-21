@@ -829,7 +829,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
         scale={0.838}
         floorNumber={1.1}
         popupValue={31}
-        moveAnimationParams={[19.4, 1.1, undefined, 3.2, -1.54]}
+        moveAnimationParams={[19.4, 1.1, undefined, 3.2, Math.PI * 1.5]}
       >
         <mesh geometry={nodes.Text045.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -850,7 +850,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
         scale={1.045}
         floorNumber={1.1}
         popupValue={24}
-        moveAnimationParams={[19.9, -2.9, undefined, 3.6, -0.8]}
+        moveAnimationParams={[19.9, -2.9, undefined, 3.6, Math.PI * 1.76]}
       >
         <mesh geometry={nodes.Text046.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -871,7 +871,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
         scale={0.838}
         floorNumber={1.1}
         popupValue={23}
-        moveAnimationParams={[19.4, -1.1, undefined, 3.2, -1.54]}
+        moveAnimationParams={[19.4, -1.1, undefined, 3.2, Math.PI * 1.51]}
       >
         <mesh geometry={nodes.Text027.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />
@@ -955,7 +955,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
         scale={1.739}
         floorNumber={6}
         popupValue={6}
-        moveAnimationParams={[-49, -29.4, undefined, 1.4, Math.PI * 2.3]}
+        moveAnimationParams={[-49, -29.4, undefined, 1.4, Math.PI * 0.3]}
       >
         <mesh geometry={nodes.Text112.geometry}>
           <meshBasicMaterial color={materials["weiss.002"].color} />

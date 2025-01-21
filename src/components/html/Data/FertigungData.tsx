@@ -124,12 +124,12 @@ export const FertigungCustomer = ({
     case 2:
       store.banner = {
         type: "iframe",
-        src: "https://player.vimeo.com/video/858621907?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+        src: "https://player.vimeo.com/video/858621907?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       };
       return (
         <>
           <div className="popup_headside">
-            <h2>INFOMATERIAL</h2>
+            <h2>SMART ECO BOX</h2>
 
             {isNotCusomer ? (
               <a
@@ -149,27 +149,36 @@ export const FertigungCustomer = ({
           </div>
           <div className="popup_box">
             <p>
-              Laden Sie bequem unsere Infomaterialien herunter und erfahren Sie
-              mehr über unsere innovativen Lösungen und Technologien in den
-              Bereichen:
+              Unsere eigens entwickelte SMART ECO BOX bietet Unter- nehmen
+              zahlreiche Vorteile: Sie überwacht Energieströme, senkt Kosten und
+              CO2-Emissionen, und ermöglicht eine nachhaltige Produktion – bei
+              einfacher Installation und vielseitigem Einsatz.
             </p>
+            <h3>SMART ECO BOX – Einfach anschließen und sparen!</h3>
             <ul>
-              <li>Kunststofftechnik</li>
-              <li>Fertigung</li>
-              <li>Maschinenbau</li>
-              <li>Digitalisierung</li>
+              <li>Bis zu 4.000 € Stromersparnis pro Maschine jährlich</li>
+              <li>Verschleiß frühzeitig erkennen</li>
+              <li>CO2 -Wert ermitteln</li>
+              <li>Plug & Play Installation in Minuten</li>
+              <li>Schnelle und übersichtliche Prozessbewertung</li>
+              <li>Zugriff auf umfangreiche Sensorik</li>
+              <li>Individuelle Berichte und Auswertungen </li>
             </ul>
-            <p>
-              Entdecken Sie unsere Expertise und maßgeschneiderten Lösungen für
-              Ihre Anforderungen.
-            </p>
+            <h3>WEITERE VORTEILE UND FUNKTIONEN:</h3>
+            <ul>
+              <li>Return of Investment innerhalb eines Jahres</li>
+              <li>Geeignet für alle technischen Anlagen</li>
+              <li>Offene Dashboards für vielfältige Auswertungen</li>
+              <li>Anbindung an Maschinendaten</li>
+              <li>On-Premise-Lösung ohne Cloud und Folgekosten</li>
+            </ul>
           </div>
         </>
       );
     case 3:
       store.banner = {
         type: "iframe",
-        src: "https://player.vimeo.com/video/1025135207?h=833b6e5d77&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+        src: "https://player.vimeo.com/video/1025135679?h=f1667815cb&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       };
       return (
         <>
@@ -223,7 +232,7 @@ export const FertigungCustomer = ({
     case 4:
       store.banner = {
         type: "iframe",
-        src: "https://player.vimeo.com/video/1025135207?h=833b6e5d77&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+        src: "https://player.vimeo.com/video/1025135679?h=f1667815cb&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       };
       return (
         <>
@@ -439,12 +448,12 @@ export const FertigungNotCustomer = ({
     case 2:
       store.banner = {
         type: "iframe",
-        src: "https://player.vimeo.com/video/858621907?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+        src: "https://player.vimeo.com/video/858621907?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       };
       return (
         <>
           <div className="popup_headside">
-            <h2>INFOMATERIAL</h2>
+            <h2>SMART ECO BOX</h2>
 
             {isNotCusomer ? (
               <a
@@ -464,20 +473,29 @@ export const FertigungNotCustomer = ({
           </div>
           <div className="popup_box">
             <p>
-              Laden Sie bequem unsere Infomaterialien herunter und erfahren Sie
-              mehr über unsere innovativen Lösungen und Technologien in den
-              Bereichen:
+              Unsere eigens entwickelte SMART ECO BOX bietet Unter- nehmen
+              zahlreiche Vorteile: Sie überwacht Energieströme, senkt Kosten und
+              CO2-Emissionen, und ermöglicht eine nachhaltige Produktion – bei
+              einfacher Installation und vielseitigem Einsatz.
             </p>
+            <h3>SMART ECO BOX – Einfach anschließen und sparen!</h3>
             <ul>
-              <li>Kunststofftechnik</li>
-              <li>Fertigung</li>
-              <li>Maschinenbau</li>
-              <li>Digitalisierung</li>
+              <li>Bis zu 4.000 € Stromersparnis pro Maschine jährlich</li>
+              <li>Verschleiß frühzeitig erkennen</li>
+              <li>CO2 -Wert ermitteln</li>
+              <li>Plug & Play Installation in Minuten</li>
+              <li>Schnelle und übersichtliche Prozessbewertung</li>
+              <li>Zugriff auf umfangreiche Sensorik</li>
+              <li>Individuelle Berichte und Auswertungen </li>
             </ul>
-            <p>
-              Entdecken Sie unsere Expertise und maßgeschneiderten Lösungen für
-              Ihre Anforderungen.
-            </p>
+            <h3>WEITERE VORTEILE UND FUNKTIONEN:</h3>
+            <ul>
+              <li>Return of Investment innerhalb eines Jahres</li>
+              <li>Geeignet für alle technischen Anlagen</li>
+              <li>Offene Dashboards für vielfältige Auswertungen</li>
+              <li>Anbindung an Maschinendaten</li>
+              <li>On-Premise-Lösung ohne Cloud und Folgekosten</li>
+            </ul>
           </div>
         </>
       );
@@ -550,14 +568,18 @@ export const FertigungNotCustomer = ({
               Thomas nimmt dich mit in die Zerspanung. Lerne seine Aufgaben
               kennen:
             </p>
-            <li>
-              Einrichten und Programmieren der Maschinen für optimale Prozesse
-            </li>
-            <li>Überwachung automatisierter Abläufe für maximale Effizienz</li>
-            <li>Bearbeitung großer Werkstücke mit höchster Präzision</li>
-            <li>
-              Kontinuierlicher Einsatz neuester Maschinen und Technologien
-            </li>
+            <ul>
+              <li>
+                Einrichten und Programmieren der Maschinen für optimale Prozesse
+              </li>
+              <li>
+                Überwachung automatisierter Abläufe für maximale Effizienz
+              </li>
+              <li>Bearbeitung großer Werkstücke mit höchster Präzision</li>
+              <li>
+                Kontinuierlicher Einsatz neuester Maschinen und Technologien
+              </li>
+            </ul>
           </div>
         </>
       );

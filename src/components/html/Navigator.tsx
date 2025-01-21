@@ -56,6 +56,7 @@ const Navigator = () => {
         className="buttonBox"
       >
         <button
+          data-active={floor === 1}
           onClick={() => {
             store.isPopupActive = false;
             moveAnimation(24.2, 0, 1, 1, 1.6);
@@ -64,6 +65,7 @@ const Navigator = () => {
           Eingang / Foyer
         </button>
         <button
+          data-active={floor === 5}
           onClick={() => {
             store.isPopupActive = false;
             moveAnimation(2.2, 14.2, 5, 3.3, 2.04);
@@ -72,6 +74,7 @@ const Navigator = () => {
           Kunststofftechnik
         </button>
         <button
+          data-active={floor === 3}
           onClick={() => {
             store.isPopupActive = false;
             moveAnimation(0.1, 1.7, 3, 1.7, Math.PI * 0.4);
@@ -80,6 +83,7 @@ const Navigator = () => {
           Fertigung
         </button>
         <button
+          data-active={floor === 4}
           onClick={() => {
             store.isPopupActive = false;
             moveAnimation(-1.5, -12.5, 4, 2.8, 0.64);
@@ -88,6 +92,7 @@ const Navigator = () => {
           Maschinenbau
         </button>
         <button
+          data-active={floor === 1.1}
           onClick={() => {
             store.isPopupActive = false;
             moveAnimation(18.2, 0.7, 1.1, 3.7, Math.PI * 1.7);
@@ -96,6 +101,7 @@ const Navigator = () => {
           Verwaltung & GF
         </button>
         <button
+          data-active={floor === 7}
           onClick={() => {
             store.isPopupActive = false;
             moveAnimation(-59.3, 13.2, 7, 5, 5.67);
@@ -103,7 +109,9 @@ const Navigator = () => {
         >
           Logistik
         </button>
-        <button onClick={reverseEntryAnimation}>Vorderansicht</button>
+        <button data-active={floor === 0} onClick={reverseEntryAnimation}>
+          Vorderansicht
+        </button>
       </div>
     </>
   );

@@ -34,7 +34,7 @@ export const KunststoffCustomer = ({
           <div className="popup_box">
             <p>
               Philipp zeigt Ihnen die Kunststofftechnik. Erfahren Sie mehr über
-              unsere Fachkompetenzen und besonderen Highlights:
+              unsere Fachkompetenzen und besondere Highlights:
             </p>
             <ul>
               <li>
@@ -43,13 +43,13 @@ export const KunststoffCustomer = ({
               </li>
               <li>Schließkraftbereich von 350 KN bis 4000 KN</li>
               <li>Spritzgewichte von 1g bis 2100g</li>
-              <li>KleinserienproduktionvonAluwerkzeugen</li>
-              <li>GroßserienproduktionvonStahlwerkzeugen</li>
+              <li>Kleinserienproduktion von Aluwerkzeugen</li>
+              <li>Großserienproduktion von Stahlwerkzeugen</li>
               <li>Herstellung von 1K, 2K und LSR-Teilen</li>
               <li>Breite Palette an Veredelungsmöglichkeiten</li>
               <li>
                 Unsere Branchen: Automotive, Bauindustrie, Elektronik,
-                Hausgeräte, Maschinenbau undTelekommunikation
+                Hausgeräte, Maschinenbau und Telekommunikation
               </li>
             </ul>
             <p>
@@ -103,8 +103,8 @@ export const KunststoffCustomer = ({
               </li>
             </ul>
             <p>
-              Wir bringen Ihre Ideen in Form und freuen uns auf Ihre
-              Projektanfragen.
+              Wir bieten Ihnen maßgeschneiderte Lösungen für Ihre Projekte und
+              freuen uns auf Ihre Anfrage!
             </p>
           </div>
         </>
@@ -127,7 +127,7 @@ export const KunststoffNotCustomer = ({
       return (
         <>
           <div className="popup_headside">
-            <h2>KUNSTOFFTECHNIK</h2>
+            <h2>KUNSTSTOFFTECHNIK</h2>
             {isNotCusomer ? (
               <a target="_blank" href="https://www.nmh.de/karriere/">
                 <img src="/icons/job.png" alt="icon" />
@@ -150,7 +150,7 @@ export const KunststoffNotCustomer = ({
             <ul>
               <li>Auftragsabwicklung und Kundenkommunikation</li>
               <li>Materialbestellung und Rüsten der Werkzeuge</li>
-              <li>DurchführungderQualitätsprüfungamEndprodukt</li>
+              <li>Durchführung der Qualitätsprüfung am Endprodukt</li>
             </ul>
           </div>
         </>

@@ -39,7 +39,7 @@ export const FertigungCustomer = ({
             </p>
             <ul>
               <li>Einzel- oder Serienteilfertigung mit Roboteranbindung</li>
-              <li>ModernsteTechnik und hoher Automatisierungsgrad</li>
+              <li>Modernste Technik und hoher Automatisierungsgrad</li>
               <li>Energieoptimierte Abläufe durch die SmartEcoBox</li>
               <li>
                 Papierlose Fertigung durch unsere eigens entwickelte Software
@@ -47,10 +47,10 @@ export const FertigungCustomer = ({
               </li>
               <li>Maßgeschneiderte Lösungen für verschiedenste Branchen</li>
               <li>
-                Unsere Fertigungsverfahren: Fräsen, Drehen,Schleifen und Sägen
+                Unsere Fertigungsverfahren: Fräsen, Drehen, Schleifen und Sägen
               </li>
               <li>
-                Unsere Dienstleistungen:Trowalisieren, Finish,Messen und
+                Unsere Dienstleistungen: Trowalisieren, Finish, Messen und
                 Logistik
               </li>
             </ul>
@@ -91,7 +91,7 @@ export const FertigungCustomer = ({
               verschiedener Bearbeitungsverfahren und Materialien in der
               Lohnfertigung eröffnet Ihnen eine Vielzahl an Optionen zur
               Herstellung Ihrer präzisen Bauteile. Ob Einzel- oder Serienteile -
-              unser moderner Maschinen- park mit 20 Maschinen bietet Ihnen
+              unser moderner Maschinenpark mit 20 Maschinen bietet Ihnen
               maximale Flexibilität und höchste Präzision bei der Bearbeitung
               von:
             </p>
@@ -172,6 +172,10 @@ export const FertigungCustomer = ({
               <li>Anbindung an Maschinendaten</li>
               <li>On-Premise-Lösung ohne Cloud und Folgekosten</li>
             </ul>
+            <p>
+              Entdecken Sie unsere Expertise und maßgeschneiderten Lösungen für
+              Ihre Anforderungen.
+            </p>
           </div>
         </>
       );
@@ -206,7 +210,7 @@ export const FertigungCustomer = ({
             </p>
             <ul>
               <li>Einzel- oder Serienteilfertigung mit Roboteranbindung</li>
-              <li>ModernsteTechnik und hoher Automatisierungsgrad</li>
+              <li>Modernste Technik und hoher Automatisierungsgrad</li>
               <li>Energieoptimierte Abläufe durch die SmartEcoBox</li>
               <li>
                 Papierlose Fertigung durch unsere eigens entwickelte Software
@@ -214,10 +218,10 @@ export const FertigungCustomer = ({
               </li>
               <li>Maßgeschneiderte Lösungen für verschiedenste Branchen</li>
               <li>
-                Unsere Fertigungsverfahren: Fräsen, Drehen,Schleifen und Sägen
+                Unsere Fertigungsverfahren: Fräsen, Drehen, Schleifen und Sägen
               </li>
               <li>
-                Unsere Dienstleistungen:Trowalisieren, Finish,Messen und
+                Unsere Dienstleistungen: Trowalisieren, Finish, Messen und
                 Logistik
               </li>
             </ul>
@@ -259,7 +263,7 @@ export const FertigungCustomer = ({
             </p>
             <ul>
               <li>Einzel- oder Serienteilfertigung mit Roboteranbindung</li>
-              <li>ModernsteTechnik und hoher Automatisierungsgrad</li>
+              <li>Modernste Technik und hoher Automatisierungsgrad</li>
               <li>Energieoptimierte Abläufe durch die SmartEcoBox</li>
               <li>
                 Papierlose Fertigung durch unsere eigens entwickelte Software
@@ -267,10 +271,10 @@ export const FertigungCustomer = ({
               </li>
               <li>Maßgeschneiderte Lösungen für verschiedenste Branchen</li>
               <li>
-                Unsere Fertigungsverfahren: Fräsen, Drehen,Schleifen und Sägen
+                Unsere Fertigungsverfahren: Fräsen, Drehen, Schleifen und Sägen
               </li>
               <li>
-                Unsere Dienstleistungen:Trowalisieren, Finish,Messen und
+                Unsere Dienstleistungen: Trowalisieren, Finish, Messen und
                 Logistik
               </li>
             </ul>
@@ -311,7 +315,7 @@ export const FertigungCustomer = ({
               verschiedener Bearbeitungsverfahren und Materialien in der
               Lohnfertigung eröffnet Ihnen eine Vielzahl an Optionen zur
               Herstellung Ihrer präzisen Bauteile. Ob Einzel- oder Serienteile -
-              unser moderner Maschinen- park mit 20 Maschinen bietet Ihnen
+              unser moderner Maschinenpark mit 20 Maschinen bietet Ihnen
               maximale Flexibilität und höchste Präzision bei der Bearbeitung
               von:
             </p>
@@ -384,17 +388,14 @@ export const FertigungNotCustomer = ({
               <li>
                 Selbstständiges Programmieren der Maschinen für die Aufträge
               </li>
-              <li>
-                Rüsten der benötigten Werkzeuge und SpannmittelRüsten der
-                benötigten Werkzeuge und Spannmittel
-              </li>
+              <li>Rüsten der benötigten Werkzeuge und Spannmittel</li>
               <li>
                 Eigenständiges Einfahren der Aufträge und Sicherstellung von
                 Qualität und Prozessstabilität
               </li>
               <li>
-                Planung und Durchführung des gesamten Prozesses-vom Rohteil bis
-                zum fertigen Bauteil
+                Planung und Durchführung des gesamten Prozesses - vom Rohteil
+                bis zum fertigen Bauteil
               </li>
             </ul>
           </div>
@@ -488,6 +489,7 @@ export const FertigungNotCustomer = ({
               <li>Zugriff auf umfangreiche Sensorik</li>
               <li>Individuelle Berichte und Auswertungen </li>
             </ul>
+            <img src="/pictures/Ecobox.png" alt="ecobox" />
             <h3>WEITERE VORTEILE UND FUNKTIONEN:</h3>
             <ul>
               <li>Return of Investment innerhalb eines Jahres</li>
@@ -496,6 +498,10 @@ export const FertigungNotCustomer = ({
               <li>Anbindung an Maschinendaten</li>
               <li>On-Premise-Lösung ohne Cloud und Folgekosten</li>
             </ul>
+            <p>
+              Entdecken Sie unsere Expertise und maßgeschneiderten Lösungen für
+              Ihre Anforderungen.
+            </p>
           </div>
         </>
       );
@@ -613,7 +619,7 @@ export const FertigungNotCustomer = ({
             </p>
             <ul>
               <li>
-                Verantwortlich für die Ausbildung und betreuung unserer
+                Verantwortlich für die Ausbildung und Betreuung unserer
                 Auszubildenden
               </li>
               <li>Enge Zusammenarbeit mit den einzelnen Abteilungen </li>
@@ -622,7 +628,7 @@ export const FertigungNotCustomer = ({
                 Ausbildung
               </li>
               <li>
-                Gibt dir die Chance, an verschiedenen projekten und
+                Gibt dir die Chance, an verschiedenen Projekten und
                 Herausforderungen mitzuwirken
               </li>
             </ul>

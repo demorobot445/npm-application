@@ -56,7 +56,7 @@ const Navigator = () => {
         className="buttonBox"
       >
         <button
-          data-active={floor === 1}
+          data-active={floor === 1 || floor === 2 || floor === 2.1}
           onClick={() => {
             store.isPopupActive = false;
             moveAnimation(24.2, 0, 1, 1, 1.6);
@@ -74,7 +74,7 @@ const Navigator = () => {
           Kunststofftechnik
         </button>
         <button
-          data-active={floor === 3}
+          data-active={floor === 3 || floor === 3.2}
           onClick={() => {
             store.isPopupActive = false;
             moveAnimation(0.1, 1.7, 3, 1.7, Math.PI * 0.4);
@@ -83,7 +83,9 @@ const Navigator = () => {
           Fertigung
         </button>
         <button
-          data-active={floor === 4}
+          data-active={
+            floor === 4 || floor === 4.1 || floor === 3.4 || floor === 4.2
+          }
           onClick={() => {
             store.isPopupActive = false;
             moveAnimation(-1.5, -12.5, 4, 2.8, 0.64);
@@ -92,7 +94,7 @@ const Navigator = () => {
           Maschinenbau
         </button>
         <button
-          data-active={floor === 1.1}
+          data-active={floor === 1.1 || floor === 3.1}
           onClick={() => {
             store.isPopupActive = false;
             moveAnimation(18.2, 0.7, 1.1, 3.7, Math.PI * 1.7);

@@ -56,7 +56,7 @@ export const MaschineCustomer = ({
             <h3>ABLAUF VON KUNDENPROJEKTEN:</h3>
             <p>
               Sobald die Konstruktionspläne vorliegen, starten wir den Prozess
-              und montieren die Anlage Ab diesem Zeitpunkt sind Kunden jederzeit
+              und montieren die Anlage. Ab diesem Zeitpunkt sind Kunden jederzeit
               herzlich willkommen, uns zu besuchen. Wir freuen uns auf Ihre
               Anfrage!
             </p>
@@ -68,11 +68,11 @@ export const MaschineCustomer = ({
         type: "iframe",
         src: "https://player.vimeo.com/video/1017906379?h=8ac4639c6b&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       };
+
       return (
         <>
           <div className="popup_headside">
             <h2>MONTAGE</h2>
-
             {isNotCusomer ? (
               <a target="_blank" href="https://www.nmh.de/karriere/">
                 <img src="/icons/job.png" alt="icon" />
@@ -193,7 +193,7 @@ export const MaschineCustomer = ({
             <p>
               Im Sondermaschinenbau bieten wir Ihnen eine breite Palette an
               maßgeschneiderten Lösungen, die Ihre Produktionsprozesse
-              effizienter und präziser gestalten. UnsereTechnologien und Systeme
+              effizienter und präziser gestalten. Unsere Technologien und Systeme
               sind darauf ausgelegt, höchste Leistungsfähigkeit und Flexibilität
               zu bieten. Von Montagetechnik bis Automatisierung - wir
               unterstützen Sie mit Innovativen und nachhaltigen Lösungen.
@@ -259,11 +259,11 @@ export const MaschineCustomer = ({
             </p>
             <h3>EIN BEISPIEL:</h3>
             <p>
-              Eine verkettete Anlage kann mit einer Montagestation begin- nen,
+              Eine verkettete Anlage kann mit einer Montagestation beginnen,
               gefolgt von einer Prüfeinheit, um die Produktqualität
               sicherzustellen. Anschließend erfolgt die Spanntechnik für präzise
               Fixierungen, bevor die Schweißtechnik zum Einsatz kommt. Zum
-              Abschluss sorgt dieTransporttechnik für den reibungslosen Übergang
+              Abschluss sorgt die Transporttechnik für den reibungslosen Übergang
               zum nächsten Produktionsschritt oder zur Verpackungseinheit.
             </p>
             <p>
@@ -359,9 +359,9 @@ export const MaschineNotCustomer = ({
               <li>Installation von Schaltschränken gemäß E-Plänen</li>
               <li>Verdrahten und Verkabeln von Maschinen</li>
               <li>
-                Montage von Maschinen sowohl im Hausals auch beim Kunden vor Ort
+                Montage von Maschinen sowohl im Haus als auch beim Kunden vor Ort
               </li>
-              <li>Arbeit an verschiedenen Projektenbei diversen Kunden</li>
+              <li>Arbeit an verschiedenen Projekten bei diversen Kunden</li>
             </ul>
           </div>
         </>
@@ -395,9 +395,9 @@ export const MaschineNotCustomer = ({
             <ul>
               <li>Zielgerichtete und erfolgsorientierte Konstruktion</li>
               <li>Betreuung und Anleitung von internen Teams</li>
-              <li>ProjektleitungvonderPlanungsphasebiszur Endabnahme</li>
+              <li>Projektleitung von der Planungsphase bis zur Endabnahme</li>
               <li>
-                Verantwortung für Ressourcen, Budget,Termine, Kosten, Qualität
+                Verantwortung für Ressourcen, Budget, Termine, Kosten, Qualität
                 und gesetzliche Vorgaben
               </li>
               <li>Projektmeetings mit Kunden</li>

@@ -20,7 +20,7 @@ export const EingangCustomer = ({
           </div>
           <div className="popup_box">
             <h3>
-              UNSERE AUSZEICHNUNGEN UNDTEILNAHMEN- ZEICHEN UNSERES ENGAGEMENTS
+              UNSERE AUSZEICHNUNGEN UND TEILNAHMEN- ZEICHEN UNSERES ENGAGEMENTS
               UND UNSERER INNOVATIONSKRAFT
             </h3>
             <p>
@@ -89,7 +89,7 @@ export const EingangCustomer = ({
           </div>
           <div className="popup_box">
             <p>
-              Unser Imagefilm gibt spannende Einblicke in Kunststoff- technik,
+              Unser Imagefilm gibt spannende Einblicke in Kunststofftechnik,
               Fertigung, Maschinenbau und Digitalisierung. Taucht ein in unsere
               Welt und erfahrt, was uns täglich antreibt!
             </p>
@@ -124,7 +124,7 @@ export const EingangCustomer = ({
           </div>
           <div className="popup_box">
             <h3>
-              UNSERE ZERTIFIZIERUNGEN- IHR GARANTIE FÜR QUALITÄTUND
+              UNSERE ZERTIFIZIERUNGEN - IHR GARANTIE FÜR QUALITÄT UND
               NACHHALTIGKEIT!
             </h3>
             <p>
@@ -169,8 +169,8 @@ export const EingangCustomer = ({
           <div className="popup_box">
             <h3>NMH - IHREM PARTNER FÜR INNOVATION UND NACHHALTIGKEIT</h3>
             <p>
-              Als dynamisches Unternehmen mit 120 engagierten Mitar- beitern
-              sind wir auf folgende vier Kernbereiche spezialisiert:
+              Als dynamisches Unternehmen mit 120 engagierten Mitarbeitern sind
+              wir auf folgende vier Kernbereiche spezialisiert:
             </p>
             <ul>
               <li>Maschinenbau</li>
@@ -182,7 +182,7 @@ export const EingangCustomer = ({
               Ein besonderes Merkmal von NMH ist unsere Fähigkeit, den gesamten
               Prozess aus einer Hand anzubieten - von der ersten Idee bis zum
               After-Sales-Service. Diese Komplettlösung ermöglicht unseren
-              Kunden eine nahtlose und effiziente Abwicklung ihrer Projekte.
+              Kunden eine nahtlose und effiziente Abwicklung Ihrer Projekte.
             </p>
             <h3>UNSER ENGAGEMENT FÜR DIGITALISIERUNG UND NACHHALTIGKEIT:</h3>
             <ul>
@@ -190,14 +190,14 @@ export const EingangCustomer = ({
                 Papierlose Produktion
                 <span>
                   durch unsere Eigenentwicklung CoCo - für eine nachhaltige und
-                  effiziente Fertigung mit Echtzeit- Informationen
+                  effiziente Fertigung mit Echtzeit-Informationen
                 </span>
               </li>
               <li>
                 SmartEcoBox
                 <span>
                   unser eigenentwickeltes Produkt zur Optimierung von
-                  Ressourcen, Smart Automation und CO2-Footprint- Auswertung
+                  Ressourcen, Smart Automation und CO2-Footprint-Auswertung
                 </span>
               </li>
               <li>
@@ -270,24 +270,24 @@ export const EingangCustomer = ({
 
             <ul>
               <li>Hauptsponsor des Sportvereins Hohentengen</li>
-              <li>Silber-SponsorderSchwenningerWildWings</li>
+              <li>Silber-Sponsor der Schwenninger Wild Wings</li>
               <li>Sponsor der Razorbacks Ravensburg</li>
             </ul>
             <p>
               Als besonderes Highlight erhalten unsere Mitarbeiter für
-              herausragende LeistungenTickets zu sportlichen Events, um
+              herausragende Leistungen Tickets zu sportlichen Events, um
               gemeinsam Erfolge zu feiern und den regionalen Sport hautnah zu
               erleben.
             </p>
             <p>
               Neben diesen festen Sponsorings unterstützen wir auch immer wieder
-              regionale Vereine und Veranstaltungen. Wie zum Beispiel:
+              regionale Vereine und Veranstaltungen, wie zum Beispiel:
             </p>
             <ul>
               <li>Triathlon Schwarzachtal</li>
               <li>Biker Days Pfullendorf</li>
-              <li>NMH- Cup in Hohentengen</li>
-              <li>NMH- Pre Season Cup in Hechberg</li>
+              <li>NMH-Cup in Hohentengen</li>
+              <li>NMH-Pre Season Cup in Hechberg</li>
               <li>Trikotsponsoring C-Jugend SV Hochberg</li>
               <li>Trikotsponsoring SV Ölkofen</li>
               <li>OHA-Treffen Narrenzunft Herbertingen</li>
@@ -325,7 +325,7 @@ export const EingangCustomer = ({
           <div className="popup_box">
             <p>
               Laden Sie bequem unsere Infomaterialien herunter und erfahren Sie
-              mehr über unsere innovativen Lösungen undTechnologien in den
+              mehr über unsere innovativen Lösungen und Technologien in den
               Bereichen:
             </p>
             <ul>
@@ -338,7 +338,7 @@ export const EingangCustomer = ({
               Entdecken Sie unsere Expertise und maßgeschneiderten Lösungen für
               Ihre Anforderungen.
             </p>
-            <h3>Informaterial zum download</h3>
+            <h3>Informaterial zum Download</h3>
             <div className="popup_grid">
               <a
                 target="_blank"
@@ -398,7 +398,13 @@ export const EingangCustomer = ({
                 target="_blank"
                 href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Infomaterial/Transportieren_und_Handling.pdf"
               >
-                Transportieren & Handling.pdf Verkettungen.pdf
+                Transportieren & Handling.pdf
+              </a>
+              <a
+                target="_blank"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Infomaterial/Verkettungen.pdf"
+              >
+                Verkettungen.pdf
               </a>
             </div>
           </div>

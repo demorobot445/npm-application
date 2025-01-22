@@ -35,7 +35,7 @@ export const BackCustomer = ({
             )}
           </div>
           <div className="popup_box">
-            <h3>PRÄZISES SÄGEN MIT MODERNSTERTECHNOLOGIE!</h3>
+            <h3>PRÄZISES SÄGEN MIT MODERNSTER TECHNOLOGIE!</h3>
             <p>
               Unsere vollautomatisierten Sägeprozesse bieten Ihnen höchste
               Genauigkeit und Effizienz. Mit modernsten Bandsägen und Kreissägen
@@ -119,7 +119,7 @@ export const BackCustomer = ({
               bieten Ihnen eine nahtlose Logistik direkt bis ans Band, ohne
               Schnittstellenverluste. Besonders bei anspruchsvollen
               Know-How-Projekten sorgen wir für einen reibungslosen und
-              effizientenTransport, der höchste Qualität garantiert.
+              effizienten Transport, der höchste Qualität garantiert.
             </p>
             <p>
               Vertrauen Sie auf unsere Erfahrung und Expertise für eine perfekte
@@ -155,12 +155,12 @@ export const BackCustomer = ({
             </p>
             <h3>FREU DICH AUF:</h3>
             <ul>
-              <li>BetrieblicheAltersvorsorge</li>
-              <li>CorporateBenefits</li>
+              <li>Betriebliche Altersvorsorge</li>
+              <li>Corporate Benefits</li>
               <li>Weiterentwicklungsmöglichkeiten</li>
-              <li>KostenloseGetränke</li>
+              <li>Kostenlose Getränke</li>
               <li>VIP-Tickets</li>
-              <li>SichererArbeitsplatz</li>
+              <li>Sicherer Arbeitsplatz</li>
               <li>Dienstfahrrad</li>
               <li>Wellpass</li>
               <li>Essenszuschüsse</li>

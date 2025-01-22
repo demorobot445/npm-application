@@ -39,7 +39,7 @@ export const BuroNotCustomer = ({
             <ul>
               <li>
                 Deine Ansprechpartnerin für alle Fragen rund um den Einstieg,
-                von der Bewerbung biszur ersten Schulung
+                von der Bewerbung bis zur ersten Schulung
               </li>
               <li>
                 Zuständig für das Recruiting und die Organisation von
@@ -125,7 +125,7 @@ export const BuroNotCustomer = ({
             <p>
               Benjamin ist Elektrokonstrukteur. Ihn begeistert die Entstehung
               neuer Anlagen und Prozesse, und die Möglichkeit, aktiv
-              mitzuwirken. Das sind seineTätigkeiten:
+              mitzuwirken. Das sind seine Tätigkeiten:
             </p>
             <ul>
               <li>
@@ -173,9 +173,9 @@ export const BuroNotCustomer = ({
             <ul>
               <li>Zielgerichtete und erfolgsorientierte Konstruktion</li>
               <li>Betreuung und Anleitung von internen Teams</li>
-              <li>ProjektleitungvonderPlanungsphasebiszurEndabnahme</li>
+              <li>Projektleitung von der Planungsphase bis zur Endabnahme</li>
               <li>
-                Verantwortung für Ressourcen, Budget,Termine, Kosten, Qualität
+                Verantwortung für Ressourcen, Budget, Termine, Kosten, Qualität
                 und gesetzliche Vorgaben
               </li>
               <li>Projektmeetings mit Kunden</li>
@@ -274,14 +274,16 @@ export const BuroNotCustomer = ({
             )}
           </div>
           <div className="popup_box">
-            <p>Pascal nimmt dich mit in die Projektleitung.</p>
-            <p>Lerne seine abwechslungsreichen Aufgaben kennen:</p>
+            <p>
+              Pascal nimmt dich mit in die Projektleitung. Lerne seine
+              abwechslungsreichen Aufgaben kennen:
+            </p>
             <ul>
               <li>Zielgerichtete und erfolgsorientierte Konstruktion</li>
               <li>Betreuung und Anleitung von internen Teams</li>
-              <li>ProjektleitungvonderPlanungsphasebiszur Endabnahme</li>
+              <li>Projektleitung von der Planungsphase bis zur Endabnahme</li>
               <li>
-                Verantwortung für Ressourcen, Budget,Termine, Kosten, Qualität
+                Verantwortung für Ressourcen, Budget, Termine, Kosten, Qualität
                 und gesetzliche Vorgaben
               </li>
               <li>Projektmeetings mit Kunden</li>
@@ -324,7 +326,7 @@ export const BuroNotCustomer = ({
               </li>
               <li>Pflege, Auswahl und Festlegung von Lieferanten</li>
               <li>Überwachung der Liefertermine</li>
-              <li>ErmittlungoptimalerBestellmengen</li>
+              <li>Ermittlung optimaler Bestellmengen</li>
             </ul>
           </div>
         </>
@@ -401,7 +403,7 @@ export const BuroNotCustomer = ({
             </p>
             <ul>
               <li>
-                Zuständig für alle Personalthemenund immer ein offenes Ohr für
+                Zuständig für alle Personalthemen und immer ein offenes Ohr für
                 deine Anliegen
               </li>
               <li>
@@ -464,12 +466,12 @@ export const BuroCustomer = ({
               <li>115 Mitarbeitende</li>
               <li>2 Geschäftsführer</li>
               <li>80 Jahre Expertise</li>
-              <li>7500qmProduktionsfläche</li>
+              <li>7500qm Produktionsfläche</li>
               <li>20 Millionen Euro Umsatz</li>
             </ul>
             <p>
               Seit unserer Gründung vor 80 Jahren hat sich NMH als Vorreiter für
-              nachhaltigeTechnologien und Innovationen etabliert. Acht
+              nachhaltige Technologien und Innovationen etabliert. Acht
               Jahrzehnte Erfolg stehen für stetigen Fortschritt und unser
               Engagement für Exzellenz. Dieses Jubiläum bekräftigt unseren
               kontinuierlichen Einsatz für zukünftige Innovationen und Wachstum.
@@ -518,7 +520,7 @@ export const BuroCustomer = ({
               <li>115 Mitarbeitende</li>
               <li>2 Geschäftsführer</li>
               <li>80 Jahre Expertise</li>
-              <li>7500qmProduktionsfläche</li>
+              <li>7500qm Produktionsfläche</li>
               <li>20 Millionen Euro Umsatz</li>
             </ul>
             <p>
@@ -589,7 +591,7 @@ export const BuroCustomer = ({
               <li>Retrofit der Maschinen</li>
             </ul>
             <p>
-              Unser junges und dynamischesTeam meistert Herausforderungen von
+              Unser junges und dynamisches Team meistert Herausforderungen von
               kleinen Einzelanlagen bis hin zu kompletten Produktionslinien.
               Dank unserer großen Vielfalt im Sondermaschinenbau bieten wir
               Ihnen maßgeschneiderte Lösungen für Ihre speziellen Anforderungen.
@@ -630,7 +632,7 @@ export const BuroCustomer = ({
             <ul>
               <li>Auftragsabwicklung und Kundenkommunikation</li>
               <li>Materialbestellung und Rüsten der Werkzeuge</li>
-              <li>DurchführungderQualitätsprüfungamEndprodukt</li>
+              <li>Durchführung der Qualitätsprüfung am Endprodukt</li>
             </ul>
           </div>
         </>
@@ -662,7 +664,7 @@ export const BuroCustomer = ({
             <p>
               Benjamin ist Elektrokonstrukteur. Ihn begeistert die Entstehung
               neuer Anlagen und Prozesse, und die Möglichkeit, aktiv
-              mitzuwirken. Das sind seineTätigkeiten:
+              mitzuwirken. Das sind seine Tätigkeiten:
             </p>
             <ul>
               <li>
@@ -765,9 +767,9 @@ export const BuroCustomer = ({
               Herstellung Ihrer präzisen Bauteile.
             </p>
             <p>
-              Ob Einzel- oder Serienteile - unser moderner Maschinen- park mit
-              20 Maschinen bietet Ihnen maximale Flexibilität und höchste
-              Präzision bei der Bearbeitung von:
+              Ob Einzel- oder Serienteile - unser moderner Maschinenpark mit 20
+              Maschinen bietet Ihnen maximale Flexibilität und höchste Präzision
+              bei der Bearbeitung von:
             </p>
             <ul>
               <li>Kunststoff</li>
@@ -779,7 +781,7 @@ export const BuroCustomer = ({
               Ihnen eine präzise Bearbeitung, selbst bei komplexen Geometrien
               und höchsten Maßanforderungen. Unser Leistungsspektrum umfasst
               Bauteile von 1 mm bis 6000 mm sowie Beschichtungen und
-              Oberflächenbehand- lungen verschiedenster Art.
+              Oberflächenbehandlungen verschiedenster Art.
             </p>
             <h3>WIR BEARBEITEN:</h3>
             <ul>
@@ -825,7 +827,7 @@ export const BuroCustomer = ({
               verschiedener Bearbeitungsverfahren und Materialien in der
               Lohnfertigung eröffnet Ihnen eine Vielzahl an Optionen zur
               Herstellung Ihrer präzisen Bauteile. Ob Einzel- oder Serienteile -
-              unser moderner Maschinen- park mit 20 Maschinen bietet Ihnen
+              unser moderner Maschinenpark mit 20 Maschinen bietet Ihnen
               maximale Flexibilität und höchste Präzision bei der Bearbeitung
               von:
             </p>
@@ -839,7 +841,7 @@ export const BuroCustomer = ({
               Ihnen eine präzise Bearbeitung, selbst bei komplexen Geometrien
               und höchsten Maßanforderungen. Unser Leistungsspektrum umfasst
               Bauteile von 1 mm bis 6000 mm sowie Beschichtungen und
-              Oberflächenbehand- lungen verschiedenster Art.
+              Oberflächenbehandlungen verschiedenster Art.
             </p>
             <h3>WIR BEARBEITEN:</h3>
             <ul>

@@ -3,6 +3,7 @@ import { proxy } from "valtio";
 type Store = {
   entryAnimation: () => void;
   reverseEntryAnimation: () => void;
+  cameraChange: () => void;
   moveAnimation: (
     x: number,
     z: number,
@@ -24,6 +25,7 @@ export const store = proxy<Store>({
   entryAnimation: () => {},
   reverseEntryAnimation: () => {},
   moveAnimation: () => {},
+  cameraChange: () => {},
   floor: 0,
   previousPoistion: undefined,
   isPopupActive: false,

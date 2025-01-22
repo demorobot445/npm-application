@@ -189,9 +189,9 @@ main {
     overflow-y: auto;
     overflow-x: hidden;
     padding: 24px 36px;
-    max-height: calc(100vh - 375px);
+    max-height: calc(100vh - 405px);
     @media screen and (min-width: 1400px) {
-      max-height: calc(100vh - 420px);
+      max-height: calc(100vh - 445px);
     }
     @media screen and (min-width: 1650px) {
       max-height: calc(100vh - 524px);

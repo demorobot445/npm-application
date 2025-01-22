@@ -74,14 +74,14 @@ export const EingangCustomer = ({
             {isNotCusomer ? (
               <a
                 target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2025.pdf"
               >
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
             ) : (
               <a
                 target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2025.pdf"
               >
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
@@ -109,14 +109,14 @@ export const EingangCustomer = ({
             {isNotCusomer ? (
               <a
                 target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2025.pdf"
               >
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
             ) : (
               <a
                 target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2025.pdf"
               >
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
@@ -153,14 +153,14 @@ export const EingangCustomer = ({
             {isNotCusomer ? (
               <a
                 target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2025.pdf"
               >
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
             ) : (
               <a
                 target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2025.pdf"
               >
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
@@ -248,14 +248,14 @@ export const EingangCustomer = ({
             {isNotCusomer ? (
               <a
                 target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2025.pdf"
               >
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
             ) : (
               <a
                 target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2024_DE__240213-kl.pdf"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2025.pdf"
               >
                 <img src="/icons/pdf.png" alt="icon" />
               </a>

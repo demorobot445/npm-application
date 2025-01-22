@@ -166,6 +166,21 @@ const OrbitCamera = ({
         .to(fakeLoaderRef.current, { opacity: 0 }, ">0.5");
     });
 
+    store.cameraChange = contextSafe(() => {
+      gsap
+        .timeline()
+        .to(fakeLoaderRef.current, { opacity: 1 })
+        .call(() => {
+          setIsMainCameraActive(true);
+          store.floor = 7;
+        })
+        .to(fakeLoaderRef.current, { opacity: 0 }, ">0.5")
+        .call(() => {
+          store.popupDataValue = 8;
+          store.isPopupActive = true;
+        });
+    });
+
     store.reverseEntryAnimation = contextSafe(() => {
       gsap
         .timeline()

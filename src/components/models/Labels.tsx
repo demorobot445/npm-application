@@ -153,7 +153,7 @@ const Label: React.FC<Props> = ({
   moveAnimationParams,
   children,
 }) => {
-  const { moveAnimation, floor } = useSnapshot(store);
+  const { moveAnimation, floor, cameraChange } = useSnapshot(store);
   const [hovered, setHovered] = useState(false);
 
   // Using a ref to store original position
@@ -203,6 +203,15 @@ const Label: React.FC<Props> = ({
           store.isPopupActive = true;
           moveAnimation(...moveAnimationParams);
           store.popupDataValue = popupValue;
+        } else if (popupValue === 8 && floor === 0) {
+          cameraChange();
+          store.previousPoistion = {
+            x: -59.3,
+            y: 5,
+            z: 13.2,
+            rotateY: 5.67,
+          };
+          moveAnimation(...moveAnimationParams);
         }
       }}
     >

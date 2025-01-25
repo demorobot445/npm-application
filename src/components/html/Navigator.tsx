@@ -74,7 +74,7 @@ const Navigator = () => {
           Kunststofftechnik
         </button>
         <button
-          data-active={floor === 3 || floor === 3.2}
+          data-active={floor === 3 || floor === 3.3 || floor === 3.2}
           onClick={() => {
             store.isPopupActive = false;
             moveAnimation(0.1, 1.7, 3, 1.7, Math.PI * 0.4);

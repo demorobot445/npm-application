@@ -65,7 +65,7 @@ const Navigator = () => {
           Eingang / Foyer
         </button>
         <button
-          data-active={floor === 5}
+          data-active={floor === 5 || floor === 5.3}
           onClick={() => {
             store.isPopupActive = false;
             moveAnimation(2.2, 14.2, 5, 3.3, 2.04);
@@ -84,7 +84,11 @@ const Navigator = () => {
         </button>
         <button
           data-active={
-            floor === 4 || floor === 4.1 || floor === 3.4 || floor === 4.2
+            floor === 4 ||
+            floor === 4.1 ||
+            floor === 3.4 ||
+            floor === 4.2 ||
+            floor === 4.3
           }
           onClick={() => {
             store.isPopupActive = false;

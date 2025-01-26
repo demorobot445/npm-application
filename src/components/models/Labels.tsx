@@ -233,7 +233,7 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
         rotation={[Math.PI / 2, 0, Math.PI / 0.74]}
         floorNumber={5}
         floorSecondNumber={5.3}
-        popupValue={17}
+        popupValue={32}
         moveAnimationParams={[6.4, 19.9, undefined, 0.5, 1.38]}
       >
         <mesh geometry={newNodes.Text017.geometry}>

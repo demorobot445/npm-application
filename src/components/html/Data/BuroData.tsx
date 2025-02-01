@@ -100,14 +100,13 @@ export const BuroNotCustomer = ({
       );
     case 25:
       store.banner = {
-        type: "iframe",
-        src: "https://player.vimeo.com/video/1018038794?h=e9eeac8e07&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+        type: "img",
+        src: "/pictures/Elektrokonstruktion.jpg",
       };
       return (
         <>
           <div className="popup_headside">
             <h2>ELEKTROKONSTRUKTION</h2>
-
             {isNotCusomer ? (
               <a target="_blank" href="https://www.nmh.de/karriere/">
                 <img src="/icons/job.png" alt="icon" />
@@ -122,21 +121,28 @@ export const BuroNotCustomer = ({
             )}
           </div>
           <div className="popup_box">
-            <p>
-              Benjamin ist Elektrokonstrukteur. Ihn begeistert die Entstehung
-              neuer Anlagen und Prozesse, und die Möglichkeit, aktiv
-              mitzuwirken. Das sind seine Tätigkeiten:
-            </p>
+            <h3>Deine Aufgaben als SPS-Programmierer bei NMH:</h3>
             <ul>
+              <li>Programmierung unserer Mess-, Prüf- und Montageanlagen.</li>
               <li>
-                Projektierung und Neuentwicklung unserer Anlagen im
-                Sondermaschinenbau
+                Ausarbeitung und Erstellung der Bedienkonzepte für Steuerung und
+                HMI zuständig.
               </li>
-              <li>Erstellung von Elektroplänen mit EPLAN P8</li>
-              <li>Dokumentation der Sicherheitstechnik</li>
               <li>
-                Unterstützung bei der Inbetriebnahme unserer Maschinen und
-                Anlagen
+                Mitwirkung bei der Erstellung von Maschinendokumentationen.
+              </li>
+              <li>
+                Du begleitest Serviceeinsätze im In- und Ausland und wirkst bei
+                der Inbetriebnahme unsere Maschinen und Anlagen mit.
+              </li>
+              <li>Schulung der Anlagenbediener und Instandhalter.</li>
+              <li>
+                Du übernimmst die Kommunikation und Abstimmung mit dem Kunden
+                und trägst Terminverantwortung.
+              </li>
+              <li>
+                Die Dokumentation und Abnahme der Sicherheitstechnik gehört
+                ebenfalls zu deinem Fachgebiet.
               </li>
             </ul>
           </div>
@@ -186,12 +192,12 @@ export const BuroNotCustomer = ({
     case 27:
       store.banner = {
         type: "iframe",
-        src: "https://player.vimeo.com/video/1025135069?h=8148bef02d&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+        src: "https://player.vimeo.com/video/1018038794?h=e9eeac8e07&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       };
       return (
         <>
           <div className="popup_headside">
-            <h2>ELEKTROTECHNIK & STEUERUNGSTECHNIK</h2>
+            <h2>ELEKTROKONSTRUKTION</h2>
 
             {isNotCusomer ? (
               <a target="_blank" href="https://www.nmh.de/karriere/">
@@ -208,48 +214,26 @@ export const BuroNotCustomer = ({
           </div>
           <div className="popup_box">
             <p>
-              Gabriel Friedmann, Geschäftsführer der NMH, leitet das technische
-              Büro für Elektrotechnik und führt Sie durch die Bereiche
-              Elektrotechnik und Steuerungstechnik.
+              Benjamin ist Elektrokonstrukteur. Ihn begeistert die Entstehung
+              neuer Anlagen und Prozesse, und die Möglichkeit, aktiv
+              mitzuwirken. Das sind seine Tätigkeiten:
             </p>
-            <p>
-              Im Arbeitsalltag der NMH dreht sich alles darum, die in der
-              mechanischen Konstruktion entwickelten Maschinen zum Leben zu
-              erwecken. Die Arbeit beginnt bereits vor der Konstruktion mit der
-              Unterstützung des Vertriebs und der Konzeptionierung der
-              Steuerungstechnik.
-            </p>
-            <h3>
-              NACH AUFTRAGSERTEILUNG BIETEN WIR ALLES RUND UM DIE
-              STEUERUNGSTECHNIK AUS EINER HAND, EINSCHLIESSLICH:
-            </h3>
             <ul>
-              <li>Projektierung der Anlagen</li>
-              <li>Elektrokonstruktion</li>
-              <li>Programmierung</li>
-              <li>CE-Dokumentation</li>
-              <li>Endabnahme</li>
+              <li>
+                Projektierung und Neuentwicklung unserer Anlagen im
+                Sondermaschinenbau
+              </li>
+              <li>Erstellung von Elektroplänen mit EPLAN P8</li>
+              <li>Dokumentation der Sicherheitstechnik</li>
+              <li>
+                Unterstützung bei der Inbetriebnahme unserer Maschinen und
+                Anlagen
+              </li>
             </ul>
-            <h3>
-              AUCH WÄHREND DES GESAMTEN LEBENSZYKLUS DER ANLAGEN BIETEN WIR
-              EINEN UMFASSENDEN SERVICE, EINSCHLIESSLICH:
-            </h3>
-            <ul>
-              <li>Wartung</li>
-              <li>Fehlersuche</li>
-              <li>Instandhaltung</li>
-              <li>Retrofit der Maschinen</li>
-            </ul>
-            <p>
-              Unser junges und dynamischesTeam meistert Herausforderungen von
-              kleinen Einzelanlagen bis hin zu kompletten Produktionslinien.
-              Dank unserer großen Vielfalt im Sondermaschinenbau bieten wir
-              Ihnen maßgeschneiderte Lösungen für Ihre speziellen Anforderungen.
-            </p>
-            <p>Wir freuen uns auf Ihre Anfrage!</p>
           </div>
         </>
       );
+
     case 28:
       store.banner = {
         type: "iframe",
@@ -640,12 +624,12 @@ export const BuroCustomer = ({
     case 27:
       store.banner = {
         type: "iframe",
-        src: "https://player.vimeo.com/video/1018038794?h=e9eeac8e07&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+        src: "https://player.vimeo.com/video/1025135069?h=8148bef02d&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       };
       return (
         <>
           <div className="popup_headside">
-            <h2>ELEKTROKONSTRUKTION</h2>
+            <h2>ELEKTROTECHNIK & STEUERUNGSTECHNIK</h2>
 
             {isNotCusomer ? (
               <a target="_blank" href="https://www.nmh.de/karriere/">
@@ -662,22 +646,45 @@ export const BuroCustomer = ({
           </div>
           <div className="popup_box">
             <p>
-              Benjamin ist Elektrokonstrukteur. Ihn begeistert die Entstehung
-              neuer Anlagen und Prozesse, und die Möglichkeit, aktiv
-              mitzuwirken. Das sind seine Tätigkeiten:
+              Gabriel Friedmann, Geschäftsführer der NMH, leitet das technische
+              Büro für Elektrotechnik und führt Sie durch die Bereiche
+              Elektrotechnik und Steuerungstechnik.
             </p>
+            <p>
+              Im Arbeitsalltag der NMH dreht sich alles darum, die in der
+              mechanischen Konstruktion entwickelten Maschinen zum Leben zu
+              erwecken. Die Arbeit beginnt bereits vor der Konstruktion mit der
+              Unterstützung des Vertriebs und der Konzeptionierung der
+              Steuerungstechnik.
+            </p>
+            <h3>
+              NACH AUFTRAGSERTEILUNG BIETEN WIR ALLES RUND UM DIE
+              STEUERUNGSTECHNIK AUS EINER HAND, EINSCHLIESSLICH:
+            </h3>
             <ul>
-              <li>
-                Projektierung und Neuentwicklung unserer Anlagen im
-                Sondermaschinenbau
-              </li>
-              <li>Erstellung von Elektroplänen mit EPLAN P8</li>
-              <li>Dokumentation der Sicherheitstechnik</li>
-              <li>
-                Unterstützung bei der Inbetriebnahme unserer Maschinen und
-                Anlagen
-              </li>
+              <li>Projektierung der Anlagen</li>
+              <li>Elektrokonstruktion</li>
+              <li>Programmierung</li>
+              <li>CE-Dokumentation</li>
+              <li>Endabnahme</li>
             </ul>
+            <h3>
+              AUCH WÄHREND DES GESAMTEN LEBENSZYKLUS DER ANLAGEN BIETEN WIR
+              EINEN UMFASSENDEN SERVICE, EINSCHLIESSLICH:
+            </h3>
+            <ul>
+              <li>Wartung</li>
+              <li>Fehlersuche</li>
+              <li>Instandhaltung</li>
+              <li>Retrofit der Maschinen</li>
+            </ul>
+            <p>
+              Unser junges und dynamischesTeam meistert Herausforderungen von
+              kleinen Einzelanlagen bis hin zu kompletten Produktionslinien.
+              Dank unserer großen Vielfalt im Sondermaschinenbau bieten wir
+              Ihnen maßgeschneiderte Lösungen für Ihre speziellen Anforderungen.
+            </p>
+            <p>Wir freuen uns auf Ihre Anfrage!</p>
           </div>
         </>
       );

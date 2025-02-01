@@ -56,9 +56,9 @@ export const MaschineCustomer = ({
             <h3>ABLAUF VON KUNDENPROJEKTEN:</h3>
             <p>
               Sobald die Konstruktionspläne vorliegen, starten wir den Prozess
-              und montieren die Anlage. Ab diesem Zeitpunkt sind Kunden jederzeit
-              herzlich willkommen, uns zu besuchen. Wir freuen uns auf Ihre
-              Anfrage!
+              und montieren die Anlage. Ab diesem Zeitpunkt sind Kunden
+              jederzeit herzlich willkommen, uns zu besuchen. Wir freuen uns auf
+              Ihre Anfrage!
             </p>
           </div>
         </>
@@ -66,13 +66,14 @@ export const MaschineCustomer = ({
     case 19:
       store.banner = {
         type: "iframe",
-        src: "https://player.vimeo.com/video/1017906379?h=8ac4639c6b&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+        src: "https://player.vimeo.com/video/1025135498?h=2f9114bebd&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       };
 
       return (
         <>
           <div className="popup_headside">
             <h2>MONTAGE</h2>
+
             {isNotCusomer ? (
               <a target="_blank" href="https://www.nmh.de/karriere/">
                 <img src="/icons/job.png" alt="icon" />
@@ -88,21 +89,36 @@ export const MaschineCustomer = ({
           </div>
           <div className="popup_box">
             <p>
-              Patrick gibt dir Einblicke in die mechanische Montage. Entdecke
-              seine abwechslungsreichen Aufgaben:
+              Alexander stellt Ihnen die mechanische Konstruktion vor. Entdecken
+              Sie unsere Stärken und erfahren Sie, was uns Einzigartig macht:
             </p>
+            <h3>DIE NMH DECKT EIN GROSSES SPEKTRUM AB:</h3>
             <ul>
               <li>
-                Eigenverantwortliche Montage und Inbetriebnahme nach Zeichnung,
-                Stücklisten und 3D-PDF
+                Mechanische, elektrische, pneumatische und hydraulische Montage
               </li>
-              <li>Internationale Montageeinsätze</li>
-              <li>Installation von Pneumatik und Hydraulik</li>
-              <li>Terminverantwortung</li>
             </ul>
+            <h3>SONDERMASCHINEN, DIE WIR FÜR SIE FERTIGEN KÖNNEN:</h3>
+            <ul>
+              <li>Große Verkettungsanlagen</li>
+              <li>Kleine Standalone-Anlagen</li>
+              <li>Präzise Messanlagen</li>
+              <li>Roboterzellen</li>
+              <li>Greifsysteme</li>
+              <li>Lastaufnahmemittel</li>
+              <li>Decken- und bodengeführte Manipulatoren</li>
+            </ul>
+            <h3>ABLAUF VON KUNDENPROJEKTEN:</h3>
+            <p>
+              Sobald die Konstruktionspläne vorliegen, starten wir den Prozess
+              und montieren die Anlage. Ab diesem Zeitpunkt sind Kunden
+              jederzeit herzlich willkommen, uns zu besuchen. Wir freuen uns auf
+              Ihre Anfrage!
+            </p>
           </div>
         </>
       );
+
     case 20:
       store.banner = {
         type: "img",
@@ -193,10 +209,10 @@ export const MaschineCustomer = ({
             <p>
               Im Sondermaschinenbau bieten wir Ihnen eine breite Palette an
               maßgeschneiderten Lösungen, die Ihre Produktionsprozesse
-              effizienter und präziser gestalten. Unsere Technologien und Systeme
-              sind darauf ausgelegt, höchste Leistungsfähigkeit und Flexibilität
-              zu bieten. Von Montagetechnik bis Automatisierung - wir
-              unterstützen Sie mit Innovativen und nachhaltigen Lösungen.
+              effizienter und präziser gestalten. Unsere Technologien und
+              Systeme sind darauf ausgelegt, höchste Leistungsfähigkeit und
+              Flexibilität zu bieten. Von Montagetechnik bis Automatisierung -
+              wir unterstützen Sie mit Innovativen und nachhaltigen Lösungen.
             </p>
             <h3>FOLGENDE BEREICHE DECKEN WIR AB:</h3>
             <ul>
@@ -263,8 +279,9 @@ export const MaschineCustomer = ({
               gefolgt von einer Prüfeinheit, um die Produktqualität
               sicherzustellen. Anschließend erfolgt die Spanntechnik für präzise
               Fixierungen, bevor die Schweißtechnik zum Einsatz kommt. Zum
-              Abschluss sorgt die Transporttechnik für den reibungslosen Übergang
-              zum nächsten Produktionsschritt oder zur Verpackungseinheit.
+              Abschluss sorgt die Transporttechnik für den reibungslosen
+              Übergang zum nächsten Produktionsschritt oder zur
+              Verpackungseinheit.
             </p>
             <p>
               Alle Module können individuell angepasst und erweitert werden, um
@@ -289,13 +306,13 @@ export const MaschineNotCustomer = ({
     case 18:
       store.banner = {
         type: "iframe",
-        src: "https://player.vimeo.com/video/1017917628?h=d0678dd22f&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+        src: "https://player.vimeo.com/video/1017906379?h=8ac4639c6b&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       };
+
       return (
         <>
           <div className="popup_headside">
-            <h2>PROJEKTLEITER</h2>
-
+            <h2>MONTAGE</h2>
             {isNotCusomer ? (
               <a target="_blank" href="https://www.nmh.de/karriere/">
                 <img src="/icons/job.png" alt="icon" />
@@ -303,7 +320,7 @@ export const MaschineNotCustomer = ({
             ) : (
               <a
                 target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2025.pdf"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/012_NMH_Flyer_Montagetechnik.pdf"
               >
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
@@ -311,22 +328,22 @@ export const MaschineNotCustomer = ({
           </div>
           <div className="popup_box">
             <p>
-              Thomas gibt dir Einblicke in die Projektleitung. Lerne seine
-              Aufgaben kennen:
+              Patrick gibt dir Einblicke in die mechanische Montage. Entdecke
+              seine abwechslungsreichen Aufgaben:
             </p>
             <ul>
-              <li>Zielgerichtete und erfolgsorientierte Konstruktion</li>
-              <li>Betreuung und Anleitung von internen Teams</li>
-              <li>ProjektleitungvonderPlanungsphasebiszurEndabnahme</li>
               <li>
-                Verantwortung für Ressourcen, Budget,Termine, Kosten, Qualität
-                und gesetzliche Vorgaben
+                Eigenverantwortliche Montage und Inbetriebnahme nach Zeichnung,
+                Stücklisten und 3D-PDF
               </li>
-              <li>Projektmeetings mit Kunden</li>
+              <li>Internationale Montageeinsätze</li>
+              <li>Installation von Pneumatik und Hydraulik</li>
+              <li>Terminverantwortung</li>
             </ul>
           </div>
         </>
       );
+
     case 19:
       store.banner = {
         type: "iframe",
@@ -359,7 +376,8 @@ export const MaschineNotCustomer = ({
               <li>Installation von Schaltschränken gemäß E-Plänen</li>
               <li>Verdrahten und Verkabeln von Maschinen</li>
               <li>
-                Montage von Maschinen sowohl im Haus als auch beim Kunden vor Ort
+                Montage von Maschinen sowohl im Haus als auch beim Kunden vor
+                Ort
               </li>
               <li>Arbeit an verschiedenen Projekten bei diversen Kunden</li>
             </ul>
@@ -408,12 +426,13 @@ export const MaschineNotCustomer = ({
     case 21:
       store.banner = {
         type: "iframe",
-        src: "https://player.vimeo.com/video/1017906379?h=8ac4639c6b&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+        src: "https://player.vimeo.com/video/1017917628?h=d0678dd22f&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       };
       return (
         <>
           <div className="popup_headside">
-            <h2>EINZELANLAGEN</h2>
+            <h2>PROJEKTLEITER</h2>
+
             {isNotCusomer ? (
               <a target="_blank" href="https://www.nmh.de/karriere/">
                 <img src="/icons/job.png" alt="icon" />
@@ -421,7 +440,7 @@ export const MaschineNotCustomer = ({
             ) : (
               <a
                 target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/007_NMH_Flyer_Achsmontage.pdf"
+                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/NMH_Firmenvorstellung_Maschinenbau_2025.pdf"
               >
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
@@ -429,17 +448,18 @@ export const MaschineNotCustomer = ({
           </div>
           <div className="popup_box">
             <p>
-              Patrick gibt dir Einblicke in die mechanische Montage. Entdecke
-              seine abwechslungsreichen Aufgaben:
+              Thomas gibt dir Einblicke in die Projektleitung. Lerne seine
+              Aufgaben kennen:
             </p>
             <ul>
+              <li>Zielgerichtete und erfolgsorientierte Konstruktion</li>
+              <li>Betreuung und Anleitung von internen Teams</li>
+              <li>ProjektleitungvonderPlanungsphasebiszurEndabnahme</li>
               <li>
-                Eigenverantwortliche Montage und Inbetriebnahme nach Zeichnung,
-                Stücklisten und 3D-PDF
+                Verantwortung für Ressourcen, Budget,Termine, Kosten, Qualität
+                und gesetzliche Vorgaben
               </li>
-              <li>Internationale Montageeinsätze</li>
-              <li>Installation von Pneumatik und Hydraulik</li>
-              <li>Terminverantwortung</li>
+              <li>Projektmeetings mit Kunden</li>
             </ul>
           </div>
         </>

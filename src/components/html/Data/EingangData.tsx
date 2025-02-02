@@ -124,7 +124,7 @@ export const EingangCustomer = ({
           </div>
           <div className="popup_box">
             <h3>
-              UNSERE ZERTIFIZIERUNGEN - IHR GARANTIE FÜR QUALITÄT UND
+              UNSERE ZERTIFIZIERUNGEN - IHRE GARANTIE FÜR QUALITÄT UND
               NACHHALTIGKEIT!
             </h3>
             <p>
@@ -187,35 +187,35 @@ export const EingangCustomer = ({
             <h3>UNSER ENGAGEMENT FÜR DIGITALISIERUNG UND NACHHALTIGKEIT:</h3>
             <ul>
               <li>
-                Papierlose Produktion
+                Papierlose Produktion{" "}
                 <span>
                   durch unsere Eigenentwicklung CoCo - für eine nachhaltige und
                   effiziente Fertigung mit Echtzeit-Informationen
                 </span>
               </li>
               <li>
-                SmartEcoBox
+                SmartEcoBox{" "}
                 <span>
                   unser eigenentwickeltes Produkt zur Optimierung von
                   Ressourcen, Smart Automation und CO2-Footprint-Auswertung
                 </span>
               </li>
               <li>
-                Photovoltaikanlage mit 700 kWp,
+                Photovoltaikanlage mit 700 kWp,{" "}
                 <span>
                   um unseren Energiebedarf zu decken und die Abhängigkeit von
                   fossilen Brennstoffen zu reduzieren
                 </span>
               </li>
               <li>
-                Wärmerückgewinnungssysteme,
+                Wärmerückgewinnungssysteme,{" "}
                 <span>
                   die unsere Produktionsprozesse optimieren und den
                   Energieverbrauch senken
                 </span>
               </li>
               <li>
-                Elektrofahrzeug-Flotte
+                Elektrofahrzeug-Flotte{" "}
                 <span>
                   Diese Initiativen sind Teil unseres Engagements für eine
                   zukunftsfähige und ressourcenschonende Produktion.
@@ -269,7 +269,7 @@ export const EingangCustomer = ({
             </p>
 
             <ul>
-              <li>Hauptsponsor des Sportvereins Hohentengen</li>
+              <li>Hauptsponsor des Sportvereins Hochberg</li>
               <li>Silber-Sponsor der Schwenninger Wild Wings</li>
               <li>Sponsor der Razorbacks Ravensburg</li>
             </ul>
@@ -297,7 +297,7 @@ export const EingangCustomer = ({
               <li>SV Ennetach Jugendtunier</li>
               <li>SV Renhardsweiler Jugendtunier</li>
               <li>Geberit Trophy</li>
-              <li>Gemenidemusik Herbertingen</li>
+              <li>Gemeindemusik Herbertingen</li>
               <li>Caritas Bad Saulgau und viele weitere Aktionen</li>
             </ul>
             <p>

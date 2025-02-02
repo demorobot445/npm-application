@@ -98,8 +98,8 @@ export const KunststoffCustomer = ({
               mit Teilezuführungen und Handlingsystemen ausgestattet sind und so
               höchste Effizienz in der Produktion gewährleisten.
             </p>
-            <p>AUCH NACH DER FERTIGUNG STEHEN IHNEN VIELFÄLTIGE</p>
-            <p>WEITERBEARBEITUNGSMÖGLICHKEITEN ZUR VERFÜGUNG, DARUNTER:</p>
+            <h3>AUCH NACH DER FERTIGUNG STEHEN IHNEN VIELFÄLTIGE</h3>
+            <h3>WEITERBEARBEITUNGSMÖGLICHKEITEN ZUR VERFÜGUNG, DARUNTER:</h3>
             <ul>
               <li>Veredelung</li>
               <li>Bedruckung</li>
@@ -119,7 +119,7 @@ export const KunststoffCustomer = ({
       return (
         <>
           <div className="popup_headside">
-            <h2>KUNSTSTOFFTECHNIK</h2>
+            <h2>Kunststofftechnik</h2>
             {isNotCusomer ? (
               <a target="_blank" href="https://www.nmh.de/karriere/">
                 <img src="/icons/job.png" alt="icon" />
@@ -257,7 +257,7 @@ export const KunststoffNotCustomer = ({
       return (
         <>
           <div className="popup_headside">
-            <h2>KUNSTOFFTECHNIK</h2>
+            <h2>Kunststofftechnik</h2>
 
             {isNotCusomer ? (
               <a target="_blank" href="https://www.nmh.de/karriere/">

@@ -33,7 +33,7 @@ export const FertigungCustomer = ({
           </div>
           <div className="popup_box">
             <p>
-              Marc führt Sie durch die Fertigung. Erleben Sie unsere
+              Mark führt Sie durch die Fertigung. Erleben Sie unsere
               Produktionsprozesse hautnah und entdecken Sie, was uns einzigartig
               macht:
             </p>
@@ -149,7 +149,7 @@ export const FertigungCustomer = ({
           </div>
           <div className="popup_box">
             <p>
-              Unsere eigens entwickelte SMART ECO BOX bietet Unter- nehmen
+              Unsere eigens entwickelte SMART ECO BOX bietet Unternehmen
               zahlreiche Vorteile: Sie überwacht Energieströme, senkt Kosten und
               CO2-Emissionen, und ermöglicht eine nachhaltige Produktion – bei
               einfacher Installation und vielseitigem Einsatz.
@@ -204,7 +204,7 @@ export const FertigungCustomer = ({
           </div>
           <div className="popup_box">
             <p>
-              Marc führt Sie durch die Fertigung. Erleben Sie unsere
+              Mark führt Sie durch die Fertigung. Erleben Sie unsere
               Produktionsprozesse hautnah und entdecken Sie, was uns einzigartig
               macht:
             </p>
@@ -257,7 +257,7 @@ export const FertigungCustomer = ({
           </div>
           <div className="popup_box">
             <p>
-              Marc führt Sie durch die Fertigung. Erleben Sie unsere
+              Mark führt Sie durch die Fertigung. Erleben Sie unsere
               Produktionsprozesse hautnah und entdecken Sie, was uns einzigartig
               macht:
             </p>
@@ -474,7 +474,7 @@ export const FertigungNotCustomer = ({
           </div>
           <div className="popup_box">
             <p>
-              Unsere eigens entwickelte SMART ECO BOX bietet Unter- nehmen
+              Unsere eigens entwickelte SMART ECO BOX bietet Unternehmen
               zahlreiche Vorteile: Sie überwacht Energieströme, senkt Kosten und
               CO2-Emissionen, und ermöglicht eine nachhaltige Produktion – bei
               einfacher Installation und vielseitigem Einsatz.

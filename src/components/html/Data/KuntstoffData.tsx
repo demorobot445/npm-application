@@ -98,8 +98,10 @@ export const KunststoffCustomer = ({
               mit Teilezuführungen und Handlingsystemen ausgestattet sind und so
               höchste Effizienz in der Produktion gewährleisten.
             </p>
-            <h3>AUCH NACH DER FERTIGUNG STEHEN IHNEN VIELFÄLTIGE</h3>
-            <h3>WEITERBEARBEITUNGSMÖGLICHKEITEN ZUR VERFÜGUNG, DARUNTER:</h3>
+            <h3>
+              AUCH NACH DER FERTIGUNG STEHEN IHNEN VIELFÄLTIGE
+              WEITERBEARBEITUNGSMÖGLICHKEITEN ZUR VERFÜGUNG, DARUNTER:
+            </h3>
             <ul>
               <li>Veredelung</li>
               <li>Bedruckung</li>

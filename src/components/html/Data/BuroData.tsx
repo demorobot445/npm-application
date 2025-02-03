@@ -587,13 +587,13 @@ export const BuroCustomer = ({
     case 26:
       store.banner = {
         type: "iframe",
-        src: "https://player.vimeo.com/video/1025134449?h=6c74d370c4&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+        src: "https://player.vimeo.com/video/1025135207?h=833b6e5d77&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       };
 
       return (
         <>
           <div className="popup_headside">
-            <h2>KUNSTOFFTECHNIK</h2>
+            <h2>MECHANISCHE KONSTRUKTION</h2>
 
             {isNotCusomer ? (
               <a target="_blank" href="https://www.nmh.de/karriere/">
@@ -610,14 +610,31 @@ export const BuroCustomer = ({
           </div>
           <div className="popup_box">
             <p>
-              Philipp nimmt dich mit in die Kunststofftechnik. Erfahre mehr über
-              seine Aufgaben:
+              Marcel stellt Ihnen die mechanische Konstruktion vor. Entdecken
+              Sie unsere Stärken und erfahren Sie, was uns Einzigartig macht:
             </p>
             <ul>
-              <li>Auftragsabwicklung und Kundenkommunikation</li>
-              <li>Materialbestellung und Rüsten der Werkzeuge</li>
-              <li>Durchführung der Qualitätsprüfung am Endprodukt</li>
+              <li>
+                Unsere Projektverantwortlichen begleiten Ihre Projekte von der
+                Anfrage bis End-Of-Life
+              </li>
+              <li>
+                Konstruktion der Anlagen mit Catia V5, Siemens NX oder
+                Solidworks
+              </li>
+              <li>
+                Projektmanagement und Koordination durch einen Ansprechpartner
+              </li>
+              <li>
+                Unsere Kernkompetenzen, bestehend aus Montieren / Zusammenbau,
+                Messen / Prüfen, Transportieren / Handling und Verkettungen
+              </li>
             </ul>
+            <p>
+              Vom ersten Entwurf bis zur fertigen Anlage - wir sind Ihr Partner
+              für effiziente und maßgeschneiderte Lösungen. Wir freuen uns auf
+              Ihre Projekte.
+            </p>
           </div>
         </>
       );

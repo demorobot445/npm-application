@@ -132,17 +132,11 @@ export const FertigungCustomer = ({
             <h2>SMART ECO BOX</h2>
 
             {isNotCusomer ? (
-              <a
-                target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Smart-Eco-Box.pdf"
-              >
+              <a target="_blank" href="https://smartecobox.de/">
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
             ) : (
-              <a
-                target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Smart-Eco-Box.pdf"
-              >
+              <a target="_blank" href="https://smartecobox.de/">
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
             )}
@@ -457,17 +451,11 @@ export const FertigungNotCustomer = ({
             <h2>SMART ECO BOX</h2>
 
             {isNotCusomer ? (
-              <a
-                target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Smart-Eco-Box.pdf"
-              >
+              <a target="_blank" href="https://smartecobox.de/">
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
             ) : (
-              <a
-                target="_blank"
-                href="https://www.nmh.de/wp-content/uploads/3d-welt/pdf/Smart-Eco-Box.pdf"
-              >
+              <a target="_blank" href="https://smartecobox.de/">
                 <img src="/icons/pdf.png" alt="icon" />
               </a>
             )}

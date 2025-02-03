@@ -287,7 +287,7 @@ export const EingangCustomer = ({
               <li>Triathlon Schwarzachtal</li>
               <li>Biker Days Pfullendorf</li>
               <li>NMH-Cup in Hohentengen</li>
-              <li>NMH-Pre Season Cup in Hechberg</li>
+              <li>NMH-Pre Season Cup in Hochberg</li>
               <li>Trikotsponsoring C-Jugend SV Hochberg</li>
               <li>Trikotsponsoring SV Ölkofen</li>
               <li>OHA-Treffen Narrenzunft Herbertingen</li>

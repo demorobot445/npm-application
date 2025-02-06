@@ -10,7 +10,7 @@ import {
 } from "three";
 
 const Entry = () => {
-  const { scene, animations } = useGLTF("/entryway.glb");
+  const { scene, animations } = useGLTF("/models/entryway.glb");
 
   const [mixer, setMixer] = useState<AnimationMixer | null>(null);
   const [isAnimationPlaying, setIsAnimationPlaying] = useState(false);
@@ -92,4 +92,4 @@ const Entry = () => {
 
 export default Entry;
 
-useGLTF.preload("/entryway.glb");
+useGLTF.preload("/models/entryway.glb");

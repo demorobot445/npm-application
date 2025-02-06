@@ -59,7 +59,7 @@ type GLTFResult = GLTF & {
 export function Doors(props: JSX.IntrinsicElements["group"]) {
   const { moveAnimation, floor } = useSnapshot(store);
   const group = React.useRef<THREE.Group>(null);
-  const { nodes, materials } = useGLTF("/doors.glb") as GLTFResult;
+  const { nodes, materials } = useGLTF("/models/doors.glb") as GLTFResult;
   // model hovered
   const [hovered, setHovered] = useState(false);
   useCursor(hovered);
@@ -1362,4 +1362,4 @@ export function Doors(props: JSX.IntrinsicElements["group"]) {
   );
 }
 
-useGLTF.preload("/doors.glb");
+useGLTF.preload("/models/doors.glb");

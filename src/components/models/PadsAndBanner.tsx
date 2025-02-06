@@ -220,7 +220,9 @@ export function PadsAndBanner(props: JSX.IntrinsicElements["group"]) {
   //
   const { moveAnimation } = useSnapshot(store);
   const group = React.useRef<THREE.Group>(null);
-  const { nodes, materials } = useGLTF("/padsAndBanner.glb") as GLTFResult;
+  const { nodes, materials } = useGLTF(
+    "/models/padsAndBanner.glb"
+  ) as GLTFResult;
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
@@ -2522,4 +2524,4 @@ export function PadsAndBanner(props: JSX.IntrinsicElements["group"]) {
   );
 }
 
-useGLTF.preload("/padsAndBanner.glb");
+useGLTF.preload("/models/padsAndBanner.glb");

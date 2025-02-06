@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { MeshStandardMaterial, MeshBasicMaterial, Object3D, Mesh } from "three";
 
 const Walls = () => {
-  const { scene } = useGLTF("/walls.glb");
+  const { scene } = useGLTF("/models/walls.glb");
 
   useEffect(() => {
     scene.traverse((child) => {
@@ -45,4 +45,4 @@ const Walls = () => {
 
 export default Walls;
 
-useGLTF.preload("/walls.glb");
+useGLTF.preload("/models/walls.glb");

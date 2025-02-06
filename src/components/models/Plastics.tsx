@@ -10,7 +10,7 @@ import {
 } from "three";
 
 const Plastics = () => {
-  const { scene, animations, materials } = useGLTF("/plastics.glb");
+  const { scene, animations, materials } = useGLTF("/models/plastics.glb");
 
   const [mixer, setMixer] = useState<AnimationMixer | null>(null);
   const [isAnimationPlaying, setIsAnimationPlaying] = useState(false);
@@ -94,4 +94,4 @@ const Plastics = () => {
 
 export default Plastics;
 
-useGLTF.preload("/plastics.glb");
+useGLTF.preload("/models/plastics.glb");

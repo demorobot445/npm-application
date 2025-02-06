@@ -24,7 +24,9 @@ type GLTFResult = GLTF & {
 
 export function Spawn(props: JSX.IntrinsicElements["group"]) {
   const group = React.useRef<THREE.Group>(null);
-  const { nodes, materials, animations } = useGLTF("/spawn.glb") as GLTFResult;
+  const { nodes, materials, animations } = useGLTF(
+    "/models/spawn.glb"
+  ) as GLTFResult;
   const { actions } = useAnimations(animations, group);
 
   useEffect(() => {
@@ -61,4 +63,4 @@ export function Spawn(props: JSX.IntrinsicElements["group"]) {
   );
 }
 
-useGLTF.preload("/spawn.glb");
+useGLTF.preload("/models/spawn.glb");

@@ -221,9 +221,9 @@ const Label: React.FC<Props> = ({
 };
 
 export function Labels(props: JSX.IntrinsicElements["group"]) {
-  const { nodes, materials } = useGLTF("/labels.glb") as GLTFResult;
+  const { nodes, materials } = useGLTF("/models/labels.glb") as GLTFResult;
   const { nodes: newNodes, materials: newMaterials } = useGLTF(
-    "/kunststoff-label.glb"
+    "/models/kunststoff-label.glb"
   ) as GLTFResultLabel;
 
   return (
@@ -982,4 +982,5 @@ export function Labels(props: JSX.IntrinsicElements["group"]) {
   );
 }
 
-useGLTF.preload("/labels.glb");
+useGLTF.preload("/models/labels.glb");
+useGLTF.preload("/models/kunststoff-label.glb");

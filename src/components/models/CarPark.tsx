@@ -10,7 +10,7 @@ import {
 } from "three";
 
 const CarPark = () => {
-  const { scene, animations } = useGLTF("/carpark.glb");
+  const { scene, animations } = useGLTF("/models/carpark.glb");
 
   const [mixer, setMixer] = useState<AnimationMixer | null>(null);
   const [isAnimationPlaying, setIsAnimationPlaying] = useState(false);
@@ -92,4 +92,4 @@ const CarPark = () => {
 
 export default CarPark;
 
-useGLTF.preload("/carpark.glb");
+useGLTF.preload("/models/carpark.glb");

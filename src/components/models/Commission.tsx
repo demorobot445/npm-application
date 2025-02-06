@@ -10,7 +10,7 @@ import {
 } from "three";
 
 const Commission = () => {
-  const { scene, animations } = useGLTF("/commision.glb");
+  const { scene, animations } = useGLTF("/models/commision.glb");
 
   const [mixer, setMixer] = useState<AnimationMixer | null>(null);
   const [isAnimationPlaying, setIsAnimationPlaying] = useState(false);
@@ -92,4 +92,4 @@ const Commission = () => {
 
 export default Commission;
 
-useGLTF.preload("/commision.glb");
+useGLTF.preload("/models/commision.glb");

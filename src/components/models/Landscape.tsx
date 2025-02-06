@@ -10,7 +10,7 @@ import {
 } from "three";
 
 const Landscape = () => {
-  const { scene, animations } = useGLTF("/landscape.glb");
+  const { scene, animations } = useGLTF("/models/landscape.glb");
 
   const [mixer, setMixer] = useState<AnimationMixer | null>(null);
   const [isAnimationPlaying, setIsAnimationPlaying] = useState(false);
@@ -92,4 +92,4 @@ const Landscape = () => {
 
 export default Landscape;
 
-useGLTF.preload("/landscape.glb");
+useGLTF.preload("/models/landscape.glb");

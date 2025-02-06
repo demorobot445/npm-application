@@ -5,7 +5,7 @@ import { useSnapshot } from "valtio";
 import { store } from "../../store";
 
 const WindowsAndDoors = () => {
-  const { scene } = useGLTF("/windows&doors.glb");
+  const { scene } = useGLTF("/models/windows&doors.glb");
 
   useEffect(() => {
     scene.traverse((child) => {
@@ -68,4 +68,4 @@ const WindowsAndDoors = () => {
 
 export default WindowsAndDoors;
 
-useGLTF.preload("/windows&doors.glb");
+useGLTF.preload("/models/windows&doors.glb");

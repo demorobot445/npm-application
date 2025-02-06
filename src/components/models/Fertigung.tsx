@@ -10,7 +10,7 @@ import {
 } from "three";
 
 const Fertigung = () => {
-  const { scene, animations, materials } = useGLTF("/production.glb");
+  const { scene, animations, materials } = useGLTF("/models/production.glb");
 
   const [mixer, setMixer] = useState<AnimationMixer | null>(null);
   const [isAnimationPlaying, setIsAnimationPlaying] = useState(false);
@@ -93,4 +93,4 @@ const Fertigung = () => {
 
 export default Fertigung;
 
-useGLTF.preload("/production.glb");
+useGLTF.preload("/models/production.glb");

@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { MeshStandardMaterial, MeshBasicMaterial, Object3D, Mesh } from "three";
 
 const Cafeteria = () => {
-  const { scene } = useGLTF("/cafeteria.glb");
+  const { scene } = useGLTF("/models/cafeteria.glb");
 
   useEffect(() => {
     scene.traverse((child) => {
@@ -45,4 +45,4 @@ const Cafeteria = () => {
 
 export default Cafeteria;
 
-useGLTF.preload("/cafeteria.glb");
+useGLTF.preload("/models/cafeteria.glb");

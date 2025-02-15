@@ -233,7 +233,15 @@ function App() {
           </Suspense>
         </group>
       </Canvas>
-      <Loader />
+      <Loader
+        containerStyles={{
+          backgroundImage: "url(/loader-bg.png)",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+        dataStyles={{ color: "white" }}
+      />
     </main>
   );
 }

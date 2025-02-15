@@ -10,7 +10,11 @@ const CustomerButton = () => {
 
   return (
     <div className="buttonInside">
-      <button onClick={handleCustomer} data-active={isCustomer}>
+      <button
+        className="buttonInside_btn"
+        onClick={handleCustomer}
+        data-active={isCustomer}
+      >
         {isCustomer ? (
           <span>Lösungen bei NMH</span>
         ) : (

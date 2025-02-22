@@ -611,7 +611,7 @@ export const BuroCustomer = ({
           <div className="popup_box">
             <p>
               Marcel stellt Ihnen die mechanische Konstruktion vor. Entdecken
-              Sie unsere Stärken und erfahren Sie, was uns Einzigartig macht:
+              Sie unsere Stärken und erfahren Sie, was uns einzigartig macht:
             </p>
             <ul>
               <li>
@@ -696,7 +696,7 @@ export const BuroCustomer = ({
               <li>Retrofit der Maschinen</li>
             </ul>
             <p>
-              Unser junges und dynamischesTeam meistert Herausforderungen von
+              Unser junges und dynamisches Team meistert Herausforderungen von
               kleinen Einzelanlagen bis hin zu kompletten Produktionslinien.
               Dank unserer großen Vielfalt im Sondermaschinenbau bieten wir
               Ihnen maßgeschneiderte Lösungen für Ihre speziellen Anforderungen.
@@ -732,7 +732,7 @@ export const BuroCustomer = ({
           <div className="popup_box">
             <p>
               Marcel stellt Ihnen die mechanische Konstruktion vor. Entdecken
-              Sie unsere Stärken und erfahren Sie, was uns Einzigartig macht:
+              Sie unsere Stärken und erfahren Sie, was uns einzigartig macht:
             </p>
             <ul>
               <li>

@@ -20,8 +20,8 @@ export const EingangCustomer = ({
           </div>
           <div className="popup_box">
             <h3>
-              UNSERE AUSZEICHNUNGEN UND TEILNAHMEN- ZEICHEN UNSERES ENGAGEMENTS
-              UND UNSERER INNOVATIONSKRAFT
+              UNSERE AUSZEICHNUNGEN UND TEILNAHMEN - EIN ZEICHEN UNSERES
+              ENGAGEMENTS UND UNSERER INNOVATIONSKRAFT
             </h3>
             <p>
               NMH ist stolz auf zahlreiche Auszeichnungen, die unsere

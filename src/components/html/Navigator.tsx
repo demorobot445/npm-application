@@ -68,7 +68,7 @@ const Navigator = () => {
           onClick={handleMobileMenu}
           className="buttonBox_mobile"
         >
-          3D Welt Menu
+          3D Welt Menü
           <Arrow />
         </button>
         <button
@@ -80,7 +80,7 @@ const Navigator = () => {
             moveAnimation(24.2, 0, 1, 1, 1.6);
           }}
         >
-          Eingang / Foyer
+          Eingang & Foyer
         </button>
         <button
           className="buttonBox_btn"

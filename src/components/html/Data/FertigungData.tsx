@@ -105,7 +105,7 @@ export const FertigungCustomer = ({
               Ihnen eine präzise Bearbeitung, selbst bei komplexen Geometrien
               und höchsten Maßanforderungen. Unser Leistungsspektrum umfasst
               Bauteile von 1 mm bis 6000 mm sowie Beschichtungen und
-              Oberflächenbehand- lungen verschiedenster Art.
+              Oberflächenbehandlungen verschiedenster Art.
             </p>
             <h3>WIR BEARBEITEN:</h3>
             <ul>
@@ -323,7 +323,7 @@ export const FertigungCustomer = ({
               Ihnen eine präzise Bearbeitung, selbst bei komplexen Geometrien
               und höchsten Maßanforderungen. Unser Leistungsspektrum umfasst
               Bauteile von 1 mm bis 6000 mm sowie Beschichtungen und
-              Oberflächenbehand- lungen verschiedenster Art.
+              Oberflächenbehandlungen verschiedenster Art.
             </p>
             <h3>WIR BEARBEITEN:</h3>
             <ul>

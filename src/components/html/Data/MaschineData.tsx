@@ -35,7 +35,7 @@ export const MaschineCustomer = ({
           <div className="popup_box">
             <p>
               Alexander stellt Ihnen die mechanische Konstruktion vor. Entdecken
-              Sie unsere Stärken und erfahren Sie, was uns Einzigartig macht:
+              Sie unsere Stärken und erfahren Sie, was uns einzigartig macht:
             </p>
             <h3>DIE NMH DECKT EIN GROSSES SPEKTRUM AB:</h3>
             <ul>
@@ -90,7 +90,7 @@ export const MaschineCustomer = ({
           <div className="popup_box">
             <p>
               Alexander stellt Ihnen die mechanische Konstruktion vor. Entdecken
-              Sie unsere Stärken und erfahren Sie, was uns Einzigartig macht:
+              Sie unsere Stärken und erfahren Sie, was uns einzigartig macht:
             </p>
             <h3>DIE NMH DECKT EIN GROSSES SPEKTRUM AB:</h3>
             <ul>
@@ -106,7 +106,7 @@ export const MaschineCustomer = ({
               <li>Roboterzellen</li>
               <li>Greifsysteme</li>
               <li>Lastaufnahmemittel</li>
-              <li>Decken- und bodengeführte Manipulatoren</li>
+              <li>Deckenund bodengeführte Manipulatoren</li>
             </ul>
             <h3>ABLAUF VON KUNDENPROJEKTEN:</h3>
             <p>
@@ -145,10 +145,10 @@ export const MaschineCustomer = ({
           </div>
           <div className="popup_box">
             <p>
-              Unser eigenentwickeltes Modulares Handhabungsgerät verbessert die
+              Unser eigenentwickeltes modulares Handhabungsgerät verbessert die
               Ergonomie und erhöht den Bedienkomfort. Es eignet sich für
               vielfältige Aufgaben wie Heben von Lasten, Überkopfarbeiten,
-              statisches Halten bei der Montage, Kom- missionieren, Verpacken,
+              statisches Halten bei der Montage, Kommissionieren, Verpacken,
               Befüllen und als Montagehelfer. Zudem bietet es zahlreiche weitere
               Einsatzmöglichkeiten zur Unterstützung Ihrer Produktionsprozesse.
             </p>
@@ -454,9 +454,9 @@ export const MaschineNotCustomer = ({
             <ul>
               <li>Zielgerichtete und erfolgsorientierte Konstruktion</li>
               <li>Betreuung und Anleitung von internen Teams</li>
-              <li>ProjektleitungvonderPlanungsphasebiszurEndabnahme</li>
+              <li>Projektleitung von der Planungsphase bis zur Endabnahme</li>
               <li>
-                Verantwortung für Ressourcen, Budget,Termine, Kosten, Qualität
+                Verantwortung für Ressourcen, Budget, Termine, Kosten, Qualität
                 und gesetzliche Vorgaben
               </li>
               <li>Projektmeetings mit Kunden</li>
